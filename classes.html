@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Classes - BhaiyaKeNotes</title>
+  </title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/classes.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <div class="logo">
+          <h1>Bhaiya<span>KeNotes</span></h1>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="classes.html" class="active">Classes</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="search-container">
+            <div class="search-box">
+              <input type="text" id="searchInput" placeholder="Search notes...">
+              <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+          </li>
+          <li>
+            <button id="themeToggle" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="page-header">
+      <div class="container">
+        <h1>Explore All Classes</h1>
+        <p>Comprehensive study materials for all NCERT classes with easy-to-understand notes, important questions, and solutions.</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="classes-grid">
+    <!-- <div class="container">
+      <div class="filter-bar">
+        <div class="filter-group">
+          <label>Filter by Board:</label>
+          <select id="boardFilter">
+            <option value="all">All Boards</option>
+            <option value="cbse">CBSE</option>
+            <option value="icse">ICSE</option>
+            <option value="state">State Boards</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Filter by Subject:</label>
+          <select id="subjectFilter">
+            <option value="all">All Subjects</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="science">Science</option>
+            <option value="social">Social Science</option>
+            <option value="english">English</option>
+            <option value="hindi">Hindi</option>
+          </select>
+        </div> -->
+      </div>
+
+      <!-- <h2>Primary Classes (1-5)</h2>
+      <div class="class-grid">
+        <a href="classes/class1.html" class="class-tile">
+          <div class="class-number">1</div>
+          <div class="class-info">
+            <h3>Class 1</h3>
+            <p>Foundation learning for beginners</p>
+            <div class="subjects">
+              <span>English</span>
+              <span>Hindi</span>
+              <span>Mathematics</span>
+              <span>EVS</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="classes/class2.html" class="class-tile">
+          <div class="class-number">2</div>
+          <div class="class-info">
+            <h3>Class 2</h3>
+            <p>Elementary education concepts</p>
+            <div class="subjects">
+              <span>English</span>
+              <span>Hindi</span>
+              <span>Mathematics</span>
+              <span>EVS</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="classes/class3.html" class="class-tile">
+          <div class="class-number">3</div>
+          <div class="class-info">
+            <h3>Class 3</h3>
+            <p>Building fundamental knowledge</p>
+            <div class="subjects">
+              <span>English</span>
+              <span>Hindi</span>
+              <span>Mathematics</span>
+              <span>EVS</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="classes/class4.html" class="class-tile">
+          <div class="class-number">4</div>
+          <div class="class-info">
+            <h3>Class 4</h3>
+            <p>Expanding core concepts</p>
+            <div class="subjects">
+              <span>English</span>
+              <span>Hindi</span>
+              <span>Mathematics</span>
+              <span>EVS</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="classes/class5.html" class="class-tile">
+          <div class="class-number">5</div>
+          <div class="class-info">
+            <h3>Class 5</h3>
+            <p>Preparation for middle school</p>
+            <div class="subjects">
+              <span>English</span>
+              <span>Hindi</span>
+              <span>Mathematics</span>
+              <span>EVS</span>
+            </div>
+          </div>
+        </a>
+      </div> -->
+      
+      <!-- <h2>Middle School (6-8)</h2>
+      <div class="class-grid">
+        <a href="classes/class6.html" class="class-tile">
+          <div class="class-number">6</div>
+          <div class="class-info">
+            <h3>Class 6</h3>
+            <p>Foundation for middle school</p>
+            <div class="subjects">
+              <span>English</span>
+              <span>Hindi</span>
+              <span>Mathematics</span>
+              <span>Science</span>
+              <span>Social Science</span>
+              <span>Sanskrit</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="classes/class7.html" class="class-tile">
+          <div class="class-number">7</div>
+          <div class="class-info">
+            <h3>Class 7</h3>
+            <p>Building on fundamental knowledge</p>
+            <div class="subjects">
+              <span>English</span>
+              <span>Hindi</span>
+              <span>Mathematics</span>
+              <span>Science</span>
+              <span>Social Science</span>
+              <span>Sanskrit</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="classes/class8.html" class="class-tile">
+          <div class="class-number">8</div>
+          <div class="class-info">
+            <h3>Class 8</h3>
+            <p>Advanced middle school concepts</p>
+            <div class="subjects">
+              <span>English</span>
+              <span>Hindi</span>
+              <span>Mathematics</span>
+              <span>Science</span>
+              <span>Social Science</span>
+              <span>Sanskrit</span>
+            </div>
+          </div>
+        </a>
+      </div> -->
+      
+      <h2>Secondary School (9-10)</h2>
+      <div class="class-grid">
+        <a href="classes/class9.html" class="class-tile">
+          <div class="class-number">9</div>
+          <div class="class-info">
+            <h3>Class 9</h3>
+            <p>Preparation for board examination</p>
+            <div class="subjects">
+              <span>English</span>
+              <span>Hindi</span>
+              <span>Mathematics</span>
+              <span>Science</span>
+              <span>Social Science</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="classes/class10.html" class="class-tile highlight">
+          <div class="class-number">10</div>
+          <div class="class-info">
+            <h3>Class 10</h3>
+            <p>Complete board exam preparation</p>
+            <div class="subjects">
+              <span>English</span>
+              <span>Hindi</span>
+              <span>Mathematics</span>
+              <span>Science</span>
+              <span>Social Science</span>
+            </div>
+          </div>
+          <div class="popular-tag">Most Popular</div>
+        </a>
+      </div>
+      
+      <h2>Higher Secondary (11-12)</h2>
+      <div class="class-grid">
+        <a href="classes/class11.html" class="class-tile">
+          <div class="class-number">11</div>
+          <div class="class-info">
+            <h3>Class 11</h3>
+            <p>Higher secondary foundation</p>
+            <div class="subjects">
+              <span>English</span>
+              <span>Physics</span>
+              <span>Chemistry</span>
+              <span>Mathematics</span>
+              <span>Biology</span>
+            </div>
+          </div>
+        </a>
+        
+        <a href="classes/class12.html" class="class-tile highlight">
+          <div class="class-number">12</div>
+          <div class="class-info">
+            <h3>Class 12</h3>
+            <p>Complete higher secondary preparation</p>
+            <div class="subjects">
+              <span>English</span>
+              <span>Physics</span>
+              <span>Chemistry</span>
+              <span>Mathematics</span>
+              <span>Biology</span>
+            </div>
+          </div>
+          <div class="popular-tag">Most Popular</div>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- <section class="popular-subjects">
+    <div class="container">
+      <h2>Popular Subjects</h2>
+      <div class="subjects-row">
+        <a href="subjects/mathematics.html" class="subject-pill">
+          <div class="subject-icon"><i class="fas fa-calculator"></i></div>
+          <span>Mathematics</span>
+        </a>
+        <a href="subjects/physics.html" class="subject-pill">
+          <div class="subject-icon"><i class="fas fa-atom"></i></div>
+          <span>Physics</span>
+        </a>
+        <a href="subjects/chemistry.html" class="subject-pill">
+          <div class="subject-icon"><i class="fas fa-flask"></i></div>
+          <span>Chemistry</span>
+        </a>
+        <a href="subjects/biology.html" class="subject-pill">
+          <div class="subject-icon"><i class="fas fa-dna"></i></div>
+          <span>Biology</span>
+        </a>
+        <a href="subjects/social-science.html" class="subject-pill">
+          <div class="subject-icon"><i class="fas fa-globe-asia"></i></div>
+          <span>Social Science</span>
+        </a>
+        <a href="subjects/english.html" class="subject-pill">
+          <div class="subject-icon"><i class="fas fa-book"></i></div>
+          <span>English</span>
+        </a>
+        <a href="subjects/hindi.html" class="subject-pill">
+          <div class="subject-icon"><i class="fas fa-language"></i></div>
+          <span>Hindi</span>
+        </a>
+        <a href="subjects/computer-science.html" class="subject-pill">
+          <div class="subject-icon"><i class="fas fa-laptop-code"></i></div>
+          <span>Computer Science</span>
+        </a>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="additional-resources">
+    <div class="container">
+      <h2>Other Resources</h2>
+      <div class="resources-grid">
+        <a href="resources/sample-papers.html" class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <h3>Sample Papers</h3>
+          <p>Practice with sample question papers based on the latest CBSE pattern for all classes.</p>
+        </a>
+        
+        <a href="resources/previous-papers.html" class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-history"></i>
+          </div>
+          <h3>Previous Years' Papers</h3>
+          <p>Access and practice with solved previous years' question papers.</p>
+        </a>
+        
+        <a href="resources/important-formulas.html" class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-square-root-alt"></i>
+          </div>
+          <h3>Formula Sheets</h3>
+          <p>Comprehensive formula sheets for quick revision of Mathematics, Physics, and Chemistry.</p>
+        </a>
+        
+        <a href="resources/exam-preparation.html" class="resource-card">
+          <div class="resource-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>Exam Preparation</h3>
+          <p>Expert tips, strategies, and resources to excel in your examinations.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Bhaiya<span>KiClasses</span></h3>
+          <p>Comprehensive study materials for all NCERT classes with easy-to-understand notes, important questions, and detailed solutions.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Popular Classes</h3>
+          <ul>
+            <li><a href="classes/class9.html">Class 9</a></li>
+            <li><a href="classes/class10.html">Class 10</a></li>
+            <li><a href="classes/class11.html">Class 11</a></li>
+            <li><a href="classes/class12.html">Class 12</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+          <!-- <p>Subscribe to our newsletter</p>
+          <div class="newsletter">
+            <input type="email" placeholder="Your email">
+            <button type="submit">Subscribe</button> -->
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 BhaiyaKiClasses. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>
