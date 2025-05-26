@@ -14,29 +14,44 @@
   <link rel="stylesheet" href="../../../css/index.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            document.title = 'Class 10 Math: Real Numbers - LearnNCERT';
-            window.generatePDF = async function () {
-                const contentElement = document.querySelector('.chapter-content');
-                if (!contentElement) return;
-                const canvas = await html2canvas(contentElement);
-                const imgData = canvas.toDataURL('image/png');
-                const pdf = new window.jspdf.jsPDF('p', 'mm', 'a4');
-                const pdfWidth = pdf.internal.pageSize.getWidth();
-                const pdfHeight = pdf.internal.pageSize.getHeight();
-                const imgWidth = canvas.width;
-                const imgHeight = canvas.height;
-                const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
-                const imgX = (pdfWidth - imgWidth * ratio) / 2;
-                pdf.addImage(imgData, 'PNG', imgX, 0, imgWidth * ratio, imgHeight * ratio);
-                pdf.save('real-numbers-class10.pdf');
-            };
-        });
-    </script>
 </head>
-
 <body>
+    <div class="chapter-container">
+    <div class="container">
+      <div class="chapter-wrapper">
+        <aside class="chapter-sidebar">
+          <div class="sidebar-header">
+            <h3>Class 10 Science</h3>
+          </div>
+          <nav class="chapter-navigation">
+            <ul>
+              <li><a href="chemical-reactions.html">Chemical Reactions and Equations</a></li>
+              <li><a href="acids-bases-salts.html">Acids, Bases and Salts</a></li>
+              <li><a href="metals-nonmetals.html">Metals and Non-metals</a></li>
+              <li><a href="carbon-compounds.html">Carbon and its Compounds</a></li>
+              <li><a href="periodic-classification.html">Periodic Classification of Elements</a></li>
+              <li><a href="life-processes.html">Life Processes</a></li>
+              <li><a href="control-coordination.html">Control and Coordination</a></li>
+              <li><a href="reproduction.html">How do Organisms Reproduce?</a></li>
+              <li><a href="heredity-evolution.html">Heredity and Evolution</a></li>
+              <li><a href="light-reflection-refraction.html">Light - Reflection and Refraction</a></li>
+              <li><a href="human-eye.html">The Human Eye and Colorful World</a></li>
+              <li><a href="electricity.html" class="active">Electricity</a></li>
+              <li><a href="magnetic-effects.html">Magnetic Effects of Electric Current</a></li>
+              <li><a href="energy-sources.html">Sources of Energy</a></li>
+              <li><a href="environment.html">Our Environment</a></li>
+              <li><a href="natural-resources.html">Management of Natural Resources</a></li>
+            </ul>
+          </nav>
+          <div class="sidebar-actions">
+            <button class="btn btn-outline btn-sm download-btn">
+              <i class="fas fa-download"></i> Download PDF
+            </button>
+            <button class="btn btn-outline btn-sm bookmark-btn" data-id="class10-science-electricity" data-title="Class 10 Science: Electricity" data-type="chapter">
+              <i class="far fa-bookmark"></i> Bookmark
+            </button>
+          </div>
+    </aside>
     <div class="math-layout" data-active-chapter="real-numbers"></div>
     <div class="chapter-content">
         <div class="chapter-header">
@@ -51,7 +66,9 @@
             <div class="meta-info">
                 <span><i class="fas fa-book"></i> Class 10 Mathematics</span>
                 <span><i class="fas fa-calendar"></i> Updated: May 15, 2025</span>
+                </div>
             </div>
+        </div>
         </div>
 
         <div class="chapter-section">
@@ -60,20 +77,20 @@
                 systems from previous classes and introduces important concepts like Euclid's Division Lemma, the
                 Fundamental Theorem of Arithmetic, and more. This chapter provides the foundation for various
                 mathematical operations and proofs used throughout your mathematical journey.</p>
-        </div>
-
-        <div class="chapter-section"></div>
-        <h2>Key Concepts</h2>
-        <div class="concept-list">
-            <div class="concept-item"></div>
-            <h3>Euclid's Division Lemma</h3>
-            <ul class="bullet-points">
-                <li>For any two positive integers a and b, there exist unique integers q and r such that a = bq + r,
-                    where 0 ≤ r &lt; b</li>
-                <li>q is called the quotient</li>
-                <li>r is called the remainder</li>
-                <li>When r = 0, we say that b divides a, denoted as b | a</li>
-                <li>Applications include finding HCF using the division algorithm</li>
+        <div class="chapter-section">
+            <h2>Key Concepts</h2>
+            <div class="concept-list">
+                <div class="concept-item">
+                    <h3>Euclid's Division Lemma</h3>
+                    <ul class="bullet-points">
+                        <li>For any two positive integers a and b, there exist unique integers q and r such that a = bq + r,
+                            where 0 ≤ r &lt; b</li>
+                        <li>q is called the quotient</li>
+                        <li>r is called the remainder</li>
+                        <li>When r = 0, we say that b divides a, denoted as b | a</li>
+                        <li>Applications include finding HCF using the division algorithm</li>
+                    </ul>
+                </div>
             </ul>
         </div>
 
