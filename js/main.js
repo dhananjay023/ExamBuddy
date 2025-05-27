@@ -137,6 +137,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // For now, solutions are always visible
         }
     });
+    
+    // Initialize load more functionality
+    setupLoadMore();
 });
 
 // Bookmarking functionality
@@ -235,3 +238,61 @@ const setupBookmarks = () => {
 if (document.querySelector('.bookmark-btn')) {
     setupBookmarks();
 }
+
+// Load More Resources Functionality
+const setupLoadMore = () => {
+    const resourcesGrid = document.querySelector('.resources-grid');
+    const loadMoreBtn = document.querySelector('.load-more-btn');
+    
+    if (!resourcesGrid || !loadMoreBtn) return;
+    
+    const resourceCards = resourcesGrid.querySelectorAll('.resource-card');
+    const cardsPerLoad = 3; // Number of cards to show per load
+    let currentlyVisible = 0;
+    
+    // Function to show next batch of cards
+    const showNextBatch = () => {
+        const nextBatch = Array.from(resourceCards).slice(currentlyVisible, currentlyVisible + cardsPerLoad);
+        
+        if (nextBatch.length === 0) {
+            loadMoreBtn.style.display = 'none';
+            return;
+        }
+        
+        // Show loading state
+        loadMoreBtn.classList.add('loading');
+        const btnIcon = loadMoreBtn.querySelector('i');
+        btnIcon.classList.remove('fa-chevron-down');
+        btnIcon.classList.add('fa-spinner');
+        
+        // Simulate loading delay (remove in production)
+        setTimeout(() => {
+            nextBatch.forEach(card => {
+                card.classList.add('visible');
+            });
+            
+            currentlyVisible += cardsPerLoad;
+            
+            // Hide button if no more cards
+            if (currentlyVisible >= resourceCards.length) {
+                loadMoreBtn.style.display = 'none';
+            }
+            
+            // Remove loading state
+            loadMoreBtn.classList.remove('loading');
+            btnIcon.classList.remove('fa-spinner');
+            btnIcon.classList.add('fa-chevron-down');
+        }, 500);
+    };
+    
+    // Hide all cards initially
+    resourceCards.forEach(card => {
+        card.classList.remove('visible');
+    });
+    
+    // Show initial batch
+    showNextBatch();
+    
+    // Add click event listener
+    loadMoreBtn.addEventListener('click', showNextBatch);
+};
