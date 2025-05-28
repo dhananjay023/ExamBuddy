@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Class 10 Math: Pair of Linear Equations - NOTES</title>
-    <meta name="description" content="Learn about pair of linear equations in two variables, methods of solving them, and their applications. Master mathematical concepts with detailed examples.">
-    <meta name="keywords" content="Class 10 Math, Linear Equations, Substitution Method, Elimination Method, Cross Multiplication Method">
+    <title>Class 10 Math: Areas Related to Circles - NOTES</title>
+    <meta name="description" content="Learn about areas of circles, sectors, segments, and combinations of circular regions. Master area calculations with detailed explanations and examples.">
+    <meta name="keywords" content="Class 10 Math, Circle Area, Sector Area, Segment Area, Circular Region, Area Calculations">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="../../../css/chapter.css">
@@ -53,7 +53,7 @@
                         <ul>
                             <li><a href="real-numbers.html">Real Numbers</a></li>
                             <li><a href="polynomials.html">Polynomials</a></li>
-                            <li><a href="pair-of-linear-equations.html" class="active">Pair of Linear Equations</a></li>
+                            <li><a href="pair-of-linear-equations.html">Pair of Linear Equations</a></li>
                             <li><a href="quadratic-equations.html">Quadratic Equations</a></li>
                             <li><a href="arithmetic-progressions.html">Arithmetic Progressions</a></li>
                             <li><a href="triangles.html">Triangles</a></li>
@@ -61,7 +61,7 @@
                             <li><a href="introduction-to-trigonometry.html">Introduction to Trigonometry</a></li>
                             <li><a href="some-applications-of-trigonometry.html">Some Applications of Trigonometry</a></li>
                             <li><a href="circles.html">Circles</a></li>
-                            <li><a href="areas-related-to-circles.html">Areas Related to Circles</a></li>
+                            <li><a href="areas-related-to-circles.html" class="active">Areas Related to Circles</a></li>
                             <li><a href="surface-areas-and-volumes.html">Surface Areas and Volumes</a></li>
                             <li><a href="statistics.html">Statistics</a></li>
                             <li><a href="probability.html">Probability</a></li>
@@ -71,8 +71,8 @@
                         <button class="btn btn-outline btn-sm download-btn">
                             <i class="fas fa-download"></i> Download PDF
                         </button>
-                        <button class="btn btn-outline btn-sm bookmark-btn" data-id="class10-math-linear-equations" data-title="Class 10 Math: Pair of Linear Equations" data-type="chapter">
-                            <i class="far fa-bookmark"></i> Bookmark
+                        <button class="btn btn-outline btn-sm bookmark-btn" data-id="class10-math-circle-areas" data-title="Class 10 Math: Areas Related to Circles" data-type="chapter">
+ pa                            <i class="far fa-bookmark"></i> Bookmark
                         </button>
                     </div>
                 </aside>
@@ -84,9 +84,9 @@
                             <a href="../../../classes.html">Classes</a> &gt;
                             <a href="../../class10.html">Class 10</a> &gt;
                             <a href="../../class10.html#math">Mathematics</a> &gt;
-                            <span>Pair of Linear Equations</span>
+                            <span>Areas Related to Circles</span>
                         </div>
-                        <h1>Chapter 3: Pair of Linear Equations in Two Variables</h1>
+                        <h1>Chapter 11: Areas Related to Circles</h1>
                         <div class="meta-info">
                             <span><i class="fas fa-book"></i> Class 10 Mathematics</span>
                             <span><i class="fas fa-calendar"></i> Updated: May 15, 2025</span>
@@ -95,74 +95,79 @@
 
                     <div class="chapter-section">
                         <h2>Introduction</h2>
-                        <p>This chapter deals with systems of two linear equations in two variables. You'll learn different methods to solve these equations and understand their graphical representation. The concepts learned here have wide applications in real-life situations involving two unknown quantities.</p>
+                        <p>This chapter focuses on calculating areas of various parts of a circle and regions related to circles. We'll learn how to find areas of sectors, segments, and combinations of circular regions, which have practical applications in engineering, architecture, and everyday life.</p>
                     </div>
 
                     <div class="chapter-section">
                         <h2>Key Concepts</h2>
                         <div class="concept-list">
                             <div class="concept-item">
-                                <h3>Linear Equations</h3>
+                                <h3>Area Formulas</h3>
                                 <ul class="bullet-points">
-                                    <li>General form: ax + by + c = 0, where a, b are not both zero</li>
-                                    <li>A pair of linear equations:
+                                    <li>Circle:
                                         <div class="formula">
-                                            a₁x + b₁y + c₁ = 0<br>
-                                            a₂x + b₂y + c₂ = 0
+                                            Area = πr²<br>
+                                            where r is the radius
                                         </div>
                                     </li>
-                                    <li>Graphical representation is a straight line</li>
-                                    <li>Two equations together represent two lines</li>
-                                </ul>
-                            </div>
-
-                            <div class="concept-item">
-                                <h3>Types of Solutions</h3>
-                                <ul class="bullet-points">
-                                    <li>Unique Solution (Consistent):
-                                        <ul>
-                                            <li>Lines intersect at exactly one point</li>
-                                            <li>a₁/a₂ ≠ b₁/b₂</li>
-                                        </ul>
+                                    <li>Sector:
+                                        <div class="formula">
+                                            Area = (θ/360°) × πr²<br>
+                                            where θ is the angle in degrees
+                                        </div>
                                     </li>
-                                    <li>Infinitely Many Solutions (Dependent):
-                                        <ul>
-                                            <li>Lines are coincident</li>
-                                            <li>a₁/a₂ = b₁/b₂ = c₁/c₂</li>
-                                        </ul>
-                                    </li>
-                                    <li>No Solution (Inconsistent):
-                                        <ul>
-                                            <li>Lines are parallel</li>
-                                            <li>a₁/a₂ = b₁/b₂ ≠ c₁/c₂</li>
-                                        </ul>
+                                    <li>Segment:
+                                        <div class="formula">
+                                            Area = Area of sector - Area of triangle<br>
+                                            = (θ/360°)πr² - ½r²sin θ
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
 
                             <div class="concept-item">
-                                <h3>Methods of Solution</h3>
+                                <h3>Length Formulas</h3>
                                 <ul class="bullet-points">
-                                    <li>Substitution Method:
-                                        <ul>
-                                            <li>Express one variable in terms of other</li>
-                                            <li>Substitute in second equation</li>
-                                            <li>Solve for one variable</li>
-                                            <li>Find other variable</li>
-                                        </ul>
+                                    <li>Circumference:
+                                        <div class="formula">
+                                            C = 2πr
+                                        </div>
                                     </li>
-                                    <li>Elimination Method:
-                                        <ul>
-                                            <li>Multiply equations to make coefficients equal</li>
-                                            <li>Add or subtract equations</li>
-                                            <li>Solve for remaining variable</li>
-                                        </ul>
+                                    <li>Arc length:
+                                        <div class="formula">
+                                            L = (θ/360°) × 2πr<br>
+                                            where θ is the angle in degrees
+                                        </div>
                                     </li>
-                                    <li>Cross Multiplication Method:
-                                        <ul>
-                                            <li>Useful when equations are in ratio form</li>
-                                            <li>Convert to standard form first</li>
-                                        </ul>
+                                    <li>Perimeter of sector:
+                                        <div class="formula">
+                                            P = 2r + L<br>
+                                            where L is the arc length
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="concept-item">
+                                <h3>Special Cases</h3>
+                                <ul class="bullet-points">
+                                    <li>Semicircle:
+                                        <div class="formula">
+                                            Area = ½πr²<br>
+                                            Perimeter = πr + 2r
+                                        </div>
+                                    </li>
+                                    <li>Quarter circle:
+                                        <div class="formula">
+                                            Area = ¼πr²<br>
+                                            Perimeter = (π/2)r + 2r
+                                        </div>
+                                    </li>
+                                    <li>Annular region:
+                                        <div class="formula">
+                                            Area = π(R² - r²)<br>
+                                            where R and r are outer and inner radii
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
@@ -171,84 +176,77 @@
 
                     <div class="chapter-section">
                         <h2>Important Questions and Solutions</h2>
+                        
                         <div class="question-card">
                             <div class="question">
                                 <h3>Question 1</h3>
-                                <p>Solve the following system of equations:</p>
-                                <div class="formula">
-                                    2x + 3y = 8<br>
-                                    4x - 5y = 4
-                                </div>
+                                <p>A circular park has a circumference of 176 meters. Eight identical flower beds are laid along its boundary. Find the area of each flower bed if they cover 35% of the park's area.</p>
                             </div>
                             <div class="solution">
                                 <h4>Solution:</h4>
-                                <p>Let's solve using elimination method:</p>
+                                <p>Let's solve this step by step:</p>
                                 <ol>
-                                    <li>Multiply first equation by 2:
+                                    <li>Find the radius of the park:
                                         <div class="formula">
-                                            4x + 6y = 16 ... (1)<br>
-                                            4x - 5y = 4 ... (2)
+                                            2πr = 176<br>
+                                            r = 28 meters
                                         </div>
                                     </li>
-                                    <li>Subtract equation (2) from (1):
+                                    <li>Calculate total area of the park:
                                         <div class="formula">
-                                            11y = 12<br>
-                                            y = 12/11
+                                            A = πr²<br>
+                                            A = π(28)²<br>
+                                            A = 2,464 sq meters
                                         </div>
                                     </li>
-                                    <li>Substitute y in equation (2):
+                                    <li>Calculate total area of flower beds:
                                         <div class="formula">
-                                            4x - 5(12/11) = 4<br>
-                                            4x = 4 + 60/11<br>
-                                            4x = 104/11<br>
-                                            x = 26/11
+                                            35% of 2,464 = 862.4 sq meters
+                                        </div>
+                                    </li>
+                                    <li>Area of each flower bed:
+                                        <div class="formula">
+                                            862.4 ÷ 8 = 107.8 sq meters
                                         </div>
                                     </li>
                                 </ol>
-                                <p>Therefore, x = 26/11 and y = 12/11</p>
+                                <p>Therefore, each flower bed has an area of 107.8 square meters.</p>
                             </div>
                         </div>
 
                         <div class="question-card">
                             <div class="question">
                                 <h3>Question 2</h3>
-                                <p>The sum of numerator and denominator of a fraction is 12. If the numerator is increased by 2 and denominator is decreased by 1, the fraction becomes 1. Find the fraction.</p>
+                                <p>Find the area of the shaded region in a circle of radius 14 cm if the angle of the sector is 60°.</p>
                             </div>
                             <div class="solution">
                                 <h4>Solution:</h4>
                                 <p>Let's solve this step by step:</p>
                                 <ol>
-                                    <li>Let numerator be x and denominator be y
+                                    <li>Area of sector:
                                         <div class="formula">
-                                            x + y = 12 ... (1)
+                                            = (60/360) × πr²<br>
+                                            = (1/6) × π(14)²<br>
+                                            = (1/6) × 616π<br>
+                                            = 102.67π sq cm
                                         </div>
                                     </li>
-                                    <li>When numerator is increased by 2 and denominator is decreased by 1:
+                                    <li>Area of triangle:
                                         <div class="formula">
-                                            (x + 2)/(y - 1) = 1<br>
-                                            x + 2 = y - 1 ... (2)
+                                            = ½ × r² × sin 60°<br>
+                                            = ½ × 196 × (√3/2)<br>
+                                            = 84.87 sq cm
                                         </div>
                                     </li>
-                                    <li>From equation (2):
+                                    <li>Area of segment:
                                         <div class="formula">
-                                            y = x + 3 ... (3)
-                                        </div>
-                                    </li>
-                                    <li>Substitute (3) in (1):
-                                        <div class="formula">
-                                            x + (x + 3) = 12<br>
-                                            2x + 3 = 12<br>
-                                            2x = 9<br>
-                                            x = 9/2
-                                        </div>
-                                    </li>
-                                    <li>Therefore:
-                                        <div class="formula">
-                                            y = 9/2 + 3 = 15/2
+                                            = Area of sector - Area of triangle<br>
+                                            = 102.67π - 84.87<br>
+                                            ≈ 237.93 sq cm
                                         </div>
                                     </li>
                                 </ol>
-                                <p>The required fraction is 9/2 ÷ 15/2 = 9/15</p>
+                                <p>Therefore, the area of the shaded region is approximately 237.93 square centimeters.</p>
                             </div>
                         </div>
 
@@ -258,46 +256,47 @@
                     </div>
 
                     <div class="chapter-section">
-                        <h2>Applications</h2>
-                        <div class="applications-grid">
-                            <div class="application-box">
-                                <h4>Real-Life Applications</h4>
+                        <h2>Problem-Solving Tips</h2>
+                        
+                        <div class="tips-grid">
+                            <div class="tip-box">
+                                <h4>Drawing Clear Diagrams</h4>
                                 <ul>
-                                    <li>Age problems</li>
-                                    <li>Money and investment</li>
-                                    <li>Speed, time, and distance</li>
-                                    <li>Mixture and solutions</li>
+                                    <li>Label all dimensions clearly</li>
+                                    <li>Mark angles and arcs</li>
+                                    <li>Shade regions when needed</li>
+                                    <li>Show all relevant measurements</li>
                                 </ul>
                             </div>
 
-                            <div class="application-box">
-                                <h4>Business Applications</h4>
+                            <div class="tip-box">
+                                <h4>Choosing the Right Formula</h4>
                                 <ul>
-                                    <li>Cost and revenue analysis</li>
-                                    <li>Break-even calculations</li>
-                                    <li>Profit optimization</li>
-                                    <li>Resource allocation</li>
+                                    <li>Identify the type of region</li>
+                                    <li>Check if it's a combination of regions</li>
+                                    <li>Consider special cases</li>
+                                    <li>Verify units are consistent</li>
                                 </ul>
                             </div>
 
-                            <div class="application-box">
-                                <h4>Scientific Applications</h4>
+                            <div class="tip-box">
+                                <h4>Common Mistakes to Avoid</h4>
                                 <ul>
-                                    <li>Chemical equations</li>
-                                    <li>Force calculations</li>
-                                    <li>Circuit analysis</li>
-                                    <li>Population studies</li>
+                                    <li>Using diameter instead of radius</li>
+                                    <li>Forgetting to convert degrees</li>
+                                    <li>Mixing up sector and segment</li>
+                                    <li>Incorrect unit conversions</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
                     <div class="chapter-nav">
-                        <a href="polynomials.html" class="prev-chapter">
-                            <i class="fas fa-arrow-left"></i> Previous: Polynomials
+                        <a href="circles.html" class="prev-chapter">
+                            <i class="fas fa-arrow-left"></i> Previous: Circles
                         </a>
-                        <a href="quadratic-equations.html" class="next-chapter">
-                            Next: Quadratic Equations <i class="fas fa-arrow-right"></i>
+                        <a href="surface-areas-and-volumes.html" class="next-chapter">
+                            Next: Surface Areas and Volumes <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </main>
@@ -309,7 +308,7 @@
         <div class="container">
             <h2>Related Resources</h2>
             <div class="resources-grid">
-                <a href="../practice-tests/linear-equations-test.html" class="resource-card">
+                <a href="../practice-tests/circle-areas-test.html" class="resource-card">
                     <div class="resource-icon">
                         <i class="fas fa-clipboard-check"></i>
                     </div>
@@ -317,23 +316,23 @@
                     <p>Test your understanding with chapter-specific questions</p>
                 </a>
 
-                <a href="../videos/linear-equations-explained.html" class="resource-card">
+                <a href="../videos/circle-areas-explained.html" class="resource-card">
                     <div class="resource-icon">
                         <i class="fas fa-video"></i>
                     </div>
                     <h3>Video Explanations</h3>
-                    <p>Visual explanations of solving linear equations</p>
+                    <p>Visual explanations of area calculations</p>
                 </a>
 
-                <a href="../worksheets/linear-equations-worksheet.html" class="resource-card">
+                <a href="../worksheets/circle-areas-worksheet.html" class="resource-card">
                     <div class="resource-icon">
                         <i class="fas fa-file-alt"></i>
                     </div>
                     <h3>Worksheets</h3>
-                    <p>Practice sheets with linear equation problems</p>
+                    <p>Practice sheets with area problems</p>
                 </a>
 
-                <a href="../important-questions/linear-equations-important.html" class="resource-card">
+                <a href="../important-questions/circle-areas-important.html" class="resource-card">
                     <div class="resource-icon">
                         <i class="fas fa-question-circle"></i>
                     </div>

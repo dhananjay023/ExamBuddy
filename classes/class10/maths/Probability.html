@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class 10 Math: Probability - NOTES</title>
+    <meta name="description" content="Learn about probability concepts including experimental probability, theoretical probability, and probability of events. Master probability calculations with detailed examples.">
+    <meta name="keywords" content="Class 10 Math, Probability, Random Experiments, Events, Sample Space, Probability Theory">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/chapter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Learn<span>NCERT</span></h1>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../../classes.html" class="active">Classes</a></li>
+                    <li><a href="../../../about.html">About</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                    <li class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="Search notes...">
+                            <button id="searchBtn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="chapter-container">
+        <div class="container">
+            <div class="chapter-wrapper">
+                <aside class="chapter-sidebar">
+                    <div class="sidebar-header">
+                        <h3>Class 10 Mathematics</h3>
+                    </div>
+                    <nav class="chapter-navigation">
+                        <ul>
+                            <li><a href="real-numbers.html">Real Numbers</a></li>
+                            <li><a href="polynomials.html">Polynomials</a></li>
+                            <li><a href="pair-of-linear-equations.html">Pair of Linear Equations</a></li>
+                            <li><a href="quadratic-equations.html">Quadratic Equations</a></li>
+                            <li><a href="arithmetic-progressions.html">Arithmetic Progressions</a></li>
+                            <li><a href="triangles.html">Triangles</a></li>
+                            <li><a href="coordinate-geometry.html">Coordinate Geometry</a></li>
+                            <li><a href="introduction-to-trigonometry.html">Introduction to Trigonometry</a></li>
+                            <li><a href="some-applications-of-trigonometry.html">Some Applications of Trigonometry</a></li>
+                            <li><a href="circles.html">Circles</a></li>
+                            <li><a href="areas-related-to-circles.html">Areas Related to Circles</a></li>
+                            <li><a href="surface-areas-and-volumes.html">Surface Areas and Volumes</a></li>
+                            <li><a href="statistics.html">Statistics</a></li>
+                            <li><a href="probability.html" class="active">Probability</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sidebar-actions">
+                        <button class="btn btn-outline btn-sm download-btn">
+                            <i class="fas fa-download"></i> Download PDF
+                        </button>
+                        <button class="btn btn-outline btn-sm bookmark-btn" data-id="class10-math-probability" data-title="Class 10 Math: Probability" data-type="chapter">
+                            <i class="far fa-bookmark"></i> Bookmark
+                        </button>
+                    </div>
+                </aside>
+
+                <main class="chapter-content">
+                    <div class="chapter-header">
+                        <div class="breadcrumb">
+                            <a href="../../../index.html">Home</a> &gt;
+                            <a href="../../../classes.html">Classes</a> &gt;
+                            <a href="../../class10.html">Class 10</a> &gt;
+                            <a href="../../class10.html#math">Mathematics</a> &gt;
+                            <span>Probability</span>
+                        </div>
+                        <h1>Chapter 14: Probability</h1>
+                        <div class="meta-info">
+                            <span><i class="fas fa-book"></i> Class 10 Mathematics</span>
+                            <span><i class="fas fa-calendar"></i> Updated: May 15, 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Introduction</h2>
+                        <p>Probability is the measure of the likelihood of an event occurring. This chapter explores the fundamental concepts of probability theory, including experimental and theoretical probability, and their applications in real-world situations. Understanding probability helps in making predictions and informed decisions in various fields.</p>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Key Concepts</h2>
+                        <div class="concept-list">
+                            <div class="concept-item">
+                                <h3>Basic Terms</h3>
+                                <ul class="bullet-points">
+                                    <li>Random Experiment:
+                                        <ul>
+                                            <li>An experiment with multiple possible outcomes</li>
+                                            <li>Cannot predict exact outcome</li>
+                                            <li>Can be repeated under same conditions</li>
+                                        </ul>
+                                    </li>
+                                    <li>Sample Space (S):
+                                        <ul>
+                                            <li>Set of all possible outcomes</li>
+                                            <li>Example: For a coin toss, S = {H, T}</li>
+                                            <li>For rolling a die, S = {1, 2, 3, 4, 5, 6}</li>
+                                        </ul>
+                                    </li>
+                                    <li>Event (E):
+                                        <ul>
+                                            <li>A subset of sample space</li>
+                                            <li>Can be simple or compound</li>
+                                            <li>Example: Getting an even number on a die</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="concept-item">
+                                <h3>Probability Formulas</h3>
+                                <ul class="bullet-points">
+                                    <li>Theoretical Probability:
+                                        <div class="formula">
+                                            P(E) = Number of favorable outcomes/Total number of possible outcomes<br>
+                                            = n(E)/n(S)
+                                        </div>
+                                    </li>
+                                    <li>Experimental Probability:
+                                        <div class="formula">
+                                            P(E) = Number of times event occurs/Total number of trials
+                                        </div>
+                                    </li>
+                                    <li>Properties:
+                                        <ul>
+                                            <li>0 ≤ P(E) ≤ 1</li>
+                                            <li>P(S) = 1 (certain event)</li>
+                                            <li>P(impossible event) = 0</li>
+                                            <li>P(not E) = 1 - P(E)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="concept-item">
+                                <h3>Types of Events</h3>
+                                <ul class="bullet-points">
+                                    <li>Mutually Exclusive Events:
+                                        <ul>
+                                            <li>Cannot occur simultaneously</li>
+                                            <li>P(A and B) = 0</li>
+                                            <li>P(A or B) = P(A) + P(B)</li>
+                                        </ul>
+                                    </li>
+                                    <li>Complementary Events:
+                                        <ul>
+                                            <li>Sum of probabilities = 1</li>
+                                            <li>Cover all possible outcomes</li>
+                                            <li>Example: Getting head vs. tail</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Important Questions and Solutions</h2>
+                        
+                        <div class="question-card">
+                            <div class="question">
+                                <h3>Question 1</h3>
+                                <p>A bag contains 5 red balls, 8 white balls, and 7 black balls. One ball is drawn at random from the bag. Find the probability that the ball drawn is:</p>
+                                <ol type="a">
+                                    <li>red</li>
+                                    <li>white</li>
+                                    <li>black</li>
+                                </ol>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <p>Let's solve this step by step:</p>
+                                <ol>
+                                    <li>Total number of balls:
+                                        <div class="formula">
+                                            = 5 + 8 + 7 = 20 balls
+                                        </div>
+                                    </li>
+                                    <li>Probability of drawing a red ball:
+                                        <div class="formula">
+                                            P(red) = 5/20 = 1/4
+                                        </div>
+                                    </li>
+                                    <li>Probability of drawing a white ball:
+                                        <div class="formula">
+                                            P(white) = 8/20 = 2/5
+                                        </div>
+                                    </li>
+                                    <li>Probability of drawing a black ball:
+                                        <div class="formula">
+                                            P(black) = 7/20
+                                        </div>
+                                    </li>
+                                </ol>
+                                <p>Note: The sum of all probabilities = 1/4 + 2/5 + 7/20 = 1</p>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question">
+                                <h3>Question 2</h3>
+                                <p>Two dice are thrown simultaneously. Find the probability of getting:</p>
+                                <ol type="a">
+                                    <li>sum of numbers on dice = 8</li>
+                                    <li>doubles (same number on both dice)</li>
+                                </ol>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <p>Let's solve this step by step:</p>
+                                <ol>
+                                    <li>Total possible outcomes:
+                                        <div class="formula">
+                                            = 6 × 6 = 36 outcomes
+                                        </div>
+                                    </li>
+                                    <li>For sum = 8, favorable outcomes are:
+                                        <div class="formula">
+                                            (2,6), (3,5), (4,4), (5,3), (6,2)<br>
+                                            Number of favorable outcomes = 5<br>
+                                            P(sum = 8) = 5/36
+                                        </div>
+                                    </li>
+                                    <li>For doubles, favorable outcomes are:
+                                        <div class="formula">
+                                            (1,1), (2,2), (3,3), (4,4), (5,5), (6,6)<br>
+                                            Number of favorable outcomes = 6<br>
+                                            P(doubles) = 6/36 = 1/6
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="load-more">
+                            <button class="btn btn-primary">Load More Questions</button>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Applications in Real Life</h2>
+                        
+                        <div class="applications-grid">
+                            <div class="application-box">
+                                <h4>Games and Sports</h4>
+                                <ul>
+                                    <li>Card games</li>
+                                    <li>Dice games</li>
+                                    <li>Sports predictions</li>
+                                    <li>Game strategies</li>
+                                </ul>
+                            </div>
+
+                            <div class="application-box">
+                                <h4>Business and Finance</h4>
+                                <ul>
+                                    <li>Risk assessment</li>
+                                    <li>Insurance calculations</li>
+                                    <li>Investment decisions</li>
+                                    <li>Market analysis</li>
+                                </ul>
+                            </div>
+
+                            <div class="application-box">
+                                <h4>Science and Research</h4>
+                                <ul>
+                                    <li>Genetics</li>
+                                    <li>Weather forecasting</li>
+                                    <li>Quality control</li>
+                                    <li>Research sampling</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter-nav">
+                        <a href="statistics.html" class="prev-chapter">
+                            <i class="fas fa-arrow-left"></i> Previous: Statistics
+                        </a>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <section class="related-resources">
+        <div class="container">
+            <h2>Related Resources</h2>
+            <div class="resources-grid">
+                <a href="../practice-tests/probability-test.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Practice Test</h3>
+                    <p>Test your understanding with chapter-specific questions</p>
+                </a>
+
+                <a href="../videos/probability-explained.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Explanations</h3>
+                    <p>Visual explanations of probability concepts and calculations</p>
+                </a>
+
+                <a href="../worksheets/probability-worksheet.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Worksheets</h3>
+                    <p>Practice sheets with probability problems and solutions</p>
+                </a>
+
+                <a href="../important-questions/probability-important.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Important Questions</h3>
+                    <p>Key questions likely to appear in exams</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Learn<span>NCERT</span></h3>
+                    <p>Comprehensive study materials for all NCERT classes with easy-to-understand notes, important questions, and detailed solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../../../index.html">Home</a></li>
+                        <li><a href="../../../classes.html">Classes</a></li>
+                        <li><a href="../../../about.html">About Us</a></li>
+                        <li><a href="../../../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Popular Classes</h3>
+                    <ul>
+                        <li><a href="../../class9.html">Class 9</a></li>
+                        <li><a href="../../class10.html">Class 10</a></li>
+                        <li><a href="../../class11.html">Class 11</a></li>
+                        <li><a href="../../class12.html">Class 12</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 NOTES. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/theme.js"></script>
+</body>
+</html>

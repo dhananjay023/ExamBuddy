@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class 10 Math: Circles - NOTES</title>
+    <meta name="description" content="Learn about circles, their properties, tangents, secants, and theorems. Master fundamental concepts with detailed explanations and examples.">
+    <meta name="keywords" content="Class 10 Math, Circles, Tangents, Secants, Circle Theorems, Circle Properties">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/chapter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Learn<span>NCERT</span></h1>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../../classes.html" class="active">Classes</a></li>
+                    <li><a href="../../../about.html">About</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                    <li class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="Search notes...">
+                            <button id="searchBtn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="chapter-container">
+        <div class="container">
+            <div class="chapter-wrapper">
+                <aside class="chapter-sidebar">
+                    <div class="sidebar-header">
+                        <h3>Class 10 Mathematics</h3>
+                    </div>
+                    <nav class="chapter-navigation">
+                        <ul>
+                            <li><a href="real-numbers.html">Real Numbers</a></li>
+                            <li><a href="polynomials.html">Polynomials</a></li>
+                            <li><a href="pair-of-linear-equations.html">Pair of Linear Equations</a></li>
+                            <li><a href="quadratic-equations.html">Quadratic Equations</a></li>
+                            <li><a href="arithmetic-progressions.html">Arithmetic Progressions</a></li>
+                            <li><a href="triangles.html">Triangles</a></li>
+                            <li><a href="coordinate-geometry.html">Coordinate Geometry</a></li>
+                            <li><a href="introduction-to-trigonometry.html">Introduction to Trigonometry</a></li>
+                            <li><a href="some-applications-of-trigonometry.html">Some Applications of Trigonometry</a></li>
+                            <li><a href="circles.html" class="active">Circles</a></li>
+                            <li><a href="areas-related-to-circles.html">Areas Related to Circles</a></li>
+                            <li><a href="surface-areas-and-volumes.html">Surface Areas and Volumes</a></li>
+                            <li><a href="statistics.html">Statistics</a></li>
+                            <li><a href="probability.html">Probability</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sidebar-actions">
+                        <button class="btn btn-outline btn-sm download-btn">
+                            <i class="fas fa-download"></i> Download PDF
+                        </button>
+                        <button class="btn btn-outline btn-sm bookmark-btn" data-id="class10-math-circles" data-title="Class 10 Math: Circles" data-type="chapter">
+                            <i class="far fa-bookmark"></i> Bookmark
+                        </button>
+                    </div>
+                </aside>
+
+                <main class="chapter-content">
+                    <div class="chapter-header">
+                        <div class="breadcrumb">
+                            <a href="../../../index.html">Home</a> &gt;
+                            <a href="../../../classes.html">Classes</a> &gt;
+                            <a href="../../class10.html">Class 10</a> &gt;
+                            <a href="../../class10.html#math">Mathematics</a> &gt;
+                            <span>Circles</span>
+                        </div>
+                        <h1>Chapter 10: Circles</h1>
+                        <div class="meta-info">
+                            <span><i class="fas fa-book"></i> Class 10 Mathematics</span>
+                            <span><i class="fas fa-calendar"></i> Updated: May 15, 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Introduction</h2>
+                        <p>A circle is a collection of points in a plane that are equidistant from a fixed point called the center. This chapter explores the properties of circles, including tangents, secants, and various theorems that help us understand the relationships between different parts of a circle.</p>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Key Concepts</h2>
+                        <div class="concept-list">
+                            <div class="concept-item">
+                                <h3>Basic Terms</h3>
+                                <ul class="bullet-points">
+                                    <li>Radius: Line segment from center to any point on circle</li>
+                                    <li>Diameter: Line segment through center connecting two points on circle</li>
+                                    <li>Chord: Line segment connecting any two points on circle</li>
+                                    <li>Arc: Part of circle between two points</li>
+                                    <li>Sector: Region bounded by two radii and an arc</li>
+                                    <li>Segment: Region bounded by a chord and an arc</li>
+                                </ul>
+                            </div>
+
+                            <div class="concept-item">
+                                <h3>Tangent Properties</h3>
+                                <ul class="bullet-points">
+                                    <li>Tangent-radius theorem:
+                                        <p>The tangent at any point of a circle is perpendicular to the radius at the point of contact</p>
+                                    </li>
+                                    <li>Length of tangents:
+                                        <p>Tangents drawn from an external point to a circle are equal in length</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="concept-item">
+                                <h3>Circle Theorems</h3>
+                                <ul class="bullet-points">
+                                    <li>Angle in a semicircle:
+                                        <p>Angle in a semicircle is 90°</p>
+                                    </li>
+                                    <li>Equal chords:
+                                        <p>Equal chords are equidistant from the center</p>
+                                    </li>
+                                    <li>Perpendicular from center:
+                                        <p>The perpendicular from the center to a chord bisects the chord</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Important Questions and Solutions</h2>
+                        
+                        <div class="question-card">
+                            <div class="question">
+                                <h3>Question 1</h3>
+                                <p>Two tangents TP and TQ are drawn to a circle with center O from an external point T. Prove that ∠PTQ = 2∠OTP.</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <p>Let's prove this step by step:</p>
+                                <ol>
+                                    <li>Given:
+                                        <ul>
+                                            <li>Circle with center O</li>
+                                            <li>T is an external point</li>
+                                            <li>TP and TQ are tangents</li>
+                                        </ul>
+                                    </li>
+                                    <li>Join OP and OQ:
+                                        <ul>
+                                            <li>OP ⊥ TP (radius ⊥ tangent)</li>
+                                            <li>OQ ⊥ TQ (radius ⊥ tangent)</li>
+                                            <li>OP = OQ (radii of same circle)</li>
+                                            <li>TP = TQ (tangents from external point)</li>
+                                        </ul>
+                                    </li>
+                                    <li>In triangles OTP and OTQ:
+                                        <ul>
+                                            <li>OP = OQ</li>
+                                            <li>TP = TQ</li>
+                                            <li>OT is common</li>
+                                            <li>Therefore, triangles are congruent</li>
+                                        </ul>
+                                    </li>
+                                    <li>Therefore:
+                                        <ul>
+                                            <li>∠TOP = ∠TOQ</li>
+                                            <li>∠PTQ = 2∠OTP</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <p>Hence proved that ∠PTQ = 2∠OTP</p>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question">
+                                <h3>Question 2</h3>
+                                <p>If two circles intersect at points A and B, prove that their centers are equidistant from the common chord AB.</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <p>Let's prove this step by step:</p>
+                                <ol>
+                                    <li>Given:
+                                        <ul>
+                                            <li>Two circles with centers O₁ and O₂</li>
+                                            <li>Circles intersect at points A and B</li>
+                                        </ul>
+                                    </li>
+                                    <li>Draw perpendiculars O₁M and O₂N to AB:
+                                        <ul>
+                                            <li>O₁M ⊥ AB</li>
+                                            <li>O₂N ⊥ AB</li>
+                                        </ul>
+                                    </li>
+                                    <li>In right triangles O₁MA and O₂NA:
+                                        <ul>
+                                            <li>O₁A = O₁B (radii of first circle)</li>
+                                            <li>O₂A = O₂B (radii of second circle)</li>
+                                            <li>Therefore, M and N are midpoints of AB</li>
+                                            <li>Hence, M and N coincide</li>
+                                        </ul>
+                                    </li>
+                                    <li>Therefore:
+                                        <ul>
+                                            <li>O₁M = O₂N</li>
+                                            <li>The centers are equidistant from AB</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <p>Hence proved that the centers are equidistant from the common chord.</p>
+                            </div>
+                        </div>
+
+                        <div class="load-more">
+                            <button class="btn btn-primary">Load More Questions</button>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Important Theorems and Properties</h2>
+                        
+                        <div class="theorems-grid">
+                            <div class="theorem-box">
+                                <h4>Tangent-Radius Theorem</h4>
+                                <div class="theorem-content">
+                                    <p>The tangent at any point of a circle is perpendicular to the radius at the point of contact.</p>
+                                    <ul>
+                                        <li>Helps in finding angle between tangent and radius</li>
+                                        <li>Used in construction of tangents</li>
+                                        <li>Important for proving other theorems</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="theorem-box">
+                                <h4>Equal Chords Theorem</h4>
+                                <div class="theorem-content">
+                                    <p>Equal chords of a circle are equidistant from the center.</p>
+                                    <ul>
+                                        <li>Helps in proving symmetry</li>
+                                        <li>Used in construction problems</li>
+                                        <li>Useful in finding distances</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="theorem-box">
+                                <h4>Angle in Semicircle</h4>
+                                <div class="theorem-content">
+                                    <p>The angle in a semicircle is a right angle.</p>
+                                    <ul>
+                                        <li>Used in construction of right angles</li>
+                                        <li>Helps in proving perpendicularity</li>
+                                        <li>Important in cyclic quadrilaterals</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter-nav">
+                        <a href="some-applications-of-trigonometry.html" class="prev-chapter">
+                            <i class="fas fa-arrow-left"></i> Previous: Some Applications of Trigonometry
+                        </a>
+                        <a href="areas-related-to-circles.html" class="next-chapter">
+                            Next: Areas Related to Circles <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <section class="related-resources">
+        <div class="container">
+            <h2>Related Resources</h2>
+            <div class="resources-grid">
+                <a href="../practice-tests/circles-test.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Practice Test</h3>
+                    <p>Test your understanding with chapter-specific questions</p>
+                </a>
+
+                <a href="../videos/circles-explained.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Explanations</h3>
+                    <p>Visual explanations of circle concepts and theorems</p>
+                </a>
+
+                <a href="../worksheets/circles-worksheet.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Worksheets</h3>
+                    <p>Practice sheets with circle problems</p>
+                </a>
+
+                <a href="../important-questions/circles-important.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Important Questions</h3>
+                    <p>Key questions likely to appear in exams</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Learn<span>NCERT</span></h3>
+                    <p>Comprehensive study materials for all NCERT classes with easy-to-understand notes, important questions, and detailed solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../../../index.html">Home</a></li>
+                        <li><a href="../../../classes.html">Classes</a></li>
+                        <li><a href="../../../about.html">About Us</a></li>
+                        <li><a href="../../../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Popular Classes</h3>
+                    <ul>
+                        <li><a href="../../class9.html">Class 9</a></li>
+                        <li><a href="../../class10.html">Class 10</a></li>
+                        <li><a href="../../class11.html">Class 11</a></li>
+                        <li><a href="../../class12.html">Class 12</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 NOTES. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/theme.js"></script>
+</body>
+</html>

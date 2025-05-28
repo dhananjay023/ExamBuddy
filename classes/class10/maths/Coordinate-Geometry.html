@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class 10 Math: Coordinate Geometry - NOTES</title>
+    <meta name="description" content="Learn about coordinate geometry concepts including distance formula, section formula, and area of triangles. Master key formulas and solve important questions.">
+    <meta name="keywords" content="Class 10 Math, Coordinate Geometry, Distance Formula, Section Formula, Area of Triangle, Cartesian Plane">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/chapter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Learn<span>NCERT</span></h1>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../../classes.html" class="active">Classes</a></li>
+                    <li><a href="../../../about.html">About</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                    <li class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="Search notes...">
+                            <button id="searchBtn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="chapter-container">
+        <div class="container">
+            <div class="chapter-wrapper">
+                <aside class="chapter-sidebar">
+                    <div class="sidebar-header">
+                        <h3>Class 10 Mathematics</h3>
+                    </div>
+                    <nav class="chapter-navigation">
+                        <ul>
+                            <li><a href="real-numbers.html">Real Numbers</a></li>
+                            <li><a href="polynomials.html">Polynomials</a></li>
+                            <li><a href="pair-of-linear-equations.html">Pair of Linear Equations</a></li>
+                            <li><a href="quadratic-equations.html">Quadratic Equations</a></li>
+                            <li><a href="arithmetic-progressions.html">Arithmetic Progressions</a></li>
+                            <li><a href="triangles.html">Triangles</a></li>
+                            <li><a href="coordinate-geometry.html" class="active">Coordinate Geometry</a></li>
+                            <li><a href="introduction-to-trigonometry.html">Introduction to Trigonometry</a></li>
+                            <li><a href="some-applications-of-trigonometry.html">Some Applications of Trigonometry</a></li>
+                            <li><a href="circles.html">Circles</a></li>
+                            <li><a href="areas-related-to-circles.html">Areas Related to Circles</a></li>
+                            <li><a href="surface-areas-and-volumes.html">Surface Areas and Volumes</a></li>
+                            <li><a href="statistics.html">Statistics</a></li>
+                            <li><a href="probability.html">Probability</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sidebar-actions">
+                        <button class="btn btn-outline btn-sm download-btn">
+                            <i class="fas fa-download"></i> Download PDF
+                        </button>
+                        <button class="btn btn-outline btn-sm bookmark-btn" data-id="class10-math-coordinate-geometry" data-title="Class 10 Math: Coordinate Geometry" data-type="chapter">
+                            <i class="far fa-bookmark"></i> Bookmark
+                        </button>
+                    </div>
+                </aside>
+
+                <main class="chapter-content">
+                    <div class="chapter-header">
+                        <div class="breadcrumb">
+                            <a href="../../../index.html">Home</a> &gt;
+                            <a href="../../../classes.html">Classes</a> &gt;
+                            <a href="../../class10.html">Class 10</a> &gt;
+                            <a href="../../class10.html#math">Mathematics</a> &gt;
+                            <span>Coordinate Geometry</span>
+                        </div>
+                        <h1>Chapter 7: Coordinate Geometry</h1>
+                        <div class="meta-info">
+                            <span><i class="fas fa-book"></i> Class 10 Mathematics</span>
+                            <span><i class="fas fa-calendar"></i> Updated: May 15, 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Introduction</h2>
+                        <p>Coordinate Geometry combines algebra with geometry by using a coordinate system to describe geometric shapes and their properties. This chapter introduces fundamental concepts like distance formula, section formula, and area of triangles in the coordinate plane, providing essential tools for solving geometric problems algebraically.</p>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Key Concepts</h2>
+                        <div class="concept-list">
+                            <div class="concept-item">
+                                <h3>Distance Formula</h3>
+                                <ul class="bullet-points">
+                                    <li>Distance between points (x₁, y₁) and (x₂, y₂):
+                                        <div class="formula">d = √[(x₂ - x₁)² + (y₂ - y₁)²]</div>
+                                    </li>
+                                    <li>Applications:
+                                        <ul>
+                                            <li>Finding perimeter of polygons</li>
+                                            <li>Verifying geometric properties</li>
+                                            <li>Checking if points are collinear</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="concept-item">
+                                <h3>Section Formula</h3>
+                                <ul class="bullet-points">
+                                    <li>Internal division (m:n ratio):
+                                        <div class="formula">
+                                            x = (mx₂ + nx₁)/(m + n)<br>
+                                            y = (my₂ + ny₁)/(m + n)
+                                        </div>
+                                    </li>
+                                    <li>External division (m:n ratio):
+                                        <div class="formula">
+                                            x = (mx₂ - nx₁)/(m - n)<br>
+                                            y = (my₂ - ny₁)/(m - n)
+                                        </div>
+                                    </li>
+                                    <li>Special cases:
+                                        <ul>
+                                            <li>Midpoint formula (m = n = 1)</li>
+                                            <li>Centroid of triangle (m = n = 1)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="concept-item">
+                                <h3>Area of Triangle</h3>
+                                <ul class="bullet-points">
+                                    <li>Using coordinates (x₁, y₁), (x₂, y₂), (x₃, y₃):
+                                        <div class="formula">
+                                            Area = ½|x₁(y₂ - y₃) + x₂(y₃ - y₁) + x₃(y₁ - y₂)|
+                                        </div>
+                                    </li>
+                                    <li>Properties:
+                                        <ul>
+                                            <li>Area is always positive</li>
+                                            <li>Order of points doesn't matter</li>
+                                            <li>Zero area indicates collinear points</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Important Questions and Solutions</h2>
+                        
+                        <div class="question-card">
+                            <div class="question">
+                                <h3>Question 1</h3>
+                                <p>Find the ratio in which the line segment joining the points A(6, -4) and B(-3, 5) is divided by the y-axis.</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <p>Let's solve this step by step:</p>
+                                <ol>
+                                    <li>The y-axis has equation x = 0</li>
+                                    <li>Let P(0, y) be the point where the line segment AB intersects y-axis</li>
+                                    <li>Using section formula:
+                                        <ul>
+                                            <li>If P divides AB in ratio m:n, then:</li>
+                                            <li>0 = (m(-3) + n(6))/(m + n)</li>
+                                            <li>0 = -3m + 6n</li>
+                                            <li>3m = 6n</li>
+                                            <li>m:n = 2:1</li>
+                                        </ul>
+                                    </li>
+                                    <li>Therefore, y-axis divides AB in ratio 2:1</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question">
+                                <h3>Question 2</h3>
+                                <p>Show that the points A(2, -2), B(14, 10), and C(2, 10) are the vertices of a right triangle.</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <p>To prove that triangle ABC is right-angled, we'll use the distance formula and verify using the Pythagorean theorem.</p>
+                                <ol>
+                                    <li>Find AB:
+                                        <ul>
+                                            <li>AB = √[(14-2)² + (10+2)²]</li>
+                                            <li>AB = √[144 + 144]</li>
+                                            <li>AB = √288 = 12√2</li>
+                                        </ul>
+                                    </li>
+                                    <li>Find BC:
+                                        <ul>
+                                            <li>BC = √[(2-14)² + (10-10)²]</li>
+                                            <li>BC = √144 = 12</li>
+                                        </ul>
+                                    </li>
+                                    <li>Find AC:
+                                        <ul>
+                                            <li>AC = √[(2-2)² + (10+2)²]</li>
+                                            <li>AC = √144 = 12</li>
+                                        </ul>
+                                    </li>
+                                    <li>Check Pythagorean theorem:
+                                        <ul>
+                                            <li>AC² + BC² = 144 + 144 = 288</li>
+                                            <li>AB² = 288</li>
+                                            <li>Therefore, AC² + BC² = AB²</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <p>Since the Pythagorean theorem is satisfied, triangle ABC is right-angled at C.</p>
+                            </div>
+                        </div>
+
+                        <div class="load-more">
+                            <button class="btn btn-primary">Load More Questions</button>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Key Formulas to Remember</h2>
+                        
+                        <div class="formulas-grid">
+                            <div class="formula-box">
+                                <h4>Distance Formula</h4>
+                                <div class="formula">
+                                    d = √[(x₂ - x₁)² + (y₂ - y₁)²]
+                                </div>
+                            </div>
+
+                            <div class="formula-box">
+                                <h4>Section Formula</h4>
+                                <div class="formula">
+                                    Internal division (m:n)<br>
+                                    x = (mx₂ + nx₁)/(m + n)<br>
+                                    y = (my₂ + ny₁)/(m + n)
+                                </div>
+                            </div>
+
+                            <div class="formula-box">
+                                <h4>Area Formula</h4>
+                                <div class="formula">
+                                    Area = ½|x₁(y₂ - y₃) + x₂(y₃ - y₁) + x₃(y₁ - y₂)|
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter-nav">
+                        <a href="triangles.html" class="prev-chapter">
+                            <i class="fas fa-arrow-left"></i> Previous: Triangles
+                        </a>
+                        <a href="introduction-to-trigonometry.html" class="next-chapter">
+                            Next: Introduction to Trigonometry <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <section class="related-resources">
+        <div class="container">
+            <h2>Related Resources</h2>
+            <div class="resources-grid">
+                <a href="../practice-tests/coordinate-geometry-test.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Practice Test</h3>
+                    <p>Test your understanding with chapter-specific questions</p>
+                </a>
+
+                <a href="../videos/coordinate-geometry-explained.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Explanations</h3>
+                    <p>Visual explanations of coordinate geometry concepts</p>
+                </a>
+
+                <a href="../worksheets/coordinate-geometry-worksheet.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Worksheets</h3>
+                    <p>Practice sheets to reinforce your understanding</p>
+                </a>
+
+                <a href="../important-questions/coordinate-geometry-important.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Important Questions</h3>
+                    <p>Key questions likely to appear in exams</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Learn<span>NCERT</span></h3>
+                    <p>Comprehensive study materials for all NCERT classes with easy-to-understand notes, important questions, and detailed solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../../../index.html">Home</a></li>
+                        <li><a href="../../../classes.html">Classes</a></li>
+                        <li><a href="../../../about.html">About Us</a></li>
+                        <li><a href="../../../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Popular Classes</h3>
+                    <ul>
+                        <li><a href="../../class9.html">Class 9</a></li>
+                        <li><a href="../../class10.html">Class 10</a></li>
+                        <li><a href="../../class11.html">Class 11</a></li>
+                        <li><a href="../../class12.html">Class 12</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 NOTES. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/theme.js"></script>
+</body>
+</html>

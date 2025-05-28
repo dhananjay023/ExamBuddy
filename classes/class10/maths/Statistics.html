@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class 10 Math: Statistics - NOTES</title>
+    <meta name="description" content="Learn about statistics including mean, median, mode, and data representation. Master statistical concepts with detailed examples and real-world applications.">
+    <meta name="keywords" content="Class 10 Math, Statistics, Mean, Median, Mode, Data Analysis, Graphs, Ogive">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/chapter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Learn<span>NCERT</span></h1>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../../classes.html" class="active">Classes</a></li>
+                    <li><a href="../../../about.html">About</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                    <li class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="Search notes...">
+                            <button id="searchBtn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="chapter-container">
+        <div class="container">
+            <div class="chapter-wrapper">
+                <aside class="chapter-sidebar">
+                    <div class="sidebar-header">
+                        <h3>Class 10 Mathematics</h3>
+                    </div>
+                    <nav class="chapter-navigation">
+                        <ul>
+                            <li><a href="real-numbers.html">Real Numbers</a></li>
+                            <li><a href="polynomials.html">Polynomials</a></li>
+                            <li><a href="pair-of-linear-equations.html">Pair of Linear Equations</a></li>
+                            <li><a href="quadratic-equations.html">Quadratic Equations</a></li>
+                            <li><a href="arithmetic-progressions.html">Arithmetic Progressions</a></li>
+                            <li><a href="triangles.html">Triangles</a></li>
+                            <li><a href="coordinate-geometry.html">Coordinate Geometry</a></li>
+                            <li><a href="introduction-to-trigonometry.html">Introduction to Trigonometry</a></li>
+                            <li><a href="some-applications-of-trigonometry.html">Some Applications of Trigonometry</a></li>
+                            <li><a href="circles.html">Circles</a></li>
+                            <li><a href="areas-related-to-circles.html">Areas Related to Circles</a></li>
+                            <li><a href="surface-areas-and-volumes.html">Surface Areas and Volumes</a></li>
+                            <li><a href="statistics.html" class="active">Statistics</a></li>
+                            <li><a href="probability.html">Probability</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sidebar-actions">
+                        <button class="btn btn-outline btn-sm download-btn">
+                            <i class="fas fa-download"></i> Download PDF
+                        </button>
+                        <button class="btn btn-outline btn-sm bookmark-btn" data-id="class10-math-statistics" data-title="Class 10 Math: Statistics" data-type="chapter">
+                            <i class="far fa-bookmark"></i> Bookmark
+                        </button>
+                    </div>
+                </aside>
+
+                <main class="chapter-content">
+                    <div class="chapter-header">
+                        <div class="breadcrumb">
+                            <a href="../../../index.html">Home</a> &gt;
+                            <a href="../../../classes.html">Classes</a> &gt;
+                            <a href="../../class10.html">Class 10</a> &gt;
+                            <a href="../../class10.html#math">Mathematics</a> &gt;
+                            <span>Statistics</span>
+                        </div>
+                        <h1>Chapter 13: Statistics</h1>
+                        <div class="meta-info">
+                            <span><i class="fas fa-book"></i> Class 10 Mathematics</span>
+                            <span><i class="fas fa-calendar"></i> Updated: May 15, 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Introduction</h2>
+                        <p>Statistics is the science of collecting, organizing, analyzing, and interpreting data. This chapter covers various methods of data representation and analysis, including measures of central tendency and graphical representations. These concepts are essential for making informed decisions based on data in fields like economics, social sciences, and research.</p>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Key Concepts</h2>
+                        <div class="concept-list">
+                            <div class="concept-item">
+                                <h3>Measures of Central Tendency</h3>
+                                <ul class="bullet-points">
+                                    <li>Mean:
+                                        <div class="formula">
+                                            Arithmetic Mean = Σx/n<br>
+                                            For grouped data: x̄ = Σ(fx)/Σf
+                                        </div>
+                                    </li>
+                                    <li>Median:
+                                        <div class="formula">
+                                            For ungrouped data: Middle value when arranged in order<br>
+                                            For grouped data: L + h((n/2 - cf)/f)
+                                        </div>
+                                    </li>
+                                    <li>Mode:
+                                        <div class="formula">
+                                            Most frequent value<br>
+                                            For grouped data: L + h((f₁ - f₀)/(2f₁ - f₀ - f₂))
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="concept-item">
+                                <h3>Data Representation</h3>
+                                <ul class="bullet-points">
+                                    <li>Frequency Distribution Table:
+                                        <ul>
+                                            <li>Class intervals</li>
+                                            <li>Class marks</li>
+                                            <li>Frequency</li>
+                                            <li>Cumulative frequency</li>
+                                        </ul>
+                                    </li>
+                                    <li>Graphical Representations:
+                                        <ul>
+                                            <li>Histogram</li>
+                                            <li>Frequency polygon</li>
+                                            <li>Ogive (cumulative frequency curve)</li>
+                                            <li>Bar graphs and pie charts</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="concept-item">
+                                <h3>Data Analysis</h3>
+                                <ul class="bullet-points">
+                                    <li>Steps in Statistical Analysis:
+                                        <ul>
+                                            <li>Data collection</li>
+                                            <li>Organization</li>
+                                            <li>Presentation</li>
+                                            <li>Analysis</li>
+                                            <li>Interpretation</li>
+                                        </ul>
+                                    </li>
+                                    <li>Types of Data:
+                                        <ul>
+                                            <li>Primary data</li>
+                                            <li>Secondary data</li>
+                                            <li>Quantitative data</li>
+                                            <li>Qualitative data</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Important Questions and Solutions</h2>
+                        
+                        <div class="question-card">
+                            <div class="question">
+                                <h3>Question 1</h3>
+                                <p>The following data shows the daily wages (in ₹) of 50 workers in a factory:</p>
+                                <table class="data-table">
+                                    <tr>
+                                        <th>Daily Wages (₹)</th>
+                                        <th>Number of Workers</th>
+                                    </tr>
+                                    <tr>
+                                        <td>100-120</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>120-140</td>
+                                        <td>14</td>
+                                    </tr>
+                                    <tr>
+                                        <td>140-160</td>
+                                        <td>8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>160-180</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>180-200</td>
+                                        <td>10</td>
+                                    </tr>
+                                </table>
+                                <p>Find the mean daily wages of the workers.</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <p>Let's solve this step by step:</p>
+                                <ol>
+                                    <li>First, find the class marks (x):
+                                        <div class="formula">
+                                            100-120: (100 + 120)/2 = 110<br>
+                                            120-140: (120 + 140)/2 = 130<br>
+                                            140-160: (140 + 160)/2 = 150<br>
+                                            160-180: (160 + 180)/2 = 170<br>
+                                            180-200: (180 + 200)/2 = 190
+                                        </div>
+                                    </li>
+                                    <li>Calculate fx for each class:
+                                        <div class="formula">
+                                            110 × 12 = 1320<br>
+                                            130 × 14 = 1820<br>
+                                            150 × 8 = 1200<br>
+                                            170 × 6 = 1020<br>
+                                            190 × 10 = 1900
+                                        </div>
+                                    </li>
+                                    <li>Calculate mean:
+                                        <div class="formula">
+                                            Mean = Σ(fx)/Σf<br>
+                                            = (1320 + 1820 + 1200 + 1020 + 1900)/50<br>
+                                            = 7260/50<br>
+                                            = 145.2
+                                        </div>
+                                    </li>
+                                </ol>
+                                <p>Therefore, the mean daily wages of the workers is ₹145.20</p>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question">
+                                <h3>Question 2</h3>
+                                <p>Draw a less than ogive and a more than ogive for the following data and find the median from the graph:</p>
+                                <table class="data-table">
+                                    <tr>
+                                        <th>Class</th>
+                                        <th>0-10</th>
+                                        <th>10-20</th>
+                                        <th>20-30</th>
+                                        <th>30-40</th>
+                                        <th>40-50</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Frequency</td>
+                                        <td>5</td>
+                                        <td>8</td>
+                                        <td>12</td>
+                                        <td>7</td>
+                                        <td>3</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <p>Let's solve this step by step:</p>
+                                <ol>
+                                    <li>Calculate cumulative frequencies:
+                                        <div class="formula">
+                                            Less than: 5, 13, 25, 32, 35<br>
+                                            More than: 35, 30, 22, 10, 3
+                                        </div>
+                                    </li>
+                                    <li>Plot both ogives on the same graph</li>
+                                    <li>Find the intersection point:
+                                        <div class="formula">
+                                            The curves intersect at x = 23.5
+                                        </div>
+                                    </li>
+                                </ol>
+                                <p>Therefore, the median of the data is 23.5</p>
+                                <div class="graph-placeholder">
+                                    [Graph showing less than and more than ogives]
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="load-more">
+                            <button class="btn btn-primary">Load More Questions</button>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Applications in Real Life</h2>
+                        
+                        <div class="applications-grid">
+                            <div class="application-box">
+                                <h4>Business and Economics</h4>
+                                <ul>
+                                    <li>Market research</li>
+                                    <li>Sales analysis</li>
+                                    <li>Economic forecasting</li>
+                                    <li>Quality control</li>
+                                </ul>
+                            </div>
+
+                            <div class="application-box">
+                                <h4>Social Sciences</h4>
+                                <ul>
+                                    <li>Population studies</li>
+                                    <li>Education statistics</li>
+                                    <li>Survey analysis</li>
+                                    <li>Behavioral research</li>
+                                </ul>
+                            </div>
+
+                            <div class="application-box">
+                                <h4>Scientific Research</h4>
+                                <ul>
+                                    <li>Data analysis</li>
+                                    <li>Experimental results</li>
+                                    <li>Research validation</li>
+                                    <li>Pattern recognition</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter-nav">
+                        <a href="surface-areas-and-volumes.html" class="prev-chapter">
+                            <i class="fas fa-arrow-left"></i> Previous: Surface Areas and Volumes
+                        </a>
+                        <a href="probability.html" class="next-chapter">
+                            Next: Probability <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <section class="related-resources">
+        <div class="container">
+            <h2>Related Resources</h2>
+            <div class="resources-grid">
+                <a href="../practice-tests/statistics-test.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Practice Test</h3>
+                    <p>Test your understanding with chapter-specific questions</p>
+                </a>
+
+                <a href="../videos/statistics-explained.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Explanations</h3>
+                    <p>Visual explanations of statistical concepts and calculations</p>
+                </a>
+
+                <a href="../worksheets/statistics-worksheet.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Worksheets</h3>
+                    <p>Practice sheets with statistical problems and data analysis</p>
+                </a>
+
+                <a href="../important-questions/statistics-important.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Important Questions</h3>
+                    <p>Key questions likely to appear in exams</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Learn<span>NCERT</span></h3>
+                    <p>Comprehensive study materials for all NCERT classes with easy-to-understand notes, important questions, and detailed solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../../../index.html">Home</a></li>
+                        <li><a href="../../../classes.html">Classes</a></li>
+                        <li><a href="../../../about.html">About Us</a></li>
+                        <li><a href="../../../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Popular Classes</h3>
+                    <ul>
+                        <li><a href="../../class9.html">Class 9</a></li>
+                        <li><a href="../../class10.html">Class 10</a></li>
+                        <li><a href="../../class11.html">Class 11</a></li>
+                        <li><a href="../../class12.html">Class 12</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 NOTES. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/theme.js"></script>
+</body>
+</html>

@@ -2,238 +2,282 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Class 10 Math: Polynomials - LearnNCERT</title>
+    <title>Class 10 Math: Polynomials - NOTES</title>
+    <meta name="description" content="Learn about polynomials including zeros, relationship between zeros and coefficients, and division algorithm. Master polynomial concepts with detailed examples.">
+    <meta name="keywords" content="Class 10 Math, Polynomials, Zeros of Polynomials, Division Algorithm, Quadratic Polynomials">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- <style>
-        body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; color: #222; }
-        .chapter-header { background: #fff; padding: 24px 32px 16px 32px; border-bottom: 1px solid #eee; }
-        .breadcrumb { font-size: 14px; margin-bottom: 8px; }
-        .breadcrumb a { color: #007bff; text-decoration: none; }
-        .breadcrumb span { color: #555; }
-        .chapter-header h1 { margin: 0 0 8px 0; font-size: 2em; }
-        .meta-info { font-size: 13px; color: #888; }
-        .meta-info span { margin-right: 16px; }
-        .chapter-section { background: #fff; margin: 24px auto; padding: 24px 32px; max-width: 900px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);}
-        .chapter-section h2 { margin-top: 0; }
-        .concept-list { display: flex; flex-wrap: wrap; gap: 24px; }
-        .concept-item { flex: 1 1 350px; min-width: 300px; background: #f5f7fa; border-radius: 6px; padding: 18px 20px; margin-bottom: 12px; }
-        .concept-item h3 { margin-top: 0; }
-        .bullet-points { margin: 0 0 0 18px; }
-        .formula-box { background: #eaf6ff; border-left: 4px solid #2196f3; padding: 12px 18px; margin: 12px 0; border-radius: 4px; }
-        .formula { font-family: 'Courier New', monospace; font-size: 1.1em; margin: 4px 0; }
-        .question-card { background: #fffbe7; border-left: 4px solid #ffc107; margin: 18px 0; padding: 18px 20px; border-radius: 5px; }
-        .question h3 { margin: 0 0 6px 0; }
-        .solution { background: #f6f6f6; border-radius: 4px; padding: 12px 16px; margin-top: 10px; }
-        .load-more { text-align: center; margin: 24px 0 0 0; }
-        .btn { padding: 10px 22px; border: none; border-radius: 4px; background: #007bff; color: #fff; font-size: 1em; cursor: pointer; }
-        .btn:active { background: #0056b3; }
-        .formulas-grid { display: flex; flex-wrap: wrap; gap: 18px; }
-        .formulas-grid .formula-box { flex: 1 1 220px; min-width: 200px; }
-        .chapter-nav { display: flex; justify-content: space-between; align-items: center; margin: 32px auto 0 auto; max-width: 900px; }
-        .chapter-nav a { color: #007bff; text-decoration: none; font-weight: 500; padding: 10px 16px; border-radius: 4px; background: #f0f7ff; transition: background 0.2s; }
-        .chapter-nav a:hover { background: #e3f0ff; }
-        @media (max-width: 700px) {
-            .chapter-header, .chapter-section { padding: 14px 8px; }
-            .concept-list, .formulas-grid { flex-direction: column; gap: 0; }
-            .chapter-nav { flex-direction: column; gap: 12px; }
-        }
-    </style> -->
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/chapter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="chapter-header">
-        <div class="breadcrumb">
-            <a href="/class10">Class 10</a> &gt; <a href="/class10/math">Mathematics</a> &gt; <span>Polynomials</span>
-        </div>
-        <h1>Chapter 2: Polynomials</h1>
-        <div class="meta-info">
-            <span><i class="fas fa-book"></i> Class 10 Mathematics</span>
-            <span><i class="fas fa-calendar"></i> Updated: May 15, 2025</span>
-        </div>
-    </div>
-
-    <div class="chapter-section"></div>
-        <h2>Introduction</h2>
-        <p>Polynomials is the second chapter in Class 10 Mathematics. This chapter builds on the concept of polynomials that you've studied in earlier classes and introduces new methods for finding zeros of polynomials, relationship between zeros and coefficients, and division algorithm for polynomials.</p>
-    </div>
-
-    <div class="chapter-section">
-        <h2>Key Concepts</h2>
-        <div class="concept-list">
-            <div class="concept-item">
-                <h3>Polynomials and Their Degrees</h3>
-                <ul class="bullet-points">
-                    <li>A polynomial p(x) in one variable x is an expression of the form p(x) = a₀ + a₁x + a₂x² + ... + aₙxⁿ, where a₀, a₁, a₂, ..., aₙ are constants and aₙ ≠ 0</li>
-                    <li>The highest power of x in p(x) is called the degree of the polynomial</li>
-                    <li>A polynomial of degree 1 is called a linear polynomial (e.g., 2x + 3)</li>
-                    <li>A polynomial of degree 2 is called a quadratic polynomial (e.g., 3x² + 2x - 1)</li>
-                    <li>A polynomial of degree 3 is called a cubic polynomial (e.g., x³ - 6x² + 11x - 6)</li>
-                </ul>
-            </div>
-            <div class="concept-item">
-                <h3>Zeros of a Polynomial</h3>
-                <ul class="bullet-points">
-                    <li>A real number k is called a zero of a polynomial p(x) if p(k) = 0</li>
-                    <li>The zero of a polynomial is also called a root of the polynomial equation p(x) = 0</li>
-                    <li>A polynomial of degree n has at most n zeros</li>
-                    <li>Geometrically, zeros of a polynomial are the x-coordinates of the points where the graph of y = p(x) intersects the x-axis</li>
-                </ul>
-            </div>
-            <div class="concept-item">
-                <h3>Relationship Between Zeros and Coefficients</h3>
-                <ul class="bullet-points">
-                    <li>For a quadratic polynomial ax² + bx + c with zeros α and β:
-                        <ul>
-                            <li>Sum of zeros: α + β = -b/a</li>
-                            <li>Product of zeros: α × β = c/a</li>
-                        </ul>
-                    </li>
-                    <li>For a cubic polynomial ax³ + bx² + cx + d with zeros α, β, and γ:
-                        <ul>
-                            <li>Sum of zeros: α + β + γ = -b/a</li>
-                            <li>Sum of products of zeros taken two at a time: αβ + βγ + γα = c/a</li>
-                            <li>Product of zeros: α × β × γ = -d/a</li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="formula-box">
-                    <h4>For Quadratic Polynomial ax² + bx + c with zeros α and β</h4>
-                    <div class="formula">α + β = -b/a</div>
-                    <div class="formula">α × β = c/a</div>
-                    <h4>For Cubic Polynomial ax³ + bx² + cx + d with zeros α, β, and γ</h4>
-                    <div class="formula">α + β + γ = -b/a</div>
-                    <div class="formula">αβ + βγ + γα = c/a</div>
-                    <div class="formula">α × β × γ = -d/a</div>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Learn<span>NCERT</span></h1>
                 </div>
-            </div>
-            <div class="concept-item">
-                <h3>Division Algorithm for Polynomials</h3>
-                <ul class="bullet-points">
-                    <li>If p(x) and g(x) are two polynomials with g(x) ≠ 0, then there exist polynomials q(x) and r(x) such that:
-                        <ul>
-                            <li>p(x) = g(x) × q(x) + r(x)</li>
-                            <li>where r(x) = 0 or degree of r(x) &lt; degree of g(x)</li>
-                        </ul>
+                <div class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../../classes.html" class="active">Classes</a></li>
+                    <li><a href="../../../about.html">About</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                    <li class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="Search notes...">
+                            <button id="searchBtn"><i class="fas fa-search"></i></button>
+                        </div>
                     </li>
-                    <li>q(x) is called the quotient and r(x) is called the remainder</li>
-                    <li>When we divide p(x) by (x - a), the remainder is p(a)</li>
-                    <li>This result is known as the Remainder Theorem</li>
-                    <li>If p(a) = 0, then (x - a) is a factor of p(x)</li>
-                    <li>This result is known as the Factor Theorem</li>
+                    <li>
+                        <button id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
                 </ul>
             </div>
-        </div>
-    </div>
+        </nav>
+    </header>
 
-    <div class="chapter-section">
-        <h2>Important Questions and Solutions</h2>
-        <div class="question-card">
-            <div class="question">
-                <h3>Question 1</h3>
-                <p>Find the zeros of the quadratic polynomial x² - 3x - 4 and verify the relationship between the zeros and the coefficients.</p>
-            </div>
-            <div class="solution">
-                <h4>Solution:</h4>
-                <p>Given polynomial: p(x) = x² - 3x - 4</p>
-                <p>Comparing with ax² + bx + c, we have a = 1, b = -3, c = -4</p>
-                <p>To find the zeros, we need to solve p(x) = 0:</p>
-                <p>x² - 3x - 4 = 0</p>
-                <p>Using the quadratic formula: x = [-b ± √(b² - 4ac)]/2a</p>
-                <p>x = [3 ± √(9 + 16)]/2 = [3 ± √25]/2 = [3 ± 5]/2</p>
-                <p>x = (3 + 5)/2 = 4 or x = (3 - 5)/2 = -1</p>
-                <p>So the zeros of the polynomial are α = 4 and β = -1.</p>
-                <p><strong>Verification of relationship between zeros and coefficients:</strong></p>
-                <p>Sum of zeros: α + β = 4 + (-1) = 3</p>
-                <p>According to the formula: α + β = -b/a = -(-3)/1 = 3</p>
-                <p>Product of zeros: α × β = 4 × (-1) = -4</p>
-                <p>According to the formula: α × β = c/a = -4/1 = -4</p>
-                <p>Hence, the relationship between the zeros and coefficients is verified.</p>
-            </div>
-        </div>
-        <div class="question-card">
-            <div class="question">
-                <h3>Question 2</h3>
-                <p>Use the remainder theorem to find the remainder when p(x) = x³ - 4x² + 5x - 3 is divided by (x - 2).</p>
-            </div>
-            <div class="solution">
-                <h4>Solution:</h4>
-                <p>Given polynomial: p(x) = x³ - 4x² + 5x - 3</p>
-                <p>According to the remainder theorem, when p(x) is divided by (x - a), the remainder is p(a).</p>
-                <p>Here, we need to find the remainder when p(x) is divided by (x - 2), so we need to find p(2).</p>
-                <p>p(2) = (2)³ - 4(2)² + 5(2) - 3</p>
-                <p>p(2) = 8 - 16 + 10 - 3</p>
-                <p>p(2) = -1</p>
-                <p>Therefore, the remainder when p(x) is divided by (x - 2) is -1.</p>
-            </div>
-        </div>
-        <div class="question-card">
-            <div class="question">
-                <h3>Question 3</h3>
-                <p>If α and β are the zeros of the polynomial 2x² - 5x + 7, find the value of:</p>
-                <p>(i) α + β</p>
-                <p>(ii) α × β</p>
-                <p>(iii) α² + β²</p>
-                <p>(iv) 1/α + 1/β</p>
-            </div>
-            <div class="solution">
-                <h4>Solution:</h4>
-                <p>Given polynomial: p(x) = 2x² - 5x + 7</p>
-                <p>Comparing with ax² + bx + c, we have a = 2, b = -5, c = 7</p>
-                <p><strong>(i) α + β</strong></p>
-                <p>Using the relation: α + β = -b/a</p>
-                <p>α + β = -(-5)/2 = 5/2</p>
-                <p><strong>(ii) α × β</strong></p>
-                <p>Using the relation: α × β = c/a</p>
-                <p>α × β = 7/2</p>
-                <p><strong>(iii) α² + β²</strong></p>
-                <p>We know that: α² + β² = (α + β)² - 2(α × β)</p>
-                <p>α² + β² = (5/2)² - 2(7/2)</p>
-                <p>α² + β² = 25/4 - 7</p>
-                <p>α² + β² = 25/4 - 28/4</p>
-                <p>α² + β² = -3/4</p>
-                <p><strong>(iv) 1/α + 1/β</strong></p>
-                <p>We know that: 1/α + 1/β = (α + β)/(α × β)</p>
-                <p>1/α + 1/β = (5/2)/(7/2)</p>
-                <p>1/α + 1/β = 5/7</p>
-            </div>
-        </div>
-        <div class="load-more">
-            <button class="btn btn-primary" onclick="alert('Loading more questions...')"></button>
-                Load More Questions
-            </button>
-        </div>
-    </div>
+    <div class="chapter-container">
+        <div class="container">
+            <div class="chapter-wrapper">
+                <aside class="chapter-sidebar">
+                    <div class="sidebar-header">
+                        <h3>Class 10 Mathematics</h3>
+                    </div>
+                    <nav class="chapter-navigation">
+                        <ul>
+                            <li><a href="real-numbers.html">Real Numbers</a></li>
+                            <li><a href="polynomials.html" class="active">Polynomials</a></li>
+                            <li><a href="pair-of-linear-equations.html">Pair of Linear Equations</a></li>
+                            <li><a href="quadratic-equations.html">Quadratic Equations</a></li>
+                            <li><a href="arithmetic-progressions.html">Arithmetic Progressions</a></li>
+                            <li><a href="triangles.html">Triangles</a></li>
+                            <li><a href="coordinate-geometry.html">Coordinate Geometry</a></li>
+                            <li><a href="introduction-to-trigonometry.html">Introduction to Trigonometry</a></li>
+                            <li><a href="some-applications-of-trigonometry.html">Some Applications of Trigonometry</a></li>
+                            <li><a href="circles.html">Circles</a></li>
+                            <li><a href="areas-related-to-circles.html">Areas Related to Circles</a></li>
+                            <li><a href="surface-areas-and-volumes.html">Surface Areas and Volumes</a></li>
+                            <li><a href="statistics.html">Statistics</a></li>
+                            <li><a href="probability.html">Probability</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sidebar-actions">
+                        <button class="btn btn-outline btn-sm download-btn">
+                            <i class="fas fa-download"></i> Download PDF
+                        </button>
+                        <button class="btn btn-outline btn-sm bookmark-btn" data-id="class10-math-polynomials" data-title="Class 10 Math: Polynomials" data-type="chapter">
+                            <i class="far fa-bookmark"></i> Bookmark
+                        </button>
+                    </div>
+                </aside>
 
-    <div class="chapter-section">
-        <h2>Key Formulas</h2>
-        <div class="formulas-grid">
-            <div class="formula-box">
-                <h4>Remainder Theorem</h4>
-                <div class="formula">If p(x) is divided by (x - a), remainder = p(a)</div>
-            </div>
-            <div class="formula-box">
-                <h4>Factor Theorem</h4>
-                <div class="formula">(x - a) is a factor of p(x) if and only if p(a) = 0</div>
-            </div>
-            <div class="formula-box">
-                <h4>Quadratic Polynomial Zeros</h4>
-                <div class="formula">α + β = -b/a, α × β = c/a</div>
-            </div>
-            <div class="formula-box">
-                <h4>Cubic Polynomial Zeros</h4>
-                <div class="formula">α + β + γ = -b/a, αβ + βγ + γα = c/a, αβγ = -d/a</div>
+                <main class="chapter-content">
+                    <div class="chapter-header">
+                        <div class="breadcrumb">
+                            <a href="../../../index.html">Home</a> &gt;
+                            <a href="../../../classes.html">Classes</a> &gt;
+                            <a href="../../class10.html">Class 10</a> &gt;
+                            <a href="../../class10.html#math">Mathematics</a> &gt;
+                            <span>Polynomials</span>
+                        </div>
+                        <h1>Chapter 2: Polynomials</h1>
+                        <div class="meta-info">
+                            <span><i class="fas fa-book"></i> Class 10 Mathematics</span>
+                            <span><i class="fas fa-calendar"></i> Updated: May 15, 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Introduction</h2>
+                        <p>Polynomials is the second chapter in Class 10 Mathematics. This chapter builds on the concept of polynomials that you've studied in earlier classes and introduces new methods for finding zeros of polynomials, relationship between zeros and coefficients, and division algorithm for polynomials.</p>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Key Concepts</h2>
+                        <div class="concept-list">
+                            <div class="concept-item">
+                                <h3>Polynomials and Their Degrees</h3>
+                                <ul class="bullet-points">
+                                    <li>A polynomial p(x) in one variable x is an expression of the form p(x) = a₀ + a₁x + a₂x² + ... + aₙxⁿ, where a₀, a₁, a₂, ..., aₙ are constants and aₙ ≠ 0</li>
+                                    <li>The highest power of x in p(x) is called the degree of the polynomial</li>
+                                    <li>A polynomial of degree 1 is called a linear polynomial (e.g., 2x + 3)</li>
+                                    <li>A polynomial of degree 2 is called a quadratic polynomial (e.g., 3x² + 2x - 1)</li>
+                                    <li>A polynomial of degree 3 is called a cubic polynomial (e.g., x³ - 6x² + 11x - 6)</li>
+                                </ul>
+                            </div>
+                            <div class="concept-item">
+                                <h3>Zeros of a Polynomial</h3>
+                                <ul class="bullet-points">
+                                    <li>A real number k is called a zero of a polynomial p(x) if p(k) = 0</li>
+                                    <li>The zero of a polynomial is also called a root of the polynomial equation p(x) = 0</li>
+                                    <li>A polynomial of degree n has at most n zeros</li>
+                                    <li>Geometrically, zeros of a polynomial are the x-coordinates of the points where the graph of y = p(x) intersects the x-axis</li>
+                                </ul>
+                            </div>
+                            <div class="concept-item">
+                                <h3>Relationship Between Zeros and Coefficients</h3>
+                                <ul class="bullet-points">
+                                    <li>For a quadratic polynomial ax² + bx + c with zeros α and β:
+                                        <ul>
+                                            <li>Sum of zeros: α + β = -b/a</li>
+                                            <li>Product of zeros: α × β = c/a</li>
+                                        </ul>
+                                    </li>
+                                    <li>For a cubic polynomial ax³ + bx² + cx + d with zeros α, β, and γ:
+                                        <ul>
+                                            <li>Sum of zeros: α + β + γ = -b/a</li>
+                                            <li>Sum of products of zeros taken two at a time: αβ + βγ + γα = c/a</li>
+                                            <li>Product of zeros: α × β × γ = -d/a</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="formula-box">
+                                    <h4>For Quadratic Polynomial ax² + bx + c with zeros α and β</h4>
+                                    <div class="formula">α + β = -b/a</div>
+                                    <div class="formula">α × β = c/a</div>
+                                    <h4>For Cubic Polynomial ax³ + bx² + cx + d with zeros α, β, and γ</h4>
+                                    <div class="formula">α + β + γ = -b/a</div>
+                                    <div class="formula">αβ + βγ + γα = c/a</div>
+                                    <div class="formula">α × β × γ = -d/a</div>
+                                </div>
+                            </div>
+                            <div class="concept-item">
+                                <h3>Division Algorithm for Polynomials</h3>
+                                <ul class="bullet-points">
+                                    <li>If p(x) and g(x) are two polynomials with g(x) ≠ 0, then there exist polynomials q(x) and r(x) such that:
+                                        <ul>
+                                            <li>p(x) = g(x) × q(x) + r(x)</li>
+                                            <li>where r(x) = 0 or degree of r(x) &lt; degree of g(x)</li>
+                                        </ul>
+                                    </li>
+                                    <li>q(x) is called the quotient and r(x) is called the remainder</li>
+                                    <li>When we divide p(x) by (x - a), the remainder is p(a)</li>
+                                    <li>This result is known as the Remainder Theorem</li>
+                                    <li>If p(a) = 0, then (x - a) is a factor of p(x)</li>
+                                    <li>This result is known as the Factor Theorem</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Important Questions and Solutions</h2>
+                        <div class="question-card">
+                            <div class="question">
+                                <h3>Question 1</h3>
+                                <p>Find the zeros of the quadratic polynomial x² - 3x - 4 and verify the relationship between the zeros and the coefficients.</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <p>Given polynomial: p(x) = x² - 3x - 4</p>
+                                <p>Comparing with ax² + bx + c, we have a = 1, b = -3, c = -4</p>
+                                <p>To find the zeros, we need to solve p(x) = 0:</p>
+                                <p>x² - 3x - 4 = 0</p>
+                                <p>Using the quadratic formula: x = [-b ± √(b² - 4ac)]/2a</p>
+                                <p>x = [3 ± √(9 + 16)]/2 = [3 ± √25]/2 = [3 ± 5]/2</p>
+                                <p>x = (3 + 5)/2 = 4 or x = (3 - 5)/2 = -1</p>
+                                <p>So the zeros of the polynomial are α = 4 and β = -1.</p>
+                                <p><strong>Verification of relationship between zeros and coefficients:</strong></p>
+                                <p>Sum of zeros: α + β = 4 + (-1) = 3</p>
+                                <p>According to the formula: α + β = -b/a = -(-3)/1 = 3</p>
+                                <p>Product of zeros: α × β = 4 × (-1) = -4</p>
+                                <p>According to the formula: α × β = c/a = -4/1 = -4</p>
+                                <p>Hence, the relationship between the zeros and coefficients is verified.</p>
+                            </div>
+                        </div>
+                        <div class="question-card">
+                            <div class="question">
+                                <h3>Question 2</h3>
+                                <p>Use the remainder theorem to find the remainder when p(x) = x³ - 4x² + 5x - 3 is divided by (x - 2).</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <p>Given polynomial: p(x) = x³ - 4x² + 5x - 3</p>
+                                <p>According to the remainder theorem, when p(x) is divided by (x - a), the remainder is p(a).</p>
+                                <p>Here, we need to find the remainder when p(x) is divided by (x - 2), so we need to find p(2).</p>
+                                <p>p(2) = (2)³ - 4(2)² + 5(2) - 3</p>
+                                <p>p(2) = 8 - 16 + 10 - 3</p>
+                                <p>p(2) = -1</p>
+                                <p>Therefore, the remainder when p(x) is divided by (x - 2) is -1.</p>
+                            </div>
+                        </div>
+                        <div class="question-card">
+                            <div class="question">
+                                <h3>Question 3</h3>
+                                <p>If α and β are the zeros of the polynomial 2x² - 5x + 7, find the value of:</p>
+                                <p>(i) α + β</p>
+                                <p>(ii) α × β</p>
+                                <p>(iii) α² + β²</p>
+                                <p>(iv) 1/α + 1/β</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <p>Given polynomial: p(x) = 2x² - 5x + 7</p>
+                                <p>Comparing with ax² + bx + c, we have a = 2, b = -5, c = 7</p>
+                                <p><strong>(i) α + β</strong></p>
+                                <p>Using the relation: α + β = -b/a</p>
+                                <p>α + β = -(-5)/2 = 5/2</p>
+                                <p><strong>(ii) α × β</strong></p>
+                                <p>Using the relation: α × β = c/a</p>
+                                <p>α × β = 7/2</p>
+                                <p><strong>(iii) α² + β²</strong></p>
+                                <p>We know that: α² + β² = (α + β)² - 2(α × β)</p>
+                                <p>α² + β² = (5/2)² - 2(7/2)</p>
+                                <p>α² + β² = 25/4 - 7</p>
+                                <p>α² + β² = 25/4 - 28/4</p>
+                                <p>α² + β² = -3/4</p>
+                                <p><strong>(iv) 1/α + 1/β</strong></p>
+                                <p>We know that: 1/α + 1/β = (α + β)/(α × β)</p>
+                                <p>1/α + 1/β = (5/2)/(7/2)</p>
+                                <p>1/α + 1/β = 5/7</p>
+                            </div>
+                        </div>
+                        <div class="load-more">
+                            <button class="btn btn-primary" onclick="alert('Loading more questions...')"></button>
+                                Load More Questions
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Key Formulas</h2>
+                        <div class="formulas-grid">
+                            <div class="formula-box">
+                                <h4>Remainder Theorem</h4>
+                                <div class="formula">If p(x) is divided by (x - a), remainder = p(a)</div>
+                            </div>
+                            <div class="formula-box">
+                                <h4>Factor Theorem</h4>
+                                <div class="formula">(x - a) is a factor of p(x) if and only if p(a) = 0</div>
+                            </div>
+                            <div class="formula-box">
+                                <h4>Quadratic Polynomial Zeros</h4>
+                                <div class="formula">α + β = -b/a, α × β = c/a</div>
+                            </div>
+                            <div class="formula-box">
+                                <h4>Cubic Polynomial Zeros</h4>
+                                <div class="formula">α + β + γ = -b/a, αβ + βγ + γα = c/a, αβγ = -d/a</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter-nav">
+                        <a href="/class10/math/real-numbers" class="prev-chapter">
+                            <i class="fas fa-arrow-left"></i> Previous Chapter: Real Numbers
+                        </a>
+                        <a href="/class10/math/pair-of-linear-equations" class="next-chapter">
+                            Next Chapter: Pair of Linear Equations <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </main>
             </div>
         </div>
-    </div>
-
-    <div class="chapter-nav">
-        <a href="/class10/math/real-numbers" class="prev-chapter">
-            <i class="fas fa-arrow-left"></i> Previous Chapter: Real Numbers
-        </a>
-        <a href="/class10/math/pair-of-linear-equations" class="next-chapter">
-            Next Chapter: Pair of Linear Equations <i class="fas fa-arrow-right"></i>
-        </a>
     </div>
 </body>
 </html>

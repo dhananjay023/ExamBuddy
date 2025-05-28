@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class 10 Math: Arithmetic Progressions - NOTES</title>
+    <meta name="description" content="Learn about arithmetic progressions, their properties, nth term, sum of n terms, and applications. Master AP concepts with detailed examples and step-by-step solutions.">
+    <meta name="keywords" content="Class 10 Math, Arithmetic Progressions, AP, nth Term, Sum of AP, Arithmetic Sequence">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/chapter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Learn<span>NCERT</span></h1>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../../classes.html" class="active">Classes</a></li>
+                    <li><a href="../../../about.html">About</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                    <li class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="Search notes...">
+                            <button id="searchBtn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="chapter-container">
+        <div class="container">
+            <div class="chapter-wrapper">
+                <aside class="chapter-sidebar">
+                    <div class="sidebar-header">
+                        <h3>Class 10 Mathematics</h3>
+                    </div>
+                    <nav class="chapter-navigation">
+                        <ul>
+                            <li><a href="real-numbers.html">Real Numbers</a></li>
+                            <li><a href="polynomials.html">Polynomials</a></li>
+                            <li><a href="pair-of-linear-equations.html">Pair of Linear Equations</a></li>
+                            <li><a href="quadratic-equations.html">Quadratic Equations</a></li>
+                            <li><a href="arithmetic-progressions.html" class="active">Arithmetic Progressions</a></li>
+                            <li><a href="triangles.html">Triangles</a></li>
+                            <li><a href="coordinate-geometry.html">Coordinate Geometry</a></li>
+                            <li><a href="introduction-to-trigonometry.html">Introduction to Trigonometry</a></li>
+                            <li><a href="some-applications-of-trigonometry.html">Some Applications of Trigonometry</a></li>
+                            <li><a href="circles.html">Circles</a></li>
+                            <li><a href="areas-related-to-circles.html">Areas Related to Circles</a></li>
+                            <li><a href="surface-areas-and-volumes.html">Surface Areas and Volumes</a></li>
+                            <li><a href="statistics.html">Statistics</a></li>
+                            <li><a href="probability.html">Probability</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sidebar-actions">
+                        <button class="btn btn-outline btn-sm download-btn">
+                            <i class="fas fa-download"></i> Download PDF
+                        </button>
+                        <button class="btn btn-outline btn-sm bookmark-btn" data-id="class10-math-ap" data-title="Class 10 Math: Arithmetic Progressions" data-type="chapter">
+                            <i class="far fa-bookmark"></i> Bookmark
+                        </button>
+                    </div>
+                </aside>
+
+                <main class="chapter-content">
+                    <div class="chapter-header">
+                        <div class="breadcrumb">
+                            <a href="../../../index.html">Home</a> &gt;
+                            <a href="../../../classes.html">Classes</a> &gt;
+                            <a href="../../class10.html">Class 10</a> &gt;
+                            <a href="../../class10.html#math">Mathematics</a> &gt;
+                            <span>Arithmetic Progressions</span>
+                        </div>
+                        <h1>Chapter 5: Arithmetic Progressions</h1>
+                        <div class="meta-info">
+                            <span><i class="fas fa-book"></i> Class 10 Mathematics</span>
+                            <span><i class="fas fa-calendar"></i> Updated: May 15, 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Introduction</h2>
+                        <p>An Arithmetic Progression (AP) is a sequence where each term after the first is obtained by adding a fixed number (called the common difference) to the preceding term. This chapter explores the properties of APs, methods to find different terms, and sums of terms in an AP. The concepts learned here have wide applications in mathematics and real-world scenarios.</p>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Key Concepts</h2>
+                        <div class="concept-list">
+                            <div class="concept-item">
+                                <h3>Arithmetic Progression (AP)</h3>
+                                <ul class="bullet-points">
+                                    <li>Definition:
+                                        <ul>
+                                            <li>A sequence where each term after the first is obtained by adding a fixed number</li>
+                                            <li>The fixed number is called the common difference (d)</li>
+                                            <li>Example: 2, 5, 8, 11, 14, ... (d = 3)</li>
+                                        </ul>
+                                    </li>
+                                    <li>First term (a) and Common difference (d):
+                                        <ul>
+                                            <li>First term is denoted by a</li>
+                                            <li>d = any term - previous term</li>
+                                            <li>d remains constant throughout the AP</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="concept-item">
+                                <h3>nth Term of an AP</h3>
+                                <ul class="bullet-points">
+                                    <li>General Term Formula:
+                                        <div class="formula">
+                                            aₙ = a + (n-1)d
+                                        </div>
+                                        where:
+                                        <ul>
+                                            <li>aₙ is the nth term</li>
+                                            <li>a is the first term</li>
+                                            <li>n is the position of the term</li>
+                                            <li>d is the common difference</li>
+                                        </ul>
+                                    </li>
+                                    <li>Finding n when aₙ is given:
+                                        <div class="formula">
+                                            n = [(aₙ - a)/d] + 1
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="concept-item">
+                                <h3>Sum of n Terms of an AP</h3>
+                                <ul class="bullet-points">
+                                    <li>Sum Formula:
+                                        <div class="formula">
+                                            Sₙ = (n/2)[2a + (n-1)d]
+                                        </div>
+                                        or
+                                        <div class="formula">
+                                            Sₙ = (n/2)(first term + last term)
+                                        </div>
+                                    </li>
+                                    <li>Arithmetic Mean:
+                                        <ul>
+                                            <li>AM = (Sum of terms)/(Number of terms)</li>
+                                            <li>AM of a and b = (a + b)/2</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Important Questions and Solutions</h2>
+                        <div class="question-card">
+                            <div class="question">
+                                <h3>Question 1</h3>
+                                <p>Find the 20th term of the AP: 3, 7, 11, 15, ...</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <p>Given AP: 3, 7, 11, 15, ...</p>
+                                <ol>
+                                    <li>First term (a) = 3</li>
+                                    <li>Common difference (d) = 7 - 3 = 4</li>
+                                    <li>We need to find a₂₀ (n = 20)</li>
+                                    <li>Using the formula aₙ = a + (n-1)d:
+                                        <div class="formula">
+                                            a₂₀ = 3 + (20-1)4<br>
+                                            = 3 + 19 × 4<br>
+                                            = 3 + 76<br>
+                                            = 79
+                                        </div>
+                                    </li>
+                                </ol>
+                                <p>Therefore, the 20th term is 79</p>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question">
+                                <h3>Question 2</h3>
+                                <p>Find the sum of first 15 terms of the AP: 6, 13, 20, 27, ...</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <p>Given AP: 6, 13, 20, 27, ...</p>
+                                <ol>
+                                    <li>First term (a) = 6</li>
+                                    <li>Common difference (d) = 13 - 6 = 7</li>
+                                    <li>We need to find S₁₅ (n = 15)</li>
+                                    <li>Using the formula Sₙ = (n/2)[2a + (n-1)d]:
+                                        <div class="formula">
+                                            S₁₅ = (15/2)[2(6) + (15-1)7]<br>
+                                            = (15/2)[12 + 98]<br>
+                                            = (15/2)[110]<br>
+                                            = 15 × 55<br>
+                                            = 825
+                                        </div>
+                                    </li>
+                                </ol>
+                                <p>Therefore, the sum of first 15 terms is 825</p>
+                            </div>
+                        </div>
+
+                        <div class="load-more">
+                            <button class="btn btn-primary">Load More Questions</button>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Applications</h2>
+                        <div class="applications-grid">
+                            <div class="application-box">
+                                <h4>Real-Life Applications</h4>
+                                <ul>
+                                    <li>Salary increments</li>
+                                    <li>Population growth</li>
+                                    <li>Distance calculations</li>
+                                    <li>Financial planning</li>
+                                </ul>
+                            </div>
+
+                            <div class="application-box">
+                                <h4>Mathematical Applications</h4>
+                                <ul>
+                                    <li>Number patterns</li>
+                                    <li>Series summation</li>
+                                    <li>Sequence problems</li>
+                                    <li>Data analysis</li>
+                                </ul>
+                            </div>
+
+                            <div class="application-box">
+                                <h4>Scientific Applications</h4>
+                                <ul>
+                                    <li>Linear growth models</li>
+                                    <li>Temperature variations</li>
+                                    <li>Uniform motion</li>
+                                    <li>Data sampling</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter-nav">
+                        <a href="quadratic-equations.html" class="prev-chapter">
+                            <i class="fas fa-arrow-left"></i> Previous: Quadratic Equations
+                        </a>
+                        <a href="triangles.html" class="next-chapter">
+                            Next: Triangles <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <section class="related-resources">
+        <div class="container">
+            <h2>Related Resources</h2>
+            <div class="resources-grid">
+                <a href="../practice-tests/arithmetic-progressions-test.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Practice Test</h3>
+                    <p>Test your understanding with chapter-specific questions</p>
+                </a>
+
+                <a href="../videos/arithmetic-progressions-explained.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Explanations</h3>
+                    <p>Visual explanations of arithmetic progression concepts</p>
+                </a>
+
+                <a href="../worksheets/arithmetic-progressions-worksheet.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Worksheets</h3>
+                    <p>Practice sheets with AP problems</p>
+                </a>
+
+                <a href="../important-questions/arithmetic-progressions-important.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Important Questions</h3>
+                    <p>Key questions likely to appear in exams</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Learn<span>NCERT</span></h3>
+                    <p>Comprehensive study materials for all NCERT classes with easy-to-understand notes, important questions, and detailed solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../../../index.html">Home</a></li>
+                        <li><a href="../../../classes.html">Classes</a></li>
+                        <li><a href="../../../about.html">About Us</a></li>
+                        <li><a href="../../../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Popular Classes</h3>
+                    <ul>
+                        <li><a href="../../class9.html">Class 9</a></li>
+                        <li><a href="../../class10.html">Class 10</a></li>
+                        <li><a href="../../class11.html">Class 11</a></li>
+                        <li><a href="../../class12.html">Class 12</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 NOTES. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/theme.js"></script>
+</body>
+</html>

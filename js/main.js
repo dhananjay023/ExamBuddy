@@ -149,18 +149,22 @@ const setupBookmarks = () => {
     
     // Get bookmarks from local storage or initialize empty array
     const getBookmarks = () => {
-        const bookmarks = localStorage.getItem('learnncert-bookmarks');
+        const bookmarks = localStorage.getItem('bhaiyakiclasses-bookmarks');
         return bookmarks ? JSON.parse(bookmarks) : [];
     };
     
     // Save bookmarks to local storage
     const saveBookmarks = (bookmarks) => {
-        localStorage.setItem('learnncert-bookmarks', JSON.stringify(bookmarks));
+        localStorage.setItem('bhaiyakiclasses-bookmarks', JSON.stringify(bookmarks));
     };
     
     // Toggle bookmark
-    const toggleBookmark = (id, title, type) => {
-        const bookmarks = getBookmarks();
+    const toggleBookmark = (button) => {
+        const id = button.dataset.id;
+        const title = button.dataset.title;
+        const type = button.dataset.type;
+        
+        let bookmarks = getBookmarks();
         const index = bookmarks.findIndex(bookmark => bookmark.id === id);
         
         if (index === -1) {
@@ -202,10 +206,7 @@ const setupBookmarks = () => {
     // Add click event listeners to bookmark buttons
     bookmarkButtons.forEach(button => {
         button.addEventListener('click', () => {
-            const id = button.dataset.id;
-            const title = button.dataset.title;
-            const type = button.dataset.type;
-            toggleBookmark(id, title, type);
+            toggleBookmark(button);
         });
     });
     

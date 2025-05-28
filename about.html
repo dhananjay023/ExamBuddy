@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - NOTES</title>
+    <meta name="description" content="Learn about NOTES's mission, our dedicated team, and our commitment to providing quality educational resources for NCERT curriculum.">
+    <meta name="keywords" content="About NOTES, NCERT education platform, online learning, educational resources">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .about-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding: 3rem 0;
+            background: var(--bg-secondary);
+            border-radius: 10px;
+        }
+
+        .about-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .about-header p {
+            font-size: 1.1rem;
+            color: var(--text-color);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .mission-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 4rem;
+            align-items: center;
+        }
+
+        .mission-content h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .mission-content p {
+            color: var(--text-color);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        .mission-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .mission-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .features-section {
+            margin-bottom: 4rem;
+            padding: 3rem;
+            background: var(--bg-secondary);
+            border-radius: 10px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: var(--bg-primary);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            color: var(--text-color);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        .team-section {
+            margin-bottom: 4rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1.5rem;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .stats-section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        .stat-item {
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            color: var(--text-muted);
+        }
+
+        .testimonials-section {
+            margin-bottom: 4rem;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial-card {
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-content {
+            color: var(--text-color);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .author-info h4 {
+            color: var(--text-color);
+            margin-bottom: 0.25rem;
+        }
+
+        .author-info p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .mission-section {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-section {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .mission-image {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stats-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>NOTES<span>NCERT</span></h1>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="Search notes...">
+                            <button id="searchBtn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="about-container">
+        <div class="about-header">
+            <h1>About NOTES</h1>
+            <p>At NOTES, we believe that quality education should be accessible to every student. We're committed to providing comprehensive study materials that align perfectly with the NCERT curriculum, making learning easier and more engaging.</p>
+        </div>
+
+        <section class="mission-section">
+            <div class="mission-content">
+                <h2>Our Mission</h2>
+                <p>At NOTES, we believe that quality education should be accessible to every student. We're committed to providing comprehensive study materials that align perfectly with the NCERT curriculum, making learning easier and more engaging.</p>
+                <p>Our platform is designed to help students understand complex concepts through detailed explanations, practical examples, and interactive learning resources. We strive to make education not just informative, but also enjoyable.</p>
+            </div>
+            <div class="mission-image">
+                <img src="images/about/mission.jpg" alt="Students learning together" loading="lazy">
+            </div>
+        </section>
+
+        <section class="features-section">
+            <h2>Why Choose NOTES?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-book-reader"></i>
+                    <h3>Comprehensive Content</h3>
+                    <p>Detailed coverage of NCERT curriculum with clear explanations and examples.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Interactive Learning</h3>
+                    <p>Engaging learning experience with interactive tools and resources.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Expert Teachers</h3>
+                    <p>Content created and reviewed by experienced NCERT educators.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>24/7 Accessibility</h3>
+                    <p>Access your study materials anytime, anywhere, on any device.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="stat-item">
+                <h3>1M+</h3>
+                <p>Active Students</p>
+            </div>
+            <div class="stat-item">
+                <h3>10K+</h3>
+                <p>Study Materials</p>
+            </div>
+            <div class="stat-item">
+                <h3>500+</h3>
+                <p>Expert Teachers</p>
+            </div>
+            <div class="stat-item">
+                <h3>95%</h3>
+                <p>Success Rate</p>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h2>Our Leadership Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/team/director.jpg" alt="Education Director" loading="lazy">
+                    <h3>Dr. Rajesh Kumar</h3>
+                    <p>Education Director</p>
+                    <p>25+ years in education</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/team/academic-head.jpg" alt="Academic Head" loading="lazy">
+                    <h3>Dr. Priya Singh</h3>
+                    <p>Academic Head</p>
+                    <p>20+ years teaching experience</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/team/content-head.jpg" alt="Content Head" loading="lazy">
+                    <h3>Prof. Amit Sharma</h3>
+                    <p>Content Head</p>
+                    <p>15+ years in educational content</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-content">"NOTES has completely transformed my learning experience. The detailed explanations and practice questions helped me excel in my exams."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/student1.jpg" alt="Student" loading="lazy">
+                        <div class="author-info">
+                            <h4>Ananya Patel</h4>
+                            <p>Class 10 Student</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-content">"The quality of content and the way concepts are explained make NOTES stand out. It's been invaluable for my NCERT preparation."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/student2.jpg" alt="Student" loading="lazy">
+                        <div class="author-info">
+                            <h4>Rahul Verma</h4>
+                            <p>Class 12 Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NOTES<span>NCERT</span></h3>
+                    <p>Comprehensive study materials for all NCERT classes with easy-to-understand notes, important questions, and detailed solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Popular Classes</h3>
+                    <ul>
+                        <li><a href="class9.html">Class 9</a></li>
+                        <li><a href="class10.html">Class 10</a></li>
+                        <li><a href="class11.html">Class 11</a></li>
+                        <li><a href="class12.html">Class 12</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 NOTES. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const icon = themeToggle.querySelector('i');
+
+        themeToggle.addEventListener('click', () => {
+            body.dataset.theme = body.dataset.theme === 'dark' ? 'light' : 'dark';
+            icon.className = body.dataset.theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+            localStorage.setItem('theme', body.dataset.theme);
+        });
+
+        // Set initial theme
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        body.dataset.theme = savedTheme;
+        icon.className = savedTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+
+        // Mobile menu toggle
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

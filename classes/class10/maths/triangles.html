@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class 10 Math: Triangles - NOTES</title>
+    <meta name="description" content="Learn about triangles, their properties, similarity, congruence, and theorems. Master triangle concepts with detailed examples and step-by-step solutions.">
+    <meta name="keywords" content="Class 10 Math, Triangles, Similar Triangles, Congruent Triangles, Triangle Theorems">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/chapter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Learn<span>NCERT</span></h1>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../../classes.html" class="active">Classes</a></li>
+                    <li><a href="../../../about.html">About</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                    <li class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="Search notes...">
+                            <button id="searchBtn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="chapter-container">
+        <div class="container">
+            <div class="chapter-wrapper">
+                <aside class="chapter-sidebar">
+                    <div class="sidebar-header">
+                        <h3>Class 10 Mathematics</h3>
+                    </div>
+                    <nav class="chapter-navigation">
+                        <ul>
+                            <li><a href="real-numbers.html">Real Numbers</a></li>
+                            <li><a href="polynomials.html">Polynomials</a></li>
+                            <li><a href="pair-of-linear-equations.html">Pair of Linear Equations</a></li>
+                            <li><a href="quadratic-equations.html">Quadratic Equations</a></li>
+                            <li><a href="arithmetic-progressions.html">Arithmetic Progressions</a></li>
+                            <li><a href="triangles.html" class="active">Triangles</a></li>
+                            <li><a href="coordinate-geometry.html">Coordinate Geometry</a></li>
+                            <li><a href="introduction-to-trigonometry.html">Introduction to Trigonometry</a></li>
+                            <li><a href="some-applications-of-trigonometry.html">Some Applications of Trigonometry</a></li>
+                            <li><a href="circles.html">Circles</a></li>
+                            <li><a href="areas-related-to-circles.html">Areas Related to Circles</a></li>
+                            <li><a href="surface-areas-and-volumes.html">Surface Areas and Volumes</a></li>
+                            <li><a href="statistics.html">Statistics</a></li>
+                            <li><a href="probability.html">Probability</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sidebar-actions">
+                        <button class="btn btn-outline btn-sm download-btn">
+                            <i class="fas fa-download"></i> Download PDF
+                        </button>
+                        <button class="btn btn-outline btn-sm bookmark-btn" data-id="class10-math-triangles" data-title="Class 10 Math: Triangles" data-type="chapter">
+                            <i class="far fa-bookmark"></i> Bookmark
+                        </button>
+                    </div>
+                </aside>
+
+                <main class="chapter-content">
+                    <div class="chapter-header">
+                        <div class="breadcrumb">
+                            <a href="../../../index.html">Home</a> &gt;
+                            <a href="../../../classes.html">Classes</a> &gt;
+                            <a href="../../class10.html">Class 10</a> &gt;
+                            <a href="../../class10.html#math">Mathematics</a> &gt;
+                            <span>Triangles</span>
+                        </div>
+                        <h1>Chapter 6: Triangles</h1>
+                        <div class="meta-info">
+                            <span><i class="fas fa-book"></i> Class 10 Mathematics</span>
+                            <span><i class="fas fa-calendar"></i> Updated: May 15, 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Introduction</h2>
+                        <p>This chapter builds upon your understanding of triangles from previous classes and introduces important concepts like similarity of triangles, theorems related to similar triangles, and their applications. The concepts learned here form the foundation for many advanced geometric concepts and have practical applications in real-world problem solving.</p>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Key Concepts</h2>
+                        <div class="concept-list">
+                            <div class="concept-item">
+                                <h3>Similar Triangles</h3>
+                                <ul class="bullet-points">
+                                    <li>Definition:
+                                        <ul>
+                                            <li>Two triangles are similar if their corresponding angles are equal</li>
+                                            <li>Corresponding sides are proportional</li>
+                                            <li>Symbol used: ~</li>
+                                        </ul>
+                                    </li>
+                                    <li>Properties:
+                                        <ul>
+                                            <li>If two triangles are similar, their corresponding angles are equal</li>
+                                            <li>Ratio of corresponding sides is constant (similarity ratio)</li>
+                                            <li>Area ratio = (similarity ratio)²</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="concept-item">
+                                <h3>Criteria for Similarity of Triangles</h3>
+                                <ul class="bullet-points">
+                                    <li>AAA (Angle-Angle-Angle) Criterion:
+                                        <ul>
+                                            <li>If corresponding angles of two triangles are equal</li>
+                                            <li>Third angle is automatically equal (sum of angles = 180°)</li>
+                                        </ul>
+                                    </li>
+                                    <li>SAS (Side-Angle-Side) Similarity:
+                                        <ul>
+                                            <li>Two sides proportional</li>
+                                            <li>Included angle equal</li>
+                                        </ul>
+                                    </li>
+                                    <li>SSS (Side-Side-Side) Similarity:
+                                        <ul>
+                                            <li>All three sides proportional</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="concept-item">
+                                <h3>Important Theorems</h3>
+                                <ul class="bullet-points">
+                                    <li>Basic Proportionality Theorem (Thales Theorem):
+                                        <ul>
+                                            <li>Line parallel to one side of a triangle</li>
+                                            <li>Divides other two sides in the same ratio</li>
+                                        </ul>
+                                    </li>
+                                    <li>Pythagoras Theorem:
+                                        <ul>
+                                            <li>In a right triangle</li>
+                                            <li>Square of hypotenuse = Sum of squares of other two sides</li>
+                                            <li>a² + b² = c², where c is hypotenuse</li>
+                                        </ul>
+                                    </li>
+                                    <li>Angle Bisector Theorem:
+                                        <ul>
+                                            <li>Internal bisector of an angle of a triangle</li>
+                                            <li>Divides opposite side in ratio of lengths of other two sides</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Important Questions and Solutions</h2>
+                        <div class="question-card">
+                            <div class="question">
+                                <h3>Question 1</h3>
+                                <p>In triangle ABC, DE is parallel to BC and divides AB and AC in the ratio 2:3. If BC = 15 cm, find DE.</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <p>Given: DE || BC and AB:AD = AC:AE = 2:3</p>
+                                <ol>
+                                    <li>By Basic Proportionality Theorem:
+                                        <div class="formula">
+                                            DE/BC = AD/AB = AE/AC = 2/5
+                                        </div>
+                                    </li>
+                                    <li>Given BC = 15 cm:
+                                        <div class="formula">
+                                            DE/15 = 2/5<br>
+                                            DE = (2 × 15)/5<br>
+                                            DE = 6 cm
+                                        </div>
+                                    </li>
+                                </ol>
+                                <p>Therefore, DE = 6 cm</p>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question">
+                                <h3>Question 2</h3>
+                                <p>In triangle ABC, ∠B = 90°. If AD ⊥ BC, prove that triangles ABC and ADB are similar.</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <p>Given: ∠B = 90° and AD ⊥ BC</p>
+                                <ol>
+                                    <li>In triangle ABC:
+                                        <ul>
+                                            <li>∠B = 90° (given)</li>
+                                            <li>Let ∠BAC = x</li>
+                                            <li>∠BCA = y</li>
+                                            <li>x + 90° + y = 180° (angle sum property)</li>
+                                        </ul>
+                                    </li>
+                                    <li>In triangle ADB:
+                                        <ul>
+                                            <li>∠ADB = 90° (given, AD ⊥ BC)</li>
+                                            <li>∠BAD = x (common angle)</li>
+                                            <li>∠ABD = y (alternate angles, AD ⊥ BC)</li>
+                                        </ul>
+                                    </li>
+                                    <li>Therefore:
+                                        <ul>
+                                            <li>∠BAC = ∠BAD (common)</li>
+                                            <li>∠ABC = ∠ABD (both 90°)</li>
+                                            <li>∠BCA = ∠BAD (proved)</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <p>By AAA similarity criterion, triangles ABC and ADB are similar.</p>
+                            </div>
+                        </div>
+
+                        <div class="load-more">
+                            <button class="btn btn-primary">Load More Questions</button>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Applications</h2>
+                        <div class="applications-grid">
+                            <div class="application-box">
+                                <h4>Real-Life Applications</h4>
+                                <ul>
+                                    <li>Height measurement</li>
+                                    <li>Distance calculation</li>
+                                    <li>Shadow problems</li>
+                                    <li>Navigation</li>
+                                </ul>
+                            </div>
+
+                            <div class="application-box">
+                                <h4>Engineering Applications</h4>
+                                <ul>
+                                    <li>Construction</li>
+                                    <li>Architecture</li>
+                                    <li>Surveying</li>
+                                    <li>Bridge design</li>
+                                </ul>
+                            </div>
+
+                            <div class="application-box">
+                                <h4>Scientific Applications</h4>
+                                <ul>
+                                    <li>Astronomy</li>
+                                    <li>Physics problems</li>
+                                    <li>Vector analysis</li>
+                                    <li>Optics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter-nav">
+                        <a href="arithmetic-progressions.html" class="prev-chapter">
+                            <i class="fas fa-arrow-left"></i> Previous: Arithmetic Progressions
+                        </a>
+                        <a href="coordinate-geometry.html" class="next-chapter">
+                            Next: Coordinate Geometry <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <section class="related-resources">
+        <div class="container">
+            <h2>Related Resources</h2>
+            <div class="resources-grid">
+                <a href="../practice-tests/triangles-test.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Practice Test</h3>
+                    <p>Test your understanding with chapter-specific questions</p>
+                </a>
+
+                <a href="../videos/triangles-explained.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Explanations</h3>
+                    <p>Visual explanations of triangle concepts</p>
+                </a>
+
+                <a href="../worksheets/triangles-worksheet.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Worksheets</h3>
+                    <p>Practice sheets with triangle problems</p>
+                </a>
+
+                <a href="../important-questions/triangles-important.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Important Questions</h3>
+                    <p>Key questions likely to appear in exams</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Learn<span>NCERT</span></h3>
+                    <p>Comprehensive study materials for all NCERT classes with easy-to-understand notes, important questions, and detailed solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../../../index.html">Home</a></li>
+                        <li><a href="../../../classes.html">Classes</a></li>
+                        <li><a href="../../../about.html">About Us</a></li>
+                        <li><a href="../../../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Popular Classes</h3>
+                    <ul>
+                        <li><a href="../../class9.html">Class 9</a></li>
+                        <li><a href="../../class10.html">Class 10</a></li>
+                        <li><a href="../../class11.html">Class 11</a></li>
+                        <li><a href="../../class12.html">Class 12</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 NOTES. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/theme.js"></script>
+</body>
+</html>

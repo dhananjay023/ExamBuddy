@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class 10 Math: Quadratic Equations - NOTES</title>
+    <meta name="description" content="Learn about quadratic equations, their solutions, nature of roots, and applications. Master quadratic equations with detailed examples and step-by-step solutions.">
+    <meta name="keywords" content="Class 10 Math, Quadratic Equations, Roots of Quadratic Equations, Discriminant, Nature of Roots">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/chapter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Learn<span>NCERT</span></h1>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="../../../index.html">Home</a></li>
+                    <li><a href="../../../classes.html" class="active">Classes</a></li>
+                    <li><a href="../../../about.html">About</a></li>
+                    <li><a href="../../../contact.html">Contact</a></li>
+                    <li class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="Search notes...">
+                            <button id="searchBtn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <button id="themeToggle" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="chapter-container">
+        <div class="container">
+            <div class="chapter-wrapper">
+                <aside class="chapter-sidebar">
+                    <div class="sidebar-header">
+                        <h3>Class 10 Mathematics</h3>
+                    </div>
+                    <nav class="chapter-navigation">
+                        <ul>
+                            <li><a href="real-numbers.html">Real Numbers</a></li>
+                            <li><a href="polynomials.html">Polynomials</a></li>
+                            <li><a href="pair-of-linear-equations.html">Pair of Linear Equations</a></li>
+                            <li><a href="quadratic-equations.html" class="active">Quadratic Equations</a></li>
+                            <li><a href="arithmetic-progressions.html">Arithmetic Progressions</a></li>
+                            <li><a href="triangles.html">Triangles</a></li>
+                            <li><a href="coordinate-geometry.html">Coordinate Geometry</a></li>
+                            <li><a href="introduction-to-trigonometry.html">Introduction to Trigonometry</a></li>
+                            <li><a href="some-applications-of-trigonometry.html">Some Applications of Trigonometry</a></li>
+                            <li><a href="circles.html">Circles</a></li>
+                            <li><a href="areas-related-to-circles.html">Areas Related to Circles</a></li>
+                            <li><a href="surface-areas-and-volumes.html">Surface Areas and Volumes</a></li>
+                            <li><a href="statistics.html">Statistics</a></li>
+                            <li><a href="probability.html">Probability</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sidebar-actions">
+                        <button class="btn btn-outline btn-sm download-btn">
+                            <i class="fas fa-download"></i> Download PDF
+                        </button>
+                        <button class="btn btn-outline btn-sm bookmark-btn" data-id="class10-math-quadratic" data-title="Class 10 Math: Quadratic Equations" data-type="chapter">
+                            <i class="far fa-bookmark"></i> Bookmark
+                        </button>
+                    </div>
+                </aside>
+
+                <main class="chapter-content">
+                    <div class="chapter-header">
+                        <div class="breadcrumb">
+                            <a href="../../../index.html">Home</a> &gt;
+                            <a href="../../../classes.html">Classes</a> &gt;
+                            <a href="../../class10.html">Class 10</a> &gt;
+                            <a href="../../class10.html#math">Mathematics</a> &gt;
+                            <span>Quadratic Equations</span>
+                        </div>
+                        <h1>Chapter 4: Quadratic Equations</h1>
+                        <div class="meta-info">
+                            <span><i class="fas fa-book"></i> Class 10 Mathematics</span>
+                            <span><i class="fas fa-calendar"></i> Updated: May 15, 2025</span>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Introduction</h2>
+                        <p>A quadratic equation is a polynomial equation of degree 2. This chapter explores methods to solve quadratic equations, understand the nature of their roots, and apply these concepts to solve real-world problems. The skills learned here are fundamental to higher mathematics and have practical applications in physics, engineering, and economics.</p>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Key Concepts</h2>
+                        <div class="concept-list">
+                            <div class="concept-item">
+                                <h3>Standard Form</h3>
+                                <ul class="bullet-points">
+                                    <li>A quadratic equation in variable x is of the form:
+                                        <div class="formula">
+                                            ax² + bx + c = 0
+                                        </div>
+                                        where:
+                                        <ul>
+                                            <li>a ≠ 0</li>
+                                            <li>a, b, c are real numbers</li>
+                                            <li>a is the coefficient of x²</li>
+                                            <li>b is the coefficient of x</li>
+                                            <li>c is the constant term</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="concept-item">
+                                <h3>Methods of Solution</h3>
+                                <ul class="bullet-points">
+                                    <li>Factorization Method:
+                                        <ul>
+                                            <li>Split the middle term</li>
+                                            <li>Find factors that add to give b and multiply to give ac</li>
+                                            <li>Write as product of linear factors</li>
+                                        </ul>
+                                    </li>
+                                    <li>Completing the Square:
+                                        <ul>
+                                            <li>Rearrange to group x terms</li>
+                                            <li>Add square of half coefficient of x</li>
+                                            <li>Write as perfect square trinomial</li>
+                                        </ul>
+                                    </li>
+                                    <li>Quadratic Formula:
+                                        <div class="formula">
+                                            x = [-b ± √(b² - 4ac)]/2a
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="concept-item">
+                                <h3>Nature of Roots</h3>
+                                <ul class="bullet-points">
+                                    <li>Discriminant (D) = b² - 4ac</li>
+                                    <li>If D > 0:
+                                        <ul>
+                                            <li>Two distinct real roots</li>
+                                            <li>Roots are real and unequal</li>
+                                        </ul>
+                                    </li>
+                                    <li>If D = 0:
+                                        <ul>
+                                            <li>Two equal real roots</li>
+                                            <li>Roots are real and equal</li>
+                                        </ul>
+                                    </li>
+                                    <li>If D < 0:
+                                        <ul>
+                                            <li>No real roots</li>
+                                            <li>Roots are complex conjugates</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Important Questions and Solutions</h2>
+                        <div class="question-card">
+                            <div class="question">
+                                <h3>Question 1</h3>
+                                <p>Solve the quadratic equation: x² - 5x + 6 = 0 using factorization method.</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <p>Let's solve this step by step:</p>
+                                <ol>
+                                    <li>Identify a = 1, b = -5, c = 6</li>
+                                    <li>Find factors of 6 that add up to -5:
+                                        <ul>
+                                            <li>Factors of 6: ±1, ±2, ±3, ±6</li>
+                                            <li>-2 and -3 add up to -5 and multiply to give 6</li>
+                                        </ul>
+                                    </li>
+                                    <li>Write equation as product of factors:
+                                        <div class="formula">
+                                            x² - 5x + 6 = 0<br>
+                                            (x - 2)(x - 3) = 0
+                                        </div>
+                                    </li>
+                                    <li>Using null factor property:
+                                        <div class="formula">
+                                            x - 2 = 0 or x - 3 = 0<br>
+                                            x = 2 or x = 3
+                                        </div>
+                                    </li>
+                                </ol>
+                                <p>Therefore, the roots are x = 2 and x = 3</p>
+                            </div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question">
+                                <h3>Question 2</h3>
+                                <p>Find the nature of roots of the quadratic equation: 2x² + x + 1 = 0</p>
+                            </div>
+                            <div class="solution">
+                                <h4>Solution:</h4>
+                                <p>Let's solve this step by step:</p>
+                                <ol>
+                                    <li>Identify coefficients:
+                                        <ul>
+                                            <li>a = 2</li>
+                                            <li>b = 1</li>
+                                            <li>c = 1</li>
+                                        </ul>
+                                    </li>
+                                    <li>Calculate discriminant (D):
+                                        <div class="formula">
+                                            D = b² - 4ac<br>
+                                            D = (1)² - 4(2)(1)<br>
+                                            D = 1 - 8<br>
+                                            D = -7
+                                        </div>
+                                    </li>
+                                    <li>Since D < 0:
+                                        <ul>
+                                            <li>The equation has no real roots</li>
+                                            <li>The roots are complex conjugates</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                                <p>Therefore, the equation has no real roots</p>
+                            </div>
+                        </div>
+
+                        <div class="load-more">
+                            <button class="btn btn-primary">Load More Questions</button>
+                        </div>
+                    </div>
+
+                    <div class="chapter-section">
+                        <h2>Applications</h2>
+                        <div class="applications-grid">
+                            <div class="application-box">
+                                <h4>Physics Applications</h4>
+                                <ul>
+                                    <li>Projectile motion</li>
+                                    <li>Free fall problems</li>
+                                    <li>Velocity calculations</li>
+                                    <li>Work and energy</li>
+                                </ul>
+                            </div>
+
+                            <div class="application-box">
+                                <h4>Geometry Applications</h4>
+                                <ul>
+                                    <li>Area problems</li>
+                                    <li>Finding dimensions</li>
+                                    <li>Perimeter calculations</li>
+                                    <li>Volume optimization</li>
+                                </ul>
+                            </div>
+
+                            <div class="application-box">
+                                <h4>Real-World Applications</h4>
+                                <ul>
+                                    <li>Profit optimization</li>
+                                    <li>Population growth</li>
+                                    <li>Time and distance</li>
+                                    <li>Investment problems</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chapter-nav">
+                        <a href="pair-of-linear-equations.html" class="prev-chapter">
+                            <i class="fas fa-arrow-left"></i> Previous: Pair of Linear Equations
+                        </a>
+                        <a href="arithmetic-progressions.html" class="next-chapter">
+                            Next: Arithmetic Progressions <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <section class="related-resources">
+        <div class="container">
+            <h2>Related Resources</h2>
+            <div class="resources-grid">
+                <a href="../practice-tests/quadratic-equations-test.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Practice Test</h3>
+                    <p>Test your understanding with chapter-specific questions</p>
+                </a>
+
+                <a href="../videos/quadratic-equations-explained.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Explanations</h3>
+                    <p>Visual explanations of quadratic equations concepts</p>
+                </a>
+
+                <a href="../worksheets/quadratic-equations-worksheet.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Worksheets</h3>
+                    <p>Practice sheets with quadratic equation problems</p>
+                </a>
+
+                <a href="../important-questions/quadratic-equations-important.html" class="resource-card">
+                    <div class="resource-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Important Questions</h3>
+                    <p>Key questions likely to appear in exams</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Learn<span>NCERT</span></h3>
+                    <p>Comprehensive study materials for all NCERT classes with easy-to-understand notes, important questions, and detailed solutions.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../../../index.html">Home</a></li>
+                        <li><a href="../../../classes.html">Classes</a></li>
+                        <li><a href="../../../about.html">About Us</a></li>
+                        <li><a href="../../../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Popular Classes</h3>
+                    <ul>
+                        <li><a href="../../class9.html">Class 9</a></li>
+                        <li><a href="../../class10.html">Class 10</a></li>
+                        <li><a href="../../class11.html">Class 11</a></li>
+                        <li><a href="../../class12.html">Class 12</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 NOTES. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/theme.js"></script>
+</body>
+</html>
