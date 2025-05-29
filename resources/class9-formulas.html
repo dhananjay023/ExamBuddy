@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 9 Formulas - BhaiyaKiClasses</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/formulas.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/katex.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/katex.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/contrib/auto-render.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <div class="logo">
+          <h1>BhaiyaKi<span>Classes</span></h1>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../classes.html">Classes</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li class="search-container">
+            <div class="search-box">
+              <input type="text" id="searchInput" placeholder="Search formulas...">
+              <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+          </li>
+          <li>
+            <button id="themeToggle" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="page-header">
+      <div class="container">
+        <h1>Class 9 Formulas</h1>
+        <p>Comprehensive collection of formulas organized by subjects</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="formulas-content">
+    <div class="container">
+      <!-- Subject Selection -->
+      <div class="subject-tabs">
+        <button class="tab-btn active" data-subject="mathematics">
+          <i class="fas fa-square-root-alt"></i> Mathematics
+        </button>
+        <button class="tab-btn" data-subject="physics">
+          <i class="fas fa-atom"></i> Physics
+        </button>
+        <button class="tab-btn" data-subject="chemistry">
+          <i class="fas fa-flask"></i> Chemistry
+        </button>
+      </div>
+
+      <!-- Mathematics Content -->
+      <div class="subject-section active" id="mathematics">
+        <h2>Mathematics Formulas</h2>
+        
+        <!-- Number Systems -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-hashtag"></i> Number Systems</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <div class="formula-card-front">
+                <h4>Number Systems</h4>
+                <p>Click to see all formulas</p>
+                <i class="fas fa-sync flip-icon"></i>
+              </div>
+              <div class="formula-card-back">
+                <h4>Number Systems Formulas</h4>
+                <ul class="formula-list">
+                  <li>
+                    <div class="formula" data-formula="\mathbb{R} = \{\text{rational} \cup \text{irrational}\}"></div>
+                    <p>Real Numbers Set</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="\mathbb{Q} = \{p/q : p,q \in \mathbb{Z}, q \neq 0\}"></div>
+                    <p>Rational Numbers Set</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="\mathbb{Z} = \{\ldots, -2, -1, 0, 1, 2, \ldots\}"></div>
+                    <p>Integer Set</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="\mathbb{N} = \{1, 2, 3, \ldots\}"></div>
+                    <p>Natural Numbers Set</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="\text{If } \sqrt{n} \text{ is irrational, then } \sqrt{n} \pm a \text{ is irrational}"></div>
+                    <p>Irrational Property</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="\text{If } a \text{ is rational and } b \text{ is irrational, then } a + b \text{ is irrational}"></div>
+                    <p>Sum Property</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Polynomials -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-superscript"></i> Polynomials</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <div class="formula-card-front">
+                <h4>Polynomial Formulas</h4>
+                <p>Click to see all formulas</p>
+                <i class="fas fa-sync flip-icon"></i>
+              </div>
+              <div class="formula-card-back">
+                <h4>Polynomial Formulas & Identities</h4>
+                <ul class="formula-list">
+                  <li>
+                    <div class="formula" data-formula="(a + b)^2 = a^2 + 2ab + b^2"></div>
+                    <p>Square of Sum</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="(a - b)^2 = a^2 - 2ab + b^2"></div>
+                    <p>Square of Difference</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="a^2 - b^2 = (a+b)(a-b)"></div>
+                    <p>Difference of Squares</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="(x + a)(x + b) = x^2 + (a+b)x + ab"></div>
+                    <p>Product of Linear Terms</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="(a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca)"></div>
+                    <p>Square of Trinomial</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="(a + b)^3 = a^3 + b^3 + 3ab(a + b)"></div>
+                    <p>Cube of Sum</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="(a - b)^3 = a^3 - b^3 - 3ab(a - b)"></div>
+                    <p>Cube of Difference</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="a^3 + b^3 = (a + b)(a^2 - ab + b^2)"></div>
+                    <p>Sum of Cubes</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coordinate Geometry -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-chart-line"></i> Coordinate Geometry</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <div class="formula-card-front">
+                <h4>Coordinate Geometry</h4>
+                <p>Click to see all formulas</p>
+                <i class="fas fa-sync flip-icon"></i>
+              </div>
+              <div class="formula-card-back">
+                <h4>Coordinate Geometry Formulas</h4>
+                <ul class="formula-list">
+                  <li>
+                    <div class="formula" data-formula="d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}"></div>
+                    <p>Distance Formula</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="(x,y) = (\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2})"></div>
+                    <p>Midpoint Formula</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="(x,y) = (\frac{mx_2 + nx_1}{m+n}, \frac{my_2 + ny_1}{m+n})"></div>
+                    <p>Section Formula (m:n ratio)</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="A = \frac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|"></div>
+                    <p>Area of Triangle</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="y = mx + c"></div>
+                    <p>Equation of a Line (Slope-Intercept Form)</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="m = \frac{y_2 - y_1}{x_2 - x_1}"></div>
+                    <p>Slope Formula</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lines and Angles -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-ruler-combined"></i> Lines and Angles</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <div class="formula-card-front">
+                <h4>Lines and Angles</h4>
+                <p>Click to see all formulas</p>
+                <i class="fas fa-sync flip-icon"></i>
+              </div>
+              <div class="formula-card-back">
+                <h4>Lines and Angles Formulas</h4>
+                <ul class="formula-list">
+                  <li>
+                    <div class="formula" data-formula="\text{Linear Pair: } \angle 1 + \angle 2 = 180°"></div>
+                    <p>Linear Pair of Angles</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="\text{Vertically Opposite Angles: } \angle a = \angle c"></div>
+                    <p>Vertically Opposite Angles are Equal</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="\text{Parallel Lines: } \angle \text{corresponding} = \angle \text{alternate}"></div>
+                    <p>Parallel Lines Cut by Transversal</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="\text{Triangle Angles: } \angle A + \angle B + \angle C = 180°"></div>
+                    <p>Angle Sum Property of Triangle</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="\text{Exterior Angle} = \text{Sum of opposite interior angles}"></div>
+                    <p>Exterior Angle Property</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Physics Content -->
+      <div class="subject-section" id="physics">
+        <h2>Physics Formulas</h2>
+        
+        <!-- Motion -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-running"></i> Motion</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <div class="formula-card-front">
+                <h4>Motion Formulas</h4>
+                <p>Click to see all formulas</p>
+                <i class="fas fa-sync flip-icon"></i>
+              </div>
+              <div class="formula-card-back">
+                <h4>Motion Formulas</h4>
+                <ul class="formula-list">
+                  <li>
+                    <div class="formula" data-formula="v = \frac{s}{t}"></div>
+                    <p>Average Velocity</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="a = \frac{v - u}{t}"></div>
+                    <p>Acceleration</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="v = u + at"></div>
+                    <p>First Equation of Motion</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="s = ut + \frac{1}{2}at^2"></div>
+                    <p>Second Equation of Motion</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="v^2 = u^2 + 2as"></div>
+                    <p>Third Equation of Motion</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="s = \frac{u + v}{2}t"></div>
+                    <p>Distance by Average Speed</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="s = vt - \frac{1}{2}at^2"></div>
+                    <p>Distance (Retardation)</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Force and Laws of Motion -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-compress-arrows-alt"></i> Force and Laws of Motion</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <div class="formula-card-front">
+                <h4>Force and Motion</h4>
+                <p>Click to see all formulas</p>
+                <i class="fas fa-sync flip-icon"></i>
+              </div>
+              <div class="formula-card-back">
+                <h4>Force and Laws of Motion</h4>
+                <ul class="formula-list">
+                  <li>
+                    <div class="formula" data-formula="F = ma"></div>
+                    <p>Newton's Second Law</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="p = mv"></div>
+                    <p>Linear Momentum</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="\sum F = 0"></div>
+                    <p>Newton's First Law (Equilibrium)</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="F_{12} = -F_{21}"></div>
+                    <p>Newton's Third Law</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="F = \frac{\Delta p}{\Delta t}"></div>
+                    <p>Force as Rate of Change of Momentum</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="m_1v_1 + m_2v_2 = m_1v_1' + m_2v_2'"></div>
+                    <p>Conservation of Linear Momentum</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gravitation -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-globe"></i> Gravitation</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <div class="formula-card-front">
+                <h4>Gravitation</h4>
+                <p>Click to see all formulas</p>
+                <i class="fas fa-sync flip-icon"></i>
+              </div>
+              <div class="formula-card-back">
+                <h4>Gravitation Formulas</h4>
+                <ul class="formula-list">
+                  <li>
+                    <div class="formula" data-formula="F = G\frac{m_1m_2}{r^2}"></div>
+                    <p>Universal Gravitation</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="g = \frac{GM}{R^2}"></div>
+                    <p>Acceleration due to Gravity</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="W = mg"></div>
+                    <p>Weight</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="U = -\frac{GMm}{r}"></div>
+                    <p>Gravitational Potential Energy</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="v = \sqrt{\frac{GM}{r}}"></div>
+                    <p>Orbital Velocity</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="T = 2\pi\sqrt{\frac{r^3}{GM}}"></div>
+                    <p>Time Period of Orbit</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="g_h = g(1-\frac{2h}{R})"></div>
+                    <p>Gravity at Height h</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chemistry Content -->
+      <div class="subject-section" id="chemistry">
+        <h2>Chemistry Formulas</h2>
+        
+        <!-- Matter -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-atom"></i> Matter</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <div class="formula-card-front">
+                <h4>Matter Properties</h4>
+                <p>Click to see all formulas</p>
+                <i class="fas fa-sync flip-icon"></i>
+              </div>
+              <div class="formula-card-back">
+                <h4>Matter Formulas</h4>
+                <ul class="formula-list">
+                  <li>
+                    <div class="formula" data-formula="\rho = \frac{m}{V}"></div>
+                    <p>Density</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="P = \frac{F}{A}"></div>
+                    <p>Pressure</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="PV = nRT"></div>
+                    <p>Ideal Gas Law</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="\frac{P_1V_1}{T_1} = \frac{P_2V_2}{T_2}"></div>
+                    <p>Combined Gas Law</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="P_1V_1 = P_2V_2"></div>
+                    <p>Boyle's Law (T constant)</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="\frac{V_1}{T_1} = \frac{V_2}{T_2}"></div>
+                    <p>Charles's Law (P constant)</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="\text{Relative Humidity} = \frac{\text{Actual vapor pressure}}{\text{Saturated vapor pressure}} \times 100\%"></div>
+                    <p>Relative Humidity</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Structure of Atom -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-dot-circle"></i> Structure of Atom</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <div class="formula-card-front">
+                <h4>Atomic Structure</h4>
+                <p>Click to see all formulas</p>
+                <i class="fas fa-sync flip-icon"></i>
+              </div>
+              <div class="formula-card-back">
+                <h4>Atomic Structure Formulas</h4>
+                <ul class="formula-list">
+                  <li>
+                    <div class="formula" data-formula="A = Z + N"></div>
+                    <p>Mass Number = Atomic Number + Neutrons</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="2n^2"></div>
+                    <p>Maximum Electrons in nth Shell</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="\text{Atomic Mass} = \frac{\sum(m_i \times a_i)}{100}"></div>
+                    <p>Average Atomic Mass</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="\text{Isotopes: Same Z, Different N}"></div>
+                    <p>Definition of Isotopes</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="\text{Isobars: Same A, Different Z}"></div>
+                    <p>Definition of Isobars</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="E = -13.6 \frac{Z^2}{n^2} \text{ eV}"></div>
+                    <p>Energy of Electron in nth Shell</p>
+                  </li>
+                  <li>
+                    <div class="formula" data-formula="\lambda = \frac{h}{mv}"></div>
+                    <p>de Broglie Wavelength</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>BhaiyaKi<span>Classes</span></h3>
+          <p>Comprehensive study materials for all NCERT classes.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../classes.html">Classes</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Other Classes</h3>
+          <ul>
+            <li><a href="class10-formulas.html">Class 10</a></li>
+            <li><a href="class12-formulas.html">Class 12</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 BhaiyaKiClasses. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/theme.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize KaTeX rendering
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "$", right: "$", display: false}
+        ]
+      });
+
+      // Initialize formula elements
+      document.querySelectorAll('.formula').forEach(element => {
+        const formula = element.dataset.formula;
+        katex.render(formula, element, {
+          throwOnError: false,
+          displayMode: true
+        });
+      });
+
+      // Card flip functionality
+      document.querySelectorAll('.formula-card').forEach(card => {
+        card.addEventListener('click', function() {
+          this.classList.toggle('flipped');
+        });
+      });
+
+      // Subject tab switching
+      const subjectTabs = document.querySelectorAll('.subject-tabs .tab-btn');
+      const subjectSections = document.querySelectorAll('.subject-section');
+
+      subjectTabs.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetSubject = btn.dataset.subject;
+          
+          // Update active tab
+          subjectTabs.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          
+          // Show selected subject section
+          subjectSections.forEach(section => {
+            if (section.id === targetSubject) {
+              section.classList.add('active');
+            } else {
+              section.classList.remove('active');
+            }
+          });
+        });
+      });
+
+      // Search functionality
+      const searchInput = document.getElementById('searchInput');
+      const searchableCards = document.querySelectorAll('.formula-card');
+      const chapterSections = document.querySelectorAll('.chapter-section');
+
+      searchInput.addEventListener('input', () => {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        searchableCards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(searchTerm)) {
+            card.style.display = '';
+            // Show parent chapter section
+            const chapterSection = card.closest('.chapter-section');
+            if (chapterSection) {
+              chapterSection.style.display = '';
+            }
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Hide empty chapter sections
+        chapterSections.forEach(section => {
+          const visibleCards = section.querySelectorAll('.formula-card[style="display: none;"]');
+          if (visibleCards.length === section.querySelectorAll('.formula-card').length) {
+            section.style.display = 'none';
+          } else {
+            section.style.display = '';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html> 

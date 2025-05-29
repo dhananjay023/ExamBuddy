@@ -336,8 +336,17 @@
   padding: var(--spacing-2xl) 0;
 }
 
+.cta .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .cta h2 {
   margin-bottom: var(--spacing-md);
+  width: 100%;
+  text-align: center;
 }
 
 .cta h2::after {
@@ -349,6 +358,12 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+}
+
+.cta .btn {
+  display: inline-block;
+  margin: 0 auto;
 }
 
 /* Responsive */

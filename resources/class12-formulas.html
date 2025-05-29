@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 12 Formulas - BhaiyaKiClasses</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/formulas.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/katex.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/katex.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/contrib/auto-render.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <div class="logo">
+          <h1>BhaiyaKi<span>Classes</span></h1>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../classes.html">Classes</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li class="search-container">
+            <div class="search-box">
+              <input type="text" id="searchInput" placeholder="Search formulas...">
+              <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+          </li>
+          <li>
+            <button id="themeToggle" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="page-header">
+      <div class="container">
+        <h1>Class 12 Formulas</h1>
+        <p>Comprehensive collection of Physics and Chemistry formulas</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="formulas-content">
+    <div class="container">
+      <!-- Subject Selection -->
+      <div class="subject-tabs">
+        <button class="tab-btn active" data-subject="physics">
+          <i class="fas fa-atom"></i> Physics
+        </button>
+        <button class="tab-btn" data-subject="chemistry">
+          <i class="fas fa-flask"></i> Chemistry
+        </button>
+      </div>
+
+      <!-- Physics Content -->
+      <div class="subject-section active" id="physics">
+        <h2>Physics Formulas</h2>
+        
+        <!-- Electrostatics -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-bolt"></i> Electrostatics</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>Coulomb's Law</h4>
+              <div class="formula" data-formula="F = k\frac{q_1q_2}{r^2}"></div>
+              <div class="formula" data-formula="k = \frac{1}{4\pi\epsilon_0}"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Electric Field</h4>
+              <div class="formula" data-formula="E = \frac{F}{q} = k\frac{Q}{r^2}"></div>
+              <div class="formula" data-formula="E = -\nabla V"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Electric Potential</h4>
+              <div class="formula" data-formula="V = k\frac{Q}{r}"></div>
+              <div class="formula" data-formula="V = -\int E \cdot dr"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Gauss's Law</h4>
+              <div class="formula" data-formula="\oint E \cdot dA = \frac{Q_{enc}}{\epsilon_0}"></div>
+              <p>Electric flux through closed surface</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Current Electricity -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-plug"></i> Current Electricity</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>Ohm's Law</h4>
+              <div class="formula" data-formula="V = IR"></div>
+              <div class="formula" data-formula="J = \sigma E"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Resistivity</h4>
+              <div class="formula" data-formula="R = \rho\frac{l}{A}"></div>
+              <div class="formula" data-formula="\rho = \rho_0[1 + \alpha(T - T_0)]"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Kirchhoff's Laws</h4>
+              <div class="formula" data-formula="\sum I = 0 \text{ (junction)}"></div>
+              <div class="formula" data-formula="\sum V = 0 \text{ (loop)}"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Wheatstone Bridge</h4>
+              <div class="formula" data-formula="\frac{R_1}{R_2} = \frac{R_3}{R_4}"></div>
+              <p>Balanced condition</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Magnetism -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-magnet"></i> Magnetism</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>Magnetic Force</h4>
+              <div class="formula" data-formula="F = qv \times B"></div>
+              <div class="formula" data-formula="F = IL \times B"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Biot-Savart Law</h4>
+              <div class="formula" data-formula="dB = \frac{\mu_0}{4\pi}\frac{I dl \times r}{r^3}"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Ampere's Law</h4>
+              <div class="formula" data-formula="\oint B \cdot dl = \mu_0I_{enc}"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Electromagnetic Induction</h4>
+              <div class="formula" data-formula="\mathcal{E} = -\frac{d\Phi_B}{dt}"></div>
+              <div class="formula" data-formula="\Phi_B = \int B \cdot dA"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Electromagnetic Waves -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-broadcast-tower"></i> Electromagnetic Waves</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>Wave Properties</h4>
+              <div class="formula" data-formula="c = \lambda f"></div>
+              <div class="formula" data-formula="c = \frac{1}{\sqrt{\epsilon_0\mu_0}}"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Energy Density</h4>
+              <div class="formula" data-formula="u = \frac{1}{2}(\epsilon_0E^2 + \frac{B^2}{\mu_0})"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Poynting Vector</h4>
+              <div class="formula" data-formula="S = \frac{E \times B}{\mu_0}"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chemistry Content -->
+      <div class="subject-section" id="chemistry">
+        <h2>Chemistry Formulas</h2>
+        
+        <!-- Solutions -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-flask"></i> Solutions</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>Concentration Terms</h4>
+              <div class="formula" data-formula="\text{Molarity} = \frac{\text{moles of solute}}{\text{volume in L}}"></div>
+              <div class="formula" data-formula="\text{Molality} = \frac{\text{moles of solute}}{\text{kg of solvent}}"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Raoult's Law</h4>
+              <div class="formula" data-formula="p_1 = p_1^0x_1"></div>
+              <div class="formula" data-formula="\Delta T_b = K_b m"></div>
+              <div class="formula" data-formula="\Delta T_f = K_f m"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Osmotic Pressure</h4>
+              <div class="formula" data-formula="\pi = MRT"></div>
+              <div class="formula" data-formula="\pi = CRT"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Electrochemistry -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-car-battery"></i> Electrochemistry</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>Nernst Equation</h4>
+              <div class="formula" data-formula="E_{cell} = E^0_{cell} - \frac{RT}{nF}\ln Q"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Faraday's Laws</h4>
+              <div class="formula" data-formula="m = \frac{MIt}{nF}"></div>
+              <div class="formula" data-formula="Q = It = nF"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Conductivity</h4>
+              <div class="formula" data-formula="\kappa = \frac{1}{R}\frac{l}{A}"></div>
+              <div class="formula" data-formula="\Lambda_m = \frac{\kappa}{c}"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chemical Kinetics -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-tachometer-alt"></i> Chemical Kinetics</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>Rate Laws</h4>
+              <div class="formula" data-formula="\text{Rate} = k[A]^x[B]^y"></div>
+              <div class="formula" data-formula="\text{Order} = x + y"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Integrated Rate Laws</h4>
+              <div class="formula" data-formula="\text{Zero order: }[A]_t = [A]_0 - kt"></div>
+              <div class="formula" data-formula="\text{First order: }\ln[A]_t = \ln[A]_0 - kt"></div>
+              <div class="formula" data-formula="\text{Second order: }\frac{1}{[A]_t} = \frac{1}{[A]_0} + kt"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Arrhenius Equation</h4>
+              <div class="formula" data-formula="k = Ae^{-E_a/RT}"></div>
+              <div class="formula" data-formula="\ln k = \ln A - \frac{E_a}{RT}"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thermodynamics -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-temperature-high"></i> Thermodynamics</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>First Law</h4>
+              <div class="formula" data-formula="\Delta U = q + w"></div>
+              <div class="formula" data-formula="\Delta H = \Delta U + \Delta(PV)"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Second Law</h4>
+              <div class="formula" data-formula="\Delta S_{univ} \geq 0"></div>
+              <div class="formula" data-formula="\Delta S = \frac{q_{rev}}{T}"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Gibbs Energy</h4>
+              <div class="formula" data-formula="\Delta G = \Delta H - T\Delta S"></div>
+              <div class="formula" data-formula="\Delta G^0 = -RT\ln K"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>BhaiyaKi<span>Classes</span></h3>
+          <p>Comprehensive study materials for all NCERT classes.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../classes.html">Classes</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Other Classes</h3>
+          <ul>
+            <li><a href="class9-formulas.html">Class 9</a></li>
+            <li><a href="class10-formulas.html">Class 10</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 BhaiyaKiClasses. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/theme.js"></script>
+  <script>
+    // Same JavaScript code as other formula pages
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize KaTeX rendering
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "$", right: "$", display: false}
+        ]
+      });
+
+      // Initialize formula elements
+      document.querySelectorAll('.formula').forEach(element => {
+        const formula = element.dataset.formula;
+        katex.render(formula, element, {
+          throwOnError: false,
+          displayMode: true
+        });
+      });
+
+      // Subject tab switching
+      const subjectTabs = document.querySelectorAll('.subject-tabs .tab-btn');
+      const subjectSections = document.querySelectorAll('.subject-section');
+
+      subjectTabs.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetSubject = btn.dataset.subject;
+          
+          // Update active tab
+          subjectTabs.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          
+          // Show selected subject section
+          subjectSections.forEach(section => {
+            if (section.id === targetSubject) {
+              section.classList.add('active');
+            } else {
+              section.classList.remove('active');
+            }
+          });
+        });
+      });
+
+      // Search functionality
+      const searchInput = document.getElementById('searchInput');
+      const formulaCards = document.querySelectorAll('.formula-card');
+      const chapterSections = document.querySelectorAll('.chapter-section');
+
+      searchInput.addEventListener('input', () => {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        formulaCards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(searchTerm)) {
+            card.style.display = '';
+            // Show parent chapter section
+            const chapterSection = card.closest('.chapter-section');
+            if (chapterSection) {
+              chapterSection.style.display = '';
+            }
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Hide empty chapter sections
+        chapterSections.forEach(section => {
+          const visibleCards = section.querySelectorAll('.formula-card[style="display: none;"]');
+          if (visibleCards.length === section.querySelectorAll('.formula-card').length) {
+            section.style.display = 'none';
+          } else {
+            section.style.display = '';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html> 

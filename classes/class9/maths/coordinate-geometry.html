@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 9 Mathematics: Coordinate Geometry - BhaiyaKiClasses</title>
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/chapter.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <div class="logo">
+          <h1>Bhaiya<span>KiClasses</span></h1>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../../../index.html">Home</a></li>
+          <li><a href="../../../classes.html" class="active">Classes</a></li>
+          <li><a href="../../../about.html">About</a></li>
+          <li><a href="../../../contact.html">Contact</a></li>
+          <li class="search-container">
+            <div class="search-box">
+              <input type="text" id="searchInput" placeholder="Search notes...">
+              <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+          </li>
+          <li>
+            <button id="themeToggle" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="chapter-container">
+    <div class="container">
+      <div class="chapter-wrapper">
+        <aside class="chapter-sidebar">
+          <div class="sidebar-header">
+            <h3>Class 9 Mathematics</h3>
+          </div>
+          <nav class="chapter-navigation">
+            <ul>
+              <li><a href="number-systems.html">Number Systems</a></li>
+              <li><a href="polynomials.html">Polynomials</a></li>
+              <li><a href="coordinate-geometry.html" class="active">Coordinate Geometry</a></li>
+              <li><a href="linear-equations.html">Linear Equations in Two Variables</a></li>
+              <li><a href="introduction-euclid.html">Introduction to Euclid's Geometry</a></li>
+              <li><a href="lines-angles.html">Lines and Angles</a></li>
+              <li><a href="triangles.html">Triangles</a></li>
+              <li><a href="quadrilaterals.html">Quadrilaterals</a></li>
+              <li><a href="areas-parallelograms.html">Areas of Parallelograms and Triangles</a></li>
+              <li><a href="circles.html">Circles</a></li>
+              <li><a href="constructions.html">Constructions</a></li>
+              <li><a href="heron-formula.html">Heron's Formula</a></li>
+              <li><a href="surface-areas-volumes.html">Surface Areas and Volumes</a></li>
+              <li><a href="statistics.html">Statistics</a></li>
+              <li><a href="probability.html">Probability</a></li>
+            </ul>
+          </nav>
+          <div class="sidebar-actions">
+            <button class="btn btn-outline btn-sm download-btn">
+              <i class="fas fa-download"></i> Download PDF
+            </button>
+            <button class="btn btn-outline btn-sm bookmark-btn" data-id="class9-maths-coordinate-geometry" data-title="Class 9 Mathematics: Coordinate Geometry" data-type="chapter">
+              <i class="far fa-bookmark"></i> Bookmark
+            </button>
+          </div>
+        </aside>
+        
+        <main class="chapter-content">
+          <div class="chapter-header">
+            <div class="breadcrumb">
+              <a href="../../../index.html">Home</a> &gt; 
+              <a href="../../../classes.html">Classes</a> &gt; 
+              <a href="../../class9.html">Class 9</a> &gt; 
+              <a href="../../class9.html#mathematics">Mathematics</a> &gt; 
+              <span>Coordinate Geometry</span>
+            </div>
+            <h1>Chapter 3: Coordinate Geometry</h1>
+            <div class="meta-info">
+              <span><i class="fas fa-book"></i> Class 9 Mathematics</span>
+              <span><i class="fas fa-calendar"></i> Updated: May 15, 2025</span>
+            </div>
+          </div>
+          
+          <div class="chapter-section">
+            <h2>Introduction</h2>
+            <p>Coordinate Geometry combines algebra with geometry by using a coordinate system to describe points and shapes in a plane. This chapter introduces the Cartesian coordinate system and its applications in solving geometric problems using algebraic methods.</p>
+          </div>
+          
+          <div class="chapter-section">
+            <h2>Key Concepts</h2>
+            <div class="concept-list">
+              <div class="concept-item">
+                <h3>Cartesian Coordinate System</h3>
+                <ul class="bullet-points">
+                  <li>Two perpendicular lines (axes) intersecting at origin (0,0)</li>
+                  <li>Horizontal line is x-axis, vertical line is y-axis</li>
+                  <li>The plane is divided into four quadrants</li>
+                  <li>Any point can be located using ordered pair (x,y)</li>
+                  <li>Signs of coordinates in different quadrants:
+                    <ul>
+                      <li>Quadrant I: (+,+)</li>
+                      <li>Quadrant II: (-,+)</li>
+                      <li>Quadrant III: (-,-)</li>
+                      <li>Quadrant IV: (+,-)</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="concept-item">
+                <h3>Distance Formula</h3>
+                <ul class="bullet-points">
+                  <li>Distance between points (x₁,y₁) and (x₂,y₂)</li>
+                  <li>Formula: d = √[(x₂-x₁)² + (y₂-y₁)²]</li>
+                  <li>Based on Pythagorean theorem</li>
+                  <li>Used to find:
+                    <ul>
+                      <li>Length of line segments</li>
+                      <li>Perimeter of polygons</li>
+                      <li>Whether points are collinear</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="concept-item">
+                <h3>Section Formula</h3>
+                <ul class="bullet-points">
+                  <li>Coordinates of point dividing line segment in ratio m:n</li>
+                  <li>x-coordinate: (mx₂ + nx₁)/(m+n)</li>
+                  <li>y-coordinate: (my₂ + ny₁)/(m+n)</li>
+                  <li>Special case: Midpoint formula when m=n=1</li>
+                  <li>Midpoint coordinates: ((x₁+x₂)/2, (y₁+y₂)/2)</li>
+                </ul>
+              </div>
+              
+              <div class="concept-item">
+                <h3>Area of Triangle</h3>
+                <ul class="bullet-points">
+                  <li>Area using coordinates of vertices</li>
+                  <li>Formula: ½|x₁(y₂-y₃) + x₂(y₃-y₁) + x₃(y₁-y₂)|</li>
+                  <li>Positive value gives actual area</li>
+                  <li>Can be used to check if points are collinear</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="chapter-section">
+            <h2>Important Questions and Solutions</h2>
+            
+            <div class="question-card">
+              <div class="question">
+                <h3>Question 1</h3>
+                <p>Find the distance between points A(3,4) and B(-2,1).</p>
+              </div>
+              <div class="solution">
+                <h4>Solution:</h4>
+                <p>Using the distance formula:</p>
+                <ol>
+                  <li>d = √[(x₂-x₁)² + (y₂-y₁)²]</li>
+                  <li>d = √[(-2-3)² + (1-4)²]</li>
+                  <li>d = √[(-5)² + (-3)²]</li>
+                  <li>d = √[25 + 9]</li>
+                  <li>d = √34</li>
+                </ol>
+                <p>Therefore, the distance between A and B is √34 units.</p>
+              </div>
+            </div>
+            
+            <div class="question-card">
+              <div class="question">
+                <h3>Question 2</h3>
+                <p>Find the coordinates of the point which divides the line segment joining A(2,-3) and B(4,7) in the ratio 2:3.</p>
+              </div>
+              <div class="solution">
+                <h4>Solution:</h4>
+                <p>Using the section formula:</p>
+                <ol>
+                  <li>For ratio m:n = 2:3</li>
+                  <li>x-coordinate = (mx₂ + nx₁)/(m+n) = (2×4 + 3×2)/(2+3) = 14/5</li>
+                  <li>y-coordinate = (my₂ + ny₁)/(m+n) = (2×7 + 3×(-3))/(2+3) = 5/5 = 1</li>
+                </ol>
+                <p>Therefore, the required point is (2.8, 1).</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="chapter-section">
+            <h2>Key Formulas</h2>
+            
+            <div class="formulas-grid">
+              <div class="formula-box">
+                <h4>Distance Formula</h4>
+                <div class="formula">d = √[(x₂-x₁)² + (y₂-y₁)²]</div>
+              </div>
+              
+              <div class="formula-box">
+                <h4>Section Formula</h4>
+                <div class="formula">x = (mx₂ + nx₁)/(m+n)</div>
+                <div class="formula">y = (my₂ + ny₁)/(m+n)</div>
+              </div>
+              
+              <div class="formula-box">
+                <h4>Midpoint Formula</h4>
+                <div class="formula">x = (x₁+x₂)/2</div>
+                <div class="formula">y = (y₁+y₂)/2</div>
+              </div>
+              
+              <div class="formula-box">
+                <h4>Area of Triangle</h4>
+                <div class="formula">A = ½|x₁(y₂-y₃) + x₂(y₃-y₁) + x₃(y₁-y₂)|</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="chapter-section">
+            <h2>Common Misconceptions</h2>
+            <div class="misconception-list">
+              <div class="misconception-item">
+                <h3>Order of Coordinates</h3>
+                <p><strong>Misconception:</strong> The order of x and y coordinates doesn't matter.</p>
+                <p><strong>Correction:</strong> The order is crucial - (x,y) and (y,x) represent different points unless x=y.</p>
+              </div>
+              
+              <div class="misconception-item">
+                <h3>Distance Formula Application</h3>
+                <p><strong>Misconception:</strong> Distance formula gives negative results sometimes.</p>
+                <p><strong>Correction:</strong> Distance is always positive as it involves square root of sum of squares.</p>
+              </div>
+              
+              <div class="misconception-item">
+                <h3>Area Formula Sign</h3>
+                <p><strong>Misconception:</strong> The area formula can give negative results.</p>
+                <p><strong>Correction:</strong> We take the absolute value in the area formula to get the actual area.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="chapter-nav">
+            <a href="polynomials.html" class="prev-chapter">
+              <i class="fas fa-arrow-left"></i> Previous Chapter: Polynomials
+            </a>
+            <a href="linear-equations.html" class="next-chapter">
+              Next Chapter: Linear Equations in Two Variables <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Bhaiya<span>KiClasses</span></h3>
+          <p>Comprehensive study materials for all classes with easy-to-understand notes, important questions, and detailed solutions.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../../../index.html">Home</a></li>
+            <li><a href="../../../classes.html">Classes</a></li>
+            <li><a href="../../../about.html">About Us</a></li>
+            <li><a href="../../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Popular Classes</h3>
+          <ul>
+            <li><a href="../../class9.html">Class 9</a></li>
+            <li><a href="../../class10.html">Class 10</a></li>
+            <li><a href="../../class11.html">Class 11</a></li>
+            <li><a href="../../class12.html">Class 12</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 BhaiyaKiClasses. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../../js/main.js"></script>
+  <script src="../../../js/theme.js"></script>
+</body>
+</html>

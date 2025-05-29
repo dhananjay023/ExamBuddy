@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Important Formulas - BhaiyaKiClasses</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/formulas.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/katex.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/katex.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/contrib/auto-render.min.js"></script>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <div class="logo">
+          <h1>BhaiyaKi<span>Classes</span></h1>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../classes.html">Classes</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li class="search-container">
+            <div class="search-box">
+              <input type="text" id="searchInput" placeholder="Search formulas...">
+              <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+          </li>
+          <li>
+            <button id="themeToggle" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="page-header">
+      <div class="container">
+        <h1>Important Formulas</h1>
+        <p>Quick reference guide for essential formulas by class and chapter</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="formulas-content">
+    <div class="container">
+      <!-- Class Selection -->
+      <div class="class-tabs">
+        <button class="tab-btn" data-class="class9">
+          <i class="fas fa-book"></i> Class 9
+        </button>
+        <button class="tab-btn active" data-class="class10">
+          <i class="fas fa-book"></i> Class 10
+        </button>
+        <button class="tab-btn" data-class="class12">
+          <i class="fas fa-book"></i> Class 12
+        </button>
+      </div>
+
+      <!-- Class 9 Content -->
+      <div class="class-section" id="class9">
+        <h2>Class 9 Formulas</h2>
+        <div class="chapter-grid">
+          <!-- Mathematics -->
+          <div class="chapter-card" data-target="class9-number-systems">
+            <div class="chapter-icon"><i class="fas fa-hashtag"></i></div>
+            <h3>Number Systems</h3>
+            <p>Chapter 1</p>
+          </div>
+
+          <div class="chapter-card" data-target="class9-polynomials">
+            <div class="chapter-icon"><i class="fas fa-superscript"></i></div>
+            <h3>Polynomials</h3>
+            <p>Chapter 2</p>
+          </div>
+
+          <div class="chapter-card" data-target="class9-coordinate-geometry">
+            <div class="chapter-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Coordinate Geometry</h3>
+            <p>Chapter 3</p>
+          </div>
+
+          <div class="chapter-card" data-target="class9-triangles">
+            <div class="chapter-icon"><i class="fas fa-draw-polygon"></i></div>
+            <h3>Lines and Angles</h3>
+            <p>Chapter 4</p>
+          </div>
+
+          <!-- Physics -->
+          <div class="chapter-card" data-target="class9-motion">
+            <div class="chapter-icon"><i class="fas fa-running"></i></div>
+            <h3>Motion</h3>
+            <p>Chapter 8 (Physics)</p>
+          </div>
+
+          <div class="chapter-card" data-target="class9-force-laws">
+            <div class="chapter-icon"><i class="fas fa-compress-arrows-alt"></i></div>
+            <h3>Force and Laws of Motion</h3>
+            <p>Chapter 9 (Physics)</p>
+          </div>
+
+          <div class="chapter-card" data-target="class9-gravitation">
+            <div class="chapter-icon"><i class="fas fa-globe"></i></div>
+            <h3>Gravitation</h3>
+            <p>Chapter 10 (Physics)</p>
+          </div>
+
+          <!-- Chemistry -->
+          <div class="chapter-card" data-target="class9-matter">
+            <div class="chapter-icon"><i class="fas fa-atom"></i></div>
+            <h3>Matter</h3>
+            <p>Chapter 1 (Chemistry)</p>
+          </div>
+
+          <div class="chapter-card" data-target="class9-structure-atom">
+            <div class="chapter-icon"><i class="fas fa-dot-circle"></i></div>
+            <h3>Structure of Atom</h3>
+            <p>Chapter 4 (Chemistry)</p>
+          </div>
+        </div>
+
+        <!-- Add new chapter content sections here -->
+        <div class="chapter-content" id="class9-force-laws">
+          <div class="formula-category">
+            <h3>Force and Laws of Motion</h3>
+            <div class="formula-grid">
+              <div class="formula-card">
+                <h4>Newton's First Law</h4>
+                <div class="formula" data-formula="\sum F = 0 \text{ (for equilibrium)}"></div>
+                <p>An object remains at rest or in uniform motion unless acted upon by an external force</p>
+              </div>
+              <div class="formula-card">
+                <h4>Newton's Second Law</h4>
+                <div class="formula" data-formula="F = ma"></div>
+                <p>Force equals mass times acceleration</p>
+              </div>
+              <div class="formula-card">
+                <h4>Momentum</h4>
+                <div class="formula" data-formula="p = mv"></div>
+                <p>Momentum equals mass times velocity</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chapter-content" id="class9-structure-atom">
+          <div class="formula-category">
+            <h3>Structure of Atom</h3>
+            <div class="formula-grid">
+              <div class="formula-card">
+                <h4>Atomic Mass</h4>
+                <div class="formula" data-formula="\text{Mass number} = \text{Protons} + \text{Neutrons}"></div>
+                <p>Total number of nucleons in an atom</p>
+              </div>
+              <div class="formula-card">
+                <h4>Electronic Configuration</h4>
+                <div class="formula" data-formula="2n^2 \text{ electrons in shell n}"></div>
+                <p>Maximum number of electrons in each shell</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Class 10 Content -->
+      <div class="class-section active" id="class10">
+        <h2>Class 10 Formulas</h2>
+        <div class="chapter-grid">
+          <div class="chapter-card" data-target="class10-real-numbers">
+            <div class="chapter-icon">
+              <i class="fas fa-calculator"></i>
+            </div>
+            <h3>Real Numbers</h3>
+            <p>Chapter 1</p>
+          </div>
+
+          <div class="chapter-card" data-target="class10-polynomials">
+            <div class="chapter-icon">
+              <i class="fas fa-superscript"></i>
+            </div>
+            <h3>Polynomials</h3>
+            <p>Chapter 2</p>
+          </div>
+
+          <div class="chapter-card" data-target="class10-triangles">
+            <div class="chapter-icon">
+              <i class="fas fa-draw-polygon"></i>
+            </div>
+            <h3>Triangles</h3>
+            <p>Chapter 6</p>
+          </div>
+
+          <div class="chapter-card" data-target="class10-circles">
+            <div class="chapter-icon">
+              <i class="fas fa-circle"></i>
+            </div>
+            <h3>Circles</h3>
+            <p>Chapter 10</p>
+          </div>
+
+          <div class="chapter-card" data-target="class10-motion">
+            <div class="chapter-icon">
+              <i class="fas fa-atom"></i>
+            </div>
+            <h3>Motion</h3>
+            <p>Chapter 8</p>
+          </div>
+
+          <div class="chapter-card" data-target="class10-electricity">
+            <div class="chapter-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3>Electricity</h3>
+            <p>Chapter 12</p>
+          </div>
+        </div>
+
+        <!-- Chapter Content -->
+        <div class="chapter-content" id="class10-real-numbers">
+          <div class="formula-category">
+            <h3>Real Numbers</h3>
+            <div class="formula-grid">
+              <div class="formula-card">
+                <h4>Euclid's Division Lemma</h4>
+                <div class="formula" data-formula="a = bq + r"></div>
+                <p>Where 0 ≤ r < b</p>
+              </div>
+              <div class="formula-card">
+                <h4>HCF by Prime Factorization</h4>
+                <div class="formula" data-formula="\text{HCF}(a,b) = \prod p_i^{\min(x_i,y_i)}"></div>
+                <p>Where pi are prime factors</p>
+              </div>
+              <div class="formula-card">
+                <h4>LCM by Prime Factorization</h4>
+                <div class="formula" data-formula="\text{LCM}(a,b) = \prod p_i^{\max(x_i,y_i)}"></div>
+                <p>Where pi are prime factors</p>
+              </div>
+              <div class="formula-card">
+                <h4>HCF and LCM Relation</h4>
+                <div class="formula" data-formula="\text{HCF}(a,b) \times \text{LCM}(a,b) = a \times b"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chapter-content" id="class10-polynomials">
+          <div class="formula-category">
+            <h3>Polynomials</h3>
+            <div class="formula-grid">
+              <div class="formula-card">
+                <h4>Quadratic Equation</h4>
+                <div class="formula" data-formula="ax^2 + bx + c = 0"></div>
+                <div class="formula" data-formula="x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}"></div>
+              </div>
+              <div class="formula-card">
+                <h4>Nature of Roots</h4>
+                <div class="formula" data-formula="\text{Discriminant } D = b^2-4ac"></div>
+                <p>D > 0: Real and distinct roots</p>
+                <p>D = 0: Real and equal roots</p>
+                <p>D < 0: No real roots</p>
+              </div>
+              <div class="formula-card">
+                <h4>Vieta's Formulas</h4>
+                <div class="formula" data-formula="\alpha + \beta = -\frac{b}{a}"></div>
+                <div class="formula" data-formula="\alpha\beta = \frac{c}{a}"></div>
+                <p>Sum and product of roots</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chapter-content" id="class10-triangles">
+          <div class="formula-category">
+            <h3>Triangles</h3>
+            <div class="formula-grid">
+              <div class="formula-card">
+                <h4>Similar Triangles</h4>
+                <div class="formula" data-formula="\frac{a}{a'} = \frac{b}{b'} = \frac{c}{c'}"></div>
+                <p>Corresponding sides are proportional</p>
+              </div>
+              <div class="formula-card">
+                <h4>Area Ratio</h4>
+                <div class="formula" data-formula="\frac{\text{Area}_1}{\text{Area}_2} = (\frac{a}{a'})^2"></div>
+                <p>Ratio of areas of similar triangles</p>
+              </div>
+              <div class="formula-card">
+                <h4>Thales Theorem</h4>
+                <div class="formula" data-formula="\frac{AE}{EC} = \frac{AD}{DB}"></div>
+                <p>Line parallel to one side of a triangle</p>
+              </div>
+              <div class="formula-card">
+                <h4>Pythagoras Theorem</h4>
+                <div class="formula" data-formula="a^2 + b^2 = c^2"></div>
+                <p>In right-angled triangle</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chapter-content" id="class10-circles">
+          <div class="formula-category">
+            <h3>Circles</h3>
+            <div class="formula-grid">
+              <div class="formula-card">
+                <h4>Area and Circumference</h4>
+                <div class="formula" data-formula="\text{Area} = \pi r^2"></div>
+                <div class="formula" data-formula="\text{Circumference} = 2\pi r"></div>
+              </div>
+              <div class="formula-card">
+                <h4>Length of Arc</h4>
+                <div class="formula" data-formula="\text{Arc Length} = \frac{\theta}{360°} \times 2\pi r"></div>
+                <p>θ is angle in degrees</p>
+              </div>
+              <div class="formula-card">
+                <h4>Area of Sector</h4>
+                <div class="formula" data-formula="\text{Sector Area} = \frac{\theta}{360°} \times \pi r^2"></div>
+              </div>
+              <div class="formula-card">
+                <h4>Tangent Properties</h4>
+                <div class="formula" data-formula="\text{Tangent} \perp \text{Radius}"></div>
+                <div class="formula" data-formula="\text{Equal tangents} = \sqrt{(x-h)^2 + (y-k)^2} - r"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chapter-content" id="class10-motion">
+          <div class="formula-category">
+            <h3>Motion</h3>
+            <div class="formula-grid">
+              <div class="formula-card">
+                <h4>Equations of Motion</h4>
+                <div class="formula" data-formula="v = u + at"></div>
+                <div class="formula" data-formula="s = ut + \frac{1}{2}at^2"></div>
+                <div class="formula" data-formula="v^2 = u^2 + 2as"></div>
+              </div>
+              <div class="formula-card">
+                <h4>Momentum</h4>
+                <div class="formula" data-formula="p = mv"></div>
+                <div class="formula" data-formula="F = \frac{\Delta p}{\Delta t}"></div>
+              </div>
+              <div class="formula-card">
+                <h4>Work and Energy</h4>
+                <div class="formula" data-formula="W = Fs\cos\theta"></div>
+                <div class="formula" data-formula="KE = \frac{1}{2}mv^2"></div>
+                <div class="formula" data-formula="PE = mgh"></div>
+              </div>
+              <div class="formula-card">
+                <h4>Power</h4>
+                <div class="formula" data-formula="P = \frac{W}{t} = Fv"></div>
+                <p>Rate of doing work</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chapter-content" id="class10-electricity">
+          <div class="formula-category">
+            <h3>Electricity</h3>
+            <div class="formula-grid">
+              <div class="formula-card">
+                <h4>Ohm's Law</h4>
+                <div class="formula" data-formula="V = IR"></div>
+                <p>Voltage equals current times resistance</p>
+              </div>
+              <div class="formula-card">
+                <h4>Resistance Combinations</h4>
+                <div class="formula" data-formula="R_s = R_1 + R_2 + R_3 \text{ (Series)}"></div>
+                <div class="formula" data-formula="\frac{1}{R_p} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} \text{ (Parallel)}"></div>
+              </div>
+              <div class="formula-card">
+                <h4>Electric Power</h4>
+                <div class="formula" data-formula="P = VI = I^2R = \frac{V^2}{R}"></div>
+                <p>Different forms of power equation</p>
+              </div>
+              <div class="formula-card">
+                <h4>Heating Effect</h4>
+                <div class="formula" data-formula="H = I^2Rt"></div>
+                <p>Heat produced in conductor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Class 12 Content -->
+      <div class="class-section" id="class12">
+        <h2>Class 12 Formulas</h2>
+        <div class="chapter-grid">
+          <!-- Physics Chapters -->
+          <div class="chapter-card" data-target="class12-electrostatics">
+            <div class="chapter-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3>Electrostatics</h3>
+            <p>Chapter 1 (Physics)</p>
+          </div>
+
+          <div class="chapter-card" data-target="class12-current-electricity">
+            <div class="chapter-icon">
+              <i class="fas fa-plug"></i>
+            </div>
+            <h3>Current Electricity</h3>
+            <p>Chapter 3 (Physics)</p>
+          </div>
+
+          <div class="chapter-card" data-target="class12-magnetism">
+            <div class="chapter-icon">
+              <i class="fas fa-magnet"></i>
+            </div>
+            <h3>Magnetism</h3>
+            <p>Chapter 4 (Physics)</p>
+          </div>
+
+          <div class="chapter-card" data-target="class12-electromagnetic-waves">
+            <div class="chapter-icon">
+              <i class="fas fa-broadcast-tower"></i>
+            </div>
+            <h3>Electromagnetic Waves</h3>
+            <p>Chapter 8 (Physics)</p>
+          </div>
+
+          <!-- Chemistry Chapters -->
+          <div class="chapter-card" data-target="class12-solutions">
+            <div class="chapter-icon">
+              <i class="fas fa-flask"></i>
+            </div>
+            <h3>Solutions</h3>
+            <p>Chapter 2 (Chemistry)</p>
+          </div>
+
+          <div class="chapter-card" data-target="class12-electrochemistry">
+            <div class="chapter-icon">
+              <i class="fas fa-car-battery"></i>
+            </div>
+            <h3>Electrochemistry</h3>
+            <p>Chapter 3 (Chemistry)</p>
+          </div>
+
+          <div class="chapter-card" data-target="class12-chemical-kinetics">
+            <div class="chapter-icon">
+              <i class="fas fa-tachometer-alt"></i>
+            </div>
+            <h3>Chemical Kinetics</h3>
+            <p>Chapter 4 (Chemistry)</p>
+          </div>
+
+          <div class="chapter-card" data-target="class12-thermodynamics">
+            <div class="chapter-icon">
+              <i class="fas fa-temperature-high"></i>
+            </div>
+            <h3>Thermodynamics</h3>
+            <p>Chapter 6 (Chemistry)</p>
+          </div>
+        </div>
+
+        <!-- Class 12 Physics Content -->
+        <div class="chapter-content" id="class12-electrostatics">
+          <div class="formula-category">
+            <h3>Electrostatics</h3>
+            <div class="formula-grid">
+              <div class="formula-card">
+                <h4>Coulomb's Law</h4>
+                <div class="formula" data-formula="F = k\frac{q_1q_2}{r^2}"></div>
+                <div class="formula" data-formula="k = \frac{1}{4\pi\epsilon_0}"></div>
+                <p>Force between two point charges</p>
+              </div>
+              <div class="formula-card">
+                <h4>Electric Field</h4>
+                <div class="formula" data-formula="E = \frac{F}{q} = k\frac{Q}{r^2}"></div>
+                <div class="formula" data-formula="E = -\nabla V"></div>
+                <p>Electric field and its relation to potential</p>
+              </div>
+              <div class="formula-card">
+                <h4>Electric Potential</h4>
+                <div class="formula" data-formula="V = k\frac{Q}{r}"></div>
+                <div class="formula" data-formula="V = -\int E \cdot dr"></div>
+                <p>Potential due to point charge and field</p>
+              </div>
+              <div class="formula-card">
+                <h4>Capacitance</h4>
+                <div class="formula" data-formula="C = \frac{Q}{V}"></div>
+                <div class="formula" data-formula="C = \frac{\epsilon_0 A}{d} \text{ (parallel plate)}"></div>
+                <p>Capacitance and parallel plate capacitor</p>
+              </div>
+              <div class="formula-card">
+                <h4>Energy Stored</h4>
+                <div class="formula" data-formula="U = \frac{1}{2}CV^2"></div>
+                <div class="formula" data-formula="U = \frac{1}{2}QV"></div>
+                <p>Energy stored in capacitor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chapter-content" id="class12-current-electricity">
+          <div class="formula-category">
+            <h3>Current Electricity</h3>
+            <div class="formula-grid">
+              <div class="formula-card">
+                <h4>Ohm's Law</h4>
+                <div class="formula" data-formula="V = IR"></div>
+                <div class="formula" data-formula="J = \sigma E"></div>
+                <p>Voltage-current relationship and current density</p>
+              </div>
+              <div class="formula-card">
+                <h4>Resistivity</h4>
+                <div class="formula" data-formula="R = \rho\frac{l}{A}"></div>
+                <div class="formula" data-formula="\rho = \rho_0[1 + \alpha(T - T_0)]"></div>
+                <p>Resistance and temperature dependence</p>
+              </div>
+              <div class="formula-card">
+                <h4>Series and Parallel</h4>
+                <div class="formula" data-formula="R_s = R_1 + R_2 + R_3"></div>
+                <div class="formula" data-formula="\frac{1}{R_p} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3}"></div>
+                <p>Combination of resistors</p>
+              </div>
+              <div class="formula-card">
+                <h4>Power</h4>
+                <div class="formula" data-formula="P = VI = I^2R = \frac{V^2}{R}"></div>
+                <p>Electrical power in circuit</p>
+              </div>
+              <div class="formula-card">
+                <h4>Kirchhoff's Laws</h4>
+                <div class="formula" data-formula="\sum I = 0 \text{ (junction)}"></div>
+                <div class="formula" data-formula="\sum V = 0 \text{ (loop)}"></div>
+                <p>Current and voltage laws</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chapter-content" id="class12-magnetism">
+          <div class="formula-category">
+            <h3>Magnetism</h3>
+            <div class="formula-grid">
+              <div class="formula-card">
+                <h4>Magnetic Force</h4>
+                <div class="formula" data-formula="F = qv \times B"></div>
+                <div class="formula" data-formula="F = IL \times B"></div>
+                <p>Force on moving charge and current-carrying wire</p>
+              </div>
+              <div class="formula-card">
+                <h4>Biot-Savart Law</h4>
+                <div class="formula" data-formula="dB = \frac{\mu_0}{4\pi}\frac{I dl \times r}{r^3}"></div>
+                <p>Magnetic field due to current element</p>
+              </div>
+              <div class="formula-card">
+                <h4>Ampere's Law</h4>
+                <div class="formula" data-formula="\oint B \cdot dl = \mu_0I_{enc}"></div>
+                <p>Magnetic field around current</p>
+              </div>
+              <div class="formula-card">
+                <h4>Magnetic Flux</h4>
+                <div class="formula" data-formula="\Phi_B = \int B \cdot dA"></div>
+                <div class="formula" data-formula="\mathcal{E} = -\frac{d\Phi_B}{dt}"></div>
+                <p>Flux and Faraday's law</p>
+              </div>
+              <div class="formula-card">
+                <h4>Inductance</h4>
+                <div class="formula" data-formula="L = \frac{\Phi_B}{I}"></div>
+                <div class="formula" data-formula="E = -L\frac{dI}{dt}"></div>
+                <p>Self-inductance and induced EMF</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Class 12 Chemistry Content -->
+        <div class="chapter-content" id="class12-solutions">
+          <div class="formula-category">
+            <h3>Solutions</h3>
+            <div class="formula-grid">
+              <div class="formula-card">
+                <h4>Concentration Terms</h4>
+                <div class="formula" data-formula="\text{Molarity} = \frac{\text{moles of solute}}{\text{volume in L}}"></div>
+                <div class="formula" data-formula="\text{Molality} = \frac{\text{moles of solute}}{\text{kg of solvent}}"></div>
+                <div class="formula" data-formula="\text{Mole fraction} = \frac{n_1}{n_1 + n_2}"></div>
+              </div>
+              <div class="formula-card">
+                <h4>Raoult's Law</h4>
+                <div class="formula" data-formula="p_1 = p_1^0x_1"></div>
+                <div class="formula" data-formula="\Delta T_b = K_b m"></div>
+                <div class="formula" data-formula="\Delta T_f = K_f m"></div>
+                <p>Vapor pressure and colligative properties</p>
+              </div>
+              <div class="formula-card">
+                <h4>Van't Hoff Factor</h4>
+                <div class="formula" data-formula="i = \frac{\text{Observed value}}{\text{Calculated value}}"></div>
+                <p>Degree of dissociation</p>
+              </div>
+              <div class="formula-card">
+                <h4>Osmotic Pressure</h4>
+                <div class="formula" data-formula="\pi = MRT"></div>
+                <div class="formula" data-formula="\pi = CRT"></div>
+                <p>Van't Hoff equation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chapter-content" id="class12-electrochemistry">
+          <div class="formula-category">
+            <h3>Electrochemistry</h3>
+            <div class="formula-grid">
+              <div class="formula-card">
+                <h4>Nernst Equation</h4>
+                <div class="formula" data-formula="E_{cell} = E^0_{cell} - \frac{RT}{nF}\ln Q"></div>
+                <p>Cell potential at non-standard conditions</p>
+              </div>
+              <div class="formula-card">
+                <h4>Faraday's Laws</h4>
+                <div class="formula" data-formula="m = \frac{MIt}{nF}"></div>
+                <div class="formula" data-formula="Q = It = nF"></div>
+                <p>Mass deposited and charge passed</p>
+              </div>
+              <div class="formula-card">
+                <h4>Conductivity</h4>
+                <div class="formula" data-formula="\kappa = \frac{1}{R}\frac{l}{A}"></div>
+                <div class="formula" data-formula="\Lambda_m = \frac{\kappa}{c}"></div>
+                <p>Specific and molar conductivity</p>
+              </div>
+              <div class="formula-card">
+                <h4>Kohlrausch's Law</h4>
+                <div class="formula" data-formula="\Lambda^0_m = \lambda^0_+ + \lambda^0_-"></div>
+                <p>Molar conductivity at infinite dilution</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chapter-content" id="class12-chemical-kinetics">
+          <div class="formula-category">
+            <h3>Chemical Kinetics</h3>
+            <div class="formula-grid">
+              <div class="formula-card">
+                <h4>Rate Laws</h4>
+                <div class="formula" data-formula="\text{Rate} = k[A]^x[B]^y"></div>
+                <div class="formula" data-formula="\text{Order} = x + y"></div>
+                <p>Rate expression and overall order</p>
+              </div>
+              <div class="formula-card">
+                <h4>Integrated Rate Laws</h4>
+                <div class="formula" data-formula="\text{Zero order: }[A]_t = [A]_0 - kt"></div>
+                <div class="formula" data-formula="\text{First order: }\ln[A]_t = \ln[A]_0 - kt"></div>
+                <div class="formula" data-formula="\text{Second order: }\frac{1}{[A]_t} = \frac{1}{[A]_0} + kt"></div>
+              </div>
+              <div class="formula-card">
+                <h4>Half Life</h4>
+                <div class="formula" data-formula="t_{1/2} = \frac{0.693}{k} \text{ (1st order)}"></div>
+                <div class="formula" data-formula="t_{1/2} = \frac{[A]_0}{2k} \text{ (2nd order)}"></div>
+              </div>
+              <div class="formula-card">
+                <h4>Arrhenius Equation</h4>
+                <div class="formula" data-formula="k = Ae^{-E_a/RT}"></div>
+                <div class="formula" data-formula="\ln k = \ln A - \frac{E_a}{RT}"></div>
+                <p>Temperature dependence of rate constant</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chapter-content" id="class12-thermodynamics">
+          <div class="formula-category">
+            <h3>Thermodynamics</h3>
+            <div class="formula-grid">
+              <div class="formula-card">
+                <h4>First Law</h4>
+                <div class="formula" data-formula="\Delta U = q + w"></div>
+                <div class="formula" data-formula="\Delta H = \Delta U + \Delta(PV)"></div>
+                <p>Energy conservation and enthalpy</p>
+              </div>
+              <div class="formula-card">
+                <h4>Second Law</h4>
+                <div class="formula" data-formula="\Delta S_{univ} \geq 0"></div>
+                <div class="formula" data-formula="\Delta S = \frac{q_{rev}}{T}"></div>
+                <p>Entropy change in processes</p>
+              </div>
+              <div class="formula-card">
+                <h4>Gibbs Energy</h4>
+                <div class="formula" data-formula="\Delta G = \Delta H - T\Delta S"></div>
+                <div class="formula" data-formula="\Delta G^0 = -RT\ln K"></div>
+                <p>Spontaneity and equilibrium</p>
+              </div>
+              <div class="formula-card">
+                <h4>Heat Capacity</h4>
+                <div class="formula" data-formula="C_p = (\frac{\partial H}{\partial T})_p"></div>
+                <div class="formula" data-formula="C_v = (\frac{\partial U}{\partial T})_v"></div>
+                <p>Heat capacity at constant pressure and volume</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>BhaiyaKi<span>Classes</span></h3>
+          <p>Comprehensive study materials for all NCERT classes with easy-to-understand notes, important questions, and detailed solutions.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../classes.html">Classes</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Popular Classes</h3>
+          <ul>
+            <li><a href="../classes/class9.html">Class 9</a></li>
+            <li><a href="../classes/class10.html">Class 10</a></li>
+            <li><a href="../classes/class11.html">Class 11</a></li>
+            <li><a href="../classes/class12.html">Class 12</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Connect With Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 BhaiyaKiClasses. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/theme.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize KaTeX rendering
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "$", right: "$", display: false}
+        ]
+      });
+
+      // Initialize formula elements
+      document.querySelectorAll('.formula').forEach(element => {
+        const formula = element.dataset.formula;
+        katex.render(formula, element, {
+          throwOnError: false,
+          displayMode: true
+        });
+      });
+
+      // Class tab switching
+      const classTabs = document.querySelectorAll('.class-tabs .tab-btn');
+      const classSections = document.querySelectorAll('.class-section');
+
+      classTabs.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetClass = btn.dataset.class;
+          
+          // Update active tab
+          classTabs.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          
+          // Show selected class section
+          classSections.forEach(section => {
+            if (section.id === targetClass) {
+              section.classList.add('active');
+            } else {
+              section.classList.remove('active');
+            }
+          });
+
+          // Hide all chapter content when switching classes
+          document.querySelectorAll('.chapter-content').forEach(content => {
+            content.classList.remove('active');
+          });
+        });
+      });
+
+      // Chapter card clicking
+      const chapterCards = document.querySelectorAll('.chapter-card');
+      const chapterContents = document.querySelectorAll('.chapter-content');
+
+      chapterCards.forEach(card => {
+        card.addEventListener('click', () => {
+          const targetId = card.dataset.target;
+          
+          // Toggle active state of clicked chapter
+          chapterContents.forEach(content => {
+            if (content.id === targetId) {
+              content.classList.toggle('active');
+            } else {
+              content.classList.remove('active');
+            }
+          });
+
+          // Toggle active state of chapter card
+          chapterCards.forEach(c => {
+            if (c === card) {
+              c.classList.toggle('active');
+            } else {
+              c.classList.remove('active');
+            }
+          });
+        });
+      });
+
+      // Search functionality
+      const searchInput = document.getElementById('searchInput');
+      const formulaCards = document.querySelectorAll('.formula-card');
+      const allChapterCards = document.querySelectorAll('.chapter-card');
+
+      searchInput.addEventListener('input', () => {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        // Search in formula cards
+        formulaCards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(searchTerm)) {
+            card.style.display = '';
+            // Show parent chapter content and card
+            const chapterContent = card.closest('.chapter-content');
+            if (chapterContent) {
+              chapterContent.classList.add('active');
+              const chapterId = chapterContent.id;
+              document.querySelector(`.chapter-card[data-target="${chapterId}"]`).classList.add('active');
+            }
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Search in chapter cards
+        allChapterCards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(searchTerm)) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

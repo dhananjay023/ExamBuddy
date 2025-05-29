@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 10 Formulas - BhaiyaKiClasses</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/formulas.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/katex.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/katex.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.24/contrib/auto-render.min.js"></script>
+</head>
+<body>
+  <header>
+    <!-- Same header structure as class9-formulas.html -->
+    <nav id="navbar">
+      <div class="container">
+        <div class="logo">
+          <h1>BhaiyaKi<span>Classes</span></h1>
+        </div>
+        <div class="nav-toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../classes.html">Classes</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li class="search-container">
+            <div class="search-box">
+              <input type="text" id="searchInput" placeholder="Search formulas...">
+              <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+          </li>
+          <li>
+            <button id="themeToggle" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="page-header">
+      <div class="container">
+        <h1>Class 10 Formulas</h1>
+        <p>Comprehensive collection of formulas organized by subjects</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="formulas-content">
+    <div class="container">
+      <!-- Subject Selection -->
+      <div class="subject-tabs">
+        <button class="tab-btn active" data-subject="mathematics">
+          <i class="fas fa-square-root-alt"></i> Mathematics
+        </button>
+        <button class="tab-btn" data-subject="physics">
+          <i class="fas fa-atom"></i> Physics
+        </button>
+        <button class="tab-btn" data-subject="chemistry">
+          <i class="fas fa-flask"></i> Chemistry
+        </button>
+      </div>
+
+      <!-- Mathematics Content -->
+      <div class="subject-section active" id="mathematics">
+        <h2>Mathematics Formulas</h2>
+        
+        <!-- Real Numbers -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-hashtag"></i> Real Numbers</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>Euclid's Division Lemma</h4>
+              <div class="formula" data-formula="a = bq + r"></div>
+              <p>Where 0 ≤ r < b</p>
+            </div>
+            <div class="formula-card">
+              <h4>HCF by Prime Factorization</h4>
+              <div class="formula" data-formula="\text{HCF}(a,b) = \prod p_i^{\min(x_i,y_i)}"></div>
+              <p>Where pi are prime factors</p>
+            </div>
+            <div class="formula-card">
+              <h4>LCM by Prime Factorization</h4>
+              <div class="formula" data-formula="\text{LCM}(a,b) = \prod p_i^{\max(x_i,y_i)}"></div>
+              <p>Where pi are prime factors</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Polynomials -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-superscript"></i> Polynomials</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>Quadratic Equation</h4>
+              <div class="formula" data-formula="ax^2 + bx + c = 0"></div>
+              <div class="formula" data-formula="x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Nature of Roots</h4>
+              <div class="formula" data-formula="\text{Discriminant } D = b^2-4ac"></div>
+              <p>D > 0: Real and distinct roots</p>
+              <p>D = 0: Real and equal roots</p>
+              <p>D < 0: No real roots</p>
+            </div>
+            <div class="formula-card">
+              <h4>Vieta's Formulas</h4>
+              <div class="formula" data-formula="\alpha + \beta = -\frac{b}{a}"></div>
+              <div class="formula" data-formula="\alpha\beta = \frac{c}{a}"></div>
+              <p>Sum and product of roots</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Triangles -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-draw-polygon"></i> Triangles</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>Similar Triangles</h4>
+              <div class="formula" data-formula="\frac{a}{a'} = \frac{b}{b'} = \frac{c}{c'}"></div>
+              <p>Corresponding sides are proportional</p>
+            </div>
+            <div class="formula-card">
+              <h4>Area Ratio</h4>
+              <div class="formula" data-formula="\frac{\text{Area}_1}{\text{Area}_2} = (\frac{a}{a'})^2"></div>
+              <p>Ratio of areas of similar triangles</p>
+            </div>
+            <div class="formula-card">
+              <h4>Thales Theorem</h4>
+              <div class="formula" data-formula="\frac{AE}{EC} = \frac{AD}{DB}"></div>
+              <p>Line parallel to one side of a triangle</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Circles -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-circle"></i> Circles</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>Area and Circumference</h4>
+              <div class="formula" data-formula="\text{Area} = \pi r^2"></div>
+              <div class="formula" data-formula="\text{Circumference} = 2\pi r"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Length of Arc</h4>
+              <div class="formula" data-formula="\text{Arc Length} = \frac{\theta}{360°} \times 2\pi r"></div>
+              <p>θ is angle in degrees</p>
+            </div>
+            <div class="formula-card">
+              <h4>Area of Sector</h4>
+              <div class="formula" data-formula="\text{Sector Area} = \frac{\theta}{360°} \times \pi r^2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Physics Content -->
+      <div class="subject-section" id="physics">
+        <h2>Physics Formulas</h2>
+        
+        <!-- Motion -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-running"></i> Motion</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>Equations of Motion</h4>
+              <div class="formula" data-formula="v = u + at"></div>
+              <div class="formula" data-formula="s = ut + \frac{1}{2}at^2"></div>
+              <div class="formula" data-formula="v^2 = u^2 + 2as"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Momentum</h4>
+              <div class="formula" data-formula="p = mv"></div>
+              <div class="formula" data-formula="F = \frac{\Delta p}{\Delta t}"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Work and Energy</h4>
+              <div class="formula" data-formula="W = Fs\cos\theta"></div>
+              <div class="formula" data-formula="KE = \frac{1}{2}mv^2"></div>
+              <div class="formula" data-formula="PE = mgh"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Electricity -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-bolt"></i> Electricity</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>Ohm's Law</h4>
+              <div class="formula" data-formula="V = IR"></div>
+              <p>Voltage equals current times resistance</p>
+            </div>
+            <div class="formula-card">
+              <h4>Resistance Combinations</h4>
+              <div class="formula" data-formula="R_s = R_1 + R_2 + R_3 \text{ (Series)}"></div>
+              <div class="formula" data-formula="\frac{1}{R_p} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} \text{ (Parallel)}"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Electric Power</h4>
+              <div class="formula" data-formula="P = VI = I^2R = \frac{V^2}{R}"></div>
+              <p>Different forms of power equation</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Light -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-lightbulb"></i> Light</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>Mirror Formula</h4>
+              <div class="formula" data-formula="\frac{1}{f} = \frac{1}{u} + \frac{1}{v}"></div>
+              <p>For spherical mirrors</p>
+            </div>
+            <div class="formula-card">
+              <h4>Lens Formula</h4>
+              <div class="formula" data-formula="\frac{1}{f} = \frac{1}{v} - \frac{1}{u}"></div>
+              <p>For thin lenses</p>
+            </div>
+            <div class="formula-card">
+              <h4>Magnification</h4>
+              <div class="formula" data-formula="m = -\frac{v}{u} = \frac{h_i}{h_o}"></div>
+              <p>For mirrors and lenses</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chemistry Content -->
+      <div class="subject-section" id="chemistry">
+        <h2>Chemistry Formulas</h2>
+        
+        <!-- Chemical Reactions -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-flask"></i> Chemical Reactions</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>Balancing Equations</h4>
+              <div class="formula" data-formula="\text{Reactants} \rightarrow \text{Products}"></div>
+              <p>Number of atoms must be equal on both sides</p>
+            </div>
+            <div class="formula-card">
+              <h4>Types of Reactions</h4>
+              <div class="formula" data-formula="A + B \rightarrow AB \text{ (Combination)}"></div>
+              <div class="formula" data-formula="AB \rightarrow A + B \text{ (Decomposition)}"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Oxidation Numbers</h4>
+              <div class="formula" data-formula="\text{Sum of oxidation numbers} = \text{Charge on species}"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Acids, Bases and Salts -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-vial"></i> Acids, Bases and Salts</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>pH Scale</h4>
+              <div class="formula" data-formula="pH = -\log[H^+]"></div>
+              <p>pH + pOH = 14</p>
+            </div>
+            <div class="formula-card">
+              <h4>Neutralization</h4>
+              <div class="formula" data-formula="\text{Acid} + \text{Base} \rightarrow \text{Salt} + \text{Water}"></div>
+            </div>
+            <div class="formula-card">
+              <h4>Ionic Product of Water</h4>
+              <div class="formula" data-formula="K_w = [H^+][OH^-] = 10^{-14}"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metals and Non-metals -->
+        <div class="chapter-section">
+          <h3><i class="fas fa-cube"></i> Metals and Non-metals</h3>
+          <div class="formula-grid">
+            <div class="formula-card">
+              <h4>Metal + Oxygen</h4>
+              <div class="formula" data-formula="2M + O_2 \rightarrow 2MO"></div>
+              <p>Formation of metal oxide</p>
+            </div>
+            <div class="formula-card">
+              <h4>Metal + Acid</h4>
+              <div class="formula" data-formula="M + 2HCl \rightarrow MCl_2 + H_2"></div>
+              <p>Displacement reaction</p>
+            </div>
+            <div class="formula-card">
+              <h4>Reactivity Series</h4>
+              <div class="formula" data-formula="K > Na > Ca > Mg > Al > Zn > Fe > Pb > Cu"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <!-- Same footer structure as class9-formulas.html -->
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>BhaiyaKi<span>Classes</span></h3>
+          <p>Comprehensive study materials for all NCERT classes.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../classes.html">Classes</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Other Classes</h3>
+          <ul>
+            <li><a href="class9-formulas.html">Class 9</a></li>
+            <li><a href="class12-formulas.html">Class 12</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 BhaiyaKiClasses. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/theme.js"></script>
+  <script>
+    // Same JavaScript code as class9-formulas.html
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize KaTeX rendering
+      renderMathInElement(document.body, {
+        delimiters: [
+          {left: "$$", right: "$$", display: true},
+          {left: "$", right: "$", display: false}
+        ]
+      });
+
+      // Initialize formula elements
+      document.querySelectorAll('.formula').forEach(element => {
+        const formula = element.dataset.formula;
+        katex.render(formula, element, {
+          throwOnError: false,
+          displayMode: true
+        });
+      });
+
+      // Subject tab switching
+      const subjectTabs = document.querySelectorAll('.subject-tabs .tab-btn');
+      const subjectSections = document.querySelectorAll('.subject-section');
+
+      subjectTabs.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const targetSubject = btn.dataset.subject;
+          
+          // Update active tab
+          subjectTabs.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          
+          // Show selected subject section
+          subjectSections.forEach(section => {
+            if (section.id === targetSubject) {
+              section.classList.add('active');
+            } else {
+              section.classList.remove('active');
+            }
+          });
+        });
+      });
+
+      // Search functionality
+      const searchInput = document.getElementById('searchInput');
+      const formulaCards = document.querySelectorAll('.formula-card');
+      const chapterSections = document.querySelectorAll('.chapter-section');
+
+      searchInput.addEventListener('input', () => {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        formulaCards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(searchTerm)) {
+            card.style.display = '';
+            // Show parent chapter section
+            const chapterSection = card.closest('.chapter-section');
+            if (chapterSection) {
+              chapterSection.style.display = '';
+            }
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Hide empty chapter sections
+        chapterSections.forEach(section => {
+          const visibleCards = section.querySelectorAll('.formula-card[style="display: none;"]');
+          if (visibleCards.length === section.querySelectorAll('.formula-card').length) {
+            section.style.display = 'none';
+          } else {
+            section.style.display = '';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html> 

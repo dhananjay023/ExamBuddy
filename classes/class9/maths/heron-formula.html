@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Class 9 Mathematics: Number Systems - BhaiyaKiClasses</title>
+  <title>Class 9 Mathematics: Heron's Formula - BhaiyaKiClasses</title>
   <link rel="stylesheet" href="../../../css/style.css">
   <link rel="stylesheet" href="../../../css/chapter.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
@@ -49,7 +49,7 @@
           </div>
           <nav class="chapter-navigation">
             <ul>
-              <li><a href="number-systems.html" class="active">Number Systems</a></li>
+              <li><a href="number-systems.html">Number Systems</a></li>
               <li><a href="polynomials.html">Polynomials</a></li>
               <li><a href="coordinate-geometry.html">Coordinate Geometry</a></li>
               <li><a href="linear-equations.html">Linear Equations in Two Variables</a></li>
@@ -60,7 +60,7 @@
               <li><a href="areas-parallelograms.html">Areas of Parallelograms and Triangles</a></li>
               <li><a href="circles.html">Circles</a></li>
               <li><a href="constructions.html">Constructions</a></li>
-              <li><a href="heron-formula.html">Heron's Formula</a></li>
+              <li><a href="heron-formula.html" class="active">Heron's Formula</a></li>
               <li><a href="surface-areas-volumes.html">Surface Areas and Volumes</a></li>
               <li><a href="statistics.html">Statistics</a></li>
               <li><a href="probability.html">Probability</a></li>
@@ -70,7 +70,7 @@
             <button class="btn btn-outline btn-sm download-btn">
               <i class="fas fa-download"></i> Download PDF
             </button>
-            <button class="btn btn-outline btn-sm bookmark-btn" data-id="class9-maths-number-systems" data-title="Class 9 Mathematics: Number Systems" data-type="chapter">
+            <button class="btn btn-outline btn-sm bookmark-btn" data-id="class9-maths-heron" data-title="Class 9 Mathematics: Heron's Formula" data-type="chapter">
               <i class="far fa-bookmark"></i> Bookmark
             </button>
           </div>
@@ -83,9 +83,9 @@
               <a href="../../../classes.html">Classes</a> &gt; 
               <a href="../../class9.html">Class 9</a> &gt; 
               <a href="../../class9.html#mathematics">Mathematics</a> &gt; 
-              <span>Number Systems</span>
+              <span>Heron's Formula</span>
             </div>
-            <h1>Chapter 1: Number Systems</h1>
+            <h1>Chapter 12: Heron's Formula</h1>
             <div class="meta-info">
               <span><i class="fas fa-book"></i> Class 9 Mathematics</span>
               <span><i class="fas fa-calendar"></i> Updated: May 15, 2025</span>
@@ -94,52 +94,89 @@
           
           <div class="chapter-section">
             <h2>Introduction</h2>
-            <p>Number Systems is a fundamental chapter in Class 9 Mathematics that deals with different types of numbers, their properties, and operations. This chapter builds upon your previous knowledge of numbers and introduces new concepts about rational and irrational numbers.</p>
+            <p>Heron's Formula provides a way to calculate the area of a triangle when all three sides are known, without needing to know the height or angles. Named after Hero of Alexandria, this formula is particularly useful when direct measurement of height is difficult or impossible.</p>
           </div>
           
           <div class="chapter-section">
             <h2>Key Concepts</h2>
             <div class="concept-list">
               <div class="concept-item">
-                <h3>Real Numbers</h3>
+                <h3>Understanding Heron's Formula</h3>
                 <ul class="bullet-points">
-                  <li>Real numbers include both rational and irrational numbers</li>
-                  <li>Every real number can be represented as a point on the number line</li>
-                  <li>Real numbers can be positive, negative, or zero</li>
-                  <li>All natural numbers, whole numbers, integers, and rational numbers are real numbers</li>
-                  <li>Examples: 5, -3, 0, ½, √2, π</li>
+                  <li>Semi-perimeter (s):
+                    <ul>
+                      <li>s = (a + b + c)/2</li>
+                      <li>where a, b, c are sides of triangle</li>
+                    </ul>
+                  </li>
+                  <li>Area Formula:
+                    <ul>
+                      <li>Area = √(s(s-a)(s-b)(s-c))</li>
+                      <li>Always gives positive value</li>
+                      <li>Works for all types of triangles</li>
+                    </ul>
+                  </li>
+                  <li>Conditions:
+                    <ul>
+                      <li>Triangle inequality must be satisfied</li>
+                      <li>All sides must be positive</li>
+                      <li>Sum of any two sides > third side</li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
               
               <div class="concept-item">
-                <h3>Rational Numbers</h3>
+                <h3>Applications</h3>
                 <ul class="bullet-points">
-                  <li>Numbers that can be expressed in the form p/q, where p and q are integers and q ≠ 0</li>
-                  <li>Decimal representation either terminates or repeats</li>
-                  <li>All integers are rational numbers (can be written as n/1)</li>
-                  <li>Examples: 2/3, -5/4, 0.25, 0.333...</li>
+                  <li>Finding areas of:
+                    <ul>
+                      <li>Irregular triangular plots</li>
+                      <li>Triangular architectural elements</li>
+                      <li>Triangular structural components</li>
+                    </ul>
+                  </li>
+                  <li>Real-world uses:
+                    <ul>
+                      <li>Land surveying</li>
+                      <li>Architecture</li>
+                      <li>Engineering</li>
+                      <li>Construction</li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
               
               <div class="concept-item">
-                <h3>Irrational Numbers</h3>
+                <h3>Related Concepts</h3>
                 <ul class="bullet-points">
-                  <li>Numbers that cannot be expressed as p/q where p and q are integers and q ≠ 0</li>
-                  <li>Non-terminating, non-repeating decimal representation</li>
-                  <li>Cannot be represented as a simple fraction</li>
-                  <li>Examples: √2, √3, π, e</li>
-                  <li>Every irrational number has a unique point on the number line</li>
+                  <li>Area of triangular regions</li>
+                  <li>Perimeter calculations</li>
+                  <li>Triangle inequality theorem</li>
+                  <li>Types of triangles:
+                    <ul>
+                      <li>Acute triangles</li>
+                      <li>Right triangles</li>
+                      <li>Obtuse triangles</li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
               
               <div class="concept-item">
-                <h3>Laws of Exponents</h3>
+                <h3>Problem-Solving Steps</h3>
                 <ul class="bullet-points">
-                  <li>Product law: aᵐ × aⁿ = aᵐ⁺ⁿ</li>
-                  <li>Quotient law: aᵐ ÷ aⁿ = aᵐ⁻ⁿ</li>
-                  <li>Power law: (aᵐ)ⁿ = aᵐⁿ</li>
-                  <li>Zero exponent: a⁰ = 1, where a ≠ 0</li>
-                  <li>Negative exponent: a⁻ⁿ = 1/aⁿ</li>
+                  <li>Verify triangle inequality</li>
+                  <li>Calculate semi-perimeter</li>
+                  <li>Apply Heron's formula</li>
+                  <li>Simplify the expression</li>
+                  <li>Common errors to avoid:
+                    <ul>
+                      <li>Using incorrect units</li>
+                      <li>Forgetting to simplify under root</li>
+                      <li>Not verifying triangle inequality</li>
+                    </ul>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -151,66 +188,82 @@
             <div class="question-card">
               <div class="question">
                 <h3>Question 1</h3>
-                <p>Prove that √2 is an irrational number.</p>
+                <p>Find the area of a triangle with sides 8 cm, 15 cm, and 17 cm.</p>
               </div>
               <div class="solution">
                 <h4>Solution:</h4>
-                <p>Let's prove this by contradiction:</p>
                 <ol>
-                  <li>Assume √2 is rational</li>
-                  <li>Then √2 = p/q where p, q are coprime integers and q ≠ 0</li>
-                  <li>Therefore, 2 = p²/q²</li>
-                  <li>2q² = p²</li>
-                  <li>This means p² is even, so p is even</li>
-                  <li>Let p = 2k for some integer k</li>
-                  <li>Then 2q² = 4k²</li>
-                  <li>Therefore q² = 2k²</li>
-                  <li>This means q² is even, so q is even</li>
-                  <li>But this contradicts our assumption that p and q are coprime</li>
-                  <li>Therefore, √2 cannot be rational</li>
+                  <li>Given: a = 8 cm, b = 15 cm, c = 17 cm</li>
+                  <li>Step 1: Calculate semi-perimeter (s)
+                    <ul>
+                      <li>s = (a + b + c)/2</li>
+                      <li>s = (8 + 15 + 17)/2 = 40/2 = 20 cm</li>
+                    </ul>
+                  </li>
+                  <li>Step 2: Apply Heron's formula
+                    <ul>
+                      <li>Area = √(s(s-a)(s-b)(s-c))</li>
+                      <li>= √(20(20-8)(20-15)(20-17))</li>
+                      <li>= √(20 × 12 × 5 × 3)</li>
+                      <li>= √3600</li>
+                      <li>= 60 square cm</li>
+                    </ul>
+                  </li>
                 </ol>
-                <p>Hence, √2 is irrational.</p>
               </div>
             </div>
             
             <div class="question-card">
               <div class="question">
                 <h3>Question 2</h3>
-                <p>Express 0.6666... as a rational number.</p>
+                <p>A triangular park has sides 120 m, 80 m, and 100 m. Find its area using Heron's formula.</p>
               </div>
               <div class="solution">
                 <h4>Solution:</h4>
-                <p>Let x = 0.6666...</p>
-                <p>Then, 10x = 6.6666...</p>
-                <p>Subtracting, 10x - x = 6.6666... - 0.6666...</p>
-                <p>9x = 6</p>
-                <p>x = 6/9 = 2/3</p>
-                <p>Therefore, 0.6666... = 2/3</p>
+                <ol>
+                  <li>Given: a = 120 m, b = 80 m, c = 100 m</li>
+                  <li>Step 1: Calculate semi-perimeter (s)
+                    <ul>
+                      <li>s = (120 + 80 + 100)/2</li>
+                      <li>s = 300/2 = 150 m</li>
+                    </ul>
+                  </li>
+                  <li>Step 2: Apply Heron's formula
+                    <ul>
+                      <li>Area = √(s(s-a)(s-b)(s-c))</li>
+                      <li>= √(150(150-120)(150-80)(150-100))</li>
+                      <li>= √(150 × 30 × 70 × 50)</li>
+                      <li>= √15,750,000</li>
+                      <li>= 3,967.18 square meters</li>
+                    </ul>
+                  </li>
+                </ol>
               </div>
             </div>
+          </div>
           
           <div class="chapter-section">
             <h2>Key Formulas</h2>
             
             <div class="formulas-grid">
               <div class="formula-box">
-                <h4>Laws of Exponents</h4>
-                <div class="formula">aᵐ × aⁿ = aᵐ⁺ⁿ</div>
+                <h4>Semi-perimeter</h4>
+                <div class="formula">s = (a + b + c)/2</div>
               </div>
               
               <div class="formula-box">
-                <h4>Negative Exponents</h4>
-                <div class="formula">a⁻ⁿ = 1/aⁿ</div>
+                <h4>Heron's Formula</h4>
+                <div class="formula">A = √(s(s-a)(s-b)(s-c))</div>
               </div>
               
               <div class="formula-box">
-                <h4>Zero Exponent</h4>
-                <div class="formula">a⁰ = 1, where a ≠ 0</div>
+                <h4>Triangle Inequality</h4>
+                <div class="formula">a + b > c, b + c > a, c + a > b</div>
               </div>
               
               <div class="formula-box">
-                <h4>Power of Power</h4>
-                <div class="formula">(aᵐ)ⁿ = aᵐⁿ</div>
+                <h4>Perimeter</h4>
+                <div class="formula">P = a + b + c</div>
               </div>
             </div>
           </div>
@@ -219,37 +272,38 @@
             <h2>Common Misconceptions</h2>
             <div class="misconception-list">
               <div class="misconception-item">
-                <h3>All Decimals are Rational</h3>
-                <p><strong>Misconception:</strong> Every decimal number is rational.</p>
-                <p><strong>Correction:</strong> Only terminating and repeating decimals are rational. Non-terminating, non-repeating decimals are irrational.</p>
+                <h3>Formula Application</h3>
+                <p><strong>Misconception:</strong> Heron's formula works for any three numbers.</p>
+                <p><strong>Correction:</strong> The three sides must satisfy triangle inequality theorem to form a valid triangle.</p>
               </div>
               
               <div class="misconception-item">
-                <h3>Square Root of Negative Numbers</h3>
-                <p><strong>Misconception:</strong> Every number has a real square root.</p>
-                <p><strong>Correction:</strong> Negative numbers do not have real square roots. They have complex square roots which are not part of the real number system.</p>
+                <h3>Semi-perimeter</h3>
+                <p><strong>Misconception:</strong> Semi-perimeter is half of any two sides.</p>
+                <p><strong>Correction:</strong> Semi-perimeter is half of the sum of all three sides.</p>
               </div>
               
               <div class="misconception-item">
-                <h3>Zero is a Natural Number</h3>
-                <p><strong>Misconception:</strong> Zero is included in natural numbers.</p>
-                <p><strong>Correction:</strong> Zero is not a natural number, but it is a whole number. Natural numbers start from 1.</p>
+                <h3>Units</h3>
+                <p><strong>Misconception:</strong> Units remain same after area calculation.</p>
+                <p><strong>Correction:</strong> Area units are square units (e.g., cm² if sides are in cm).</p>
               </div>
             </div>
           </div>
           
           <div class="chapter-nav">
-            <a href="../../class9.html" class="prev-chapter">
-              <i class="fas fa-arrow-left"></i> Back to Subjects
+            <a href="constructions.html" class="prev-chapter">
+              <i class="fas fa-arrow-left"></i> Previous Chapter: Constructions
             </a>
-            <a href="polynomials.html" class="next-chapter">
-              Next Chapter: Polynomials <i class="fas fa-arrow-right"></i>
+            <a href="surface-areas-volumes.html" class="next-chapter">
+              Next Chapter: Surface Areas and Volumes <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </main>
       </div>
     </div>
   </div>
+
   <footer>
     <div class="container">
       <div class="footer-content">
@@ -294,4 +348,4 @@
   <script src="../../../js/main.js"></script>
   <script src="../../../js/theme.js"></script>
 </body>
-</html>
+</html> 
